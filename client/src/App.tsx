@@ -19,11 +19,21 @@ class App extends React.Component<MyProps, MyState > {
     });
   };
 
+  decrementer = () => {
+    const { counter } = this.state;
+    const newNumber = counter - 1;
+    this.setState({
+      counter: newNumber
+    });
+  };
+
   render() {
     const { counter } = this.state;
     return (
       <>
-        <div onClick={this.incrementer}>App goes here</div>
+        <button onClick={this.incrementer}>add</button>
+        <button onClick={this.decrementer}>subtract</button>
+
         <TestComp number={counter} />
       </>
     );

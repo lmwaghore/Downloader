@@ -1,10 +1,9 @@
 import React from 'react';
 
-const TestComp = (props) => {
-  const { number } = props;
+const TestComp = ({ number }) => {
   return (
     <div>
-      this new number is
+      Your Number i
       {' '}
       {number}
     </div>

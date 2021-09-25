@@ -62,6 +62,15 @@ var App = /*#__PURE__*/function (_React$Component) {
       });
     });
 
+    _defineProperty(_assertThisInitialized(_this), "decrementer", function () {
+      var counter = _this.state.counter;
+      var newNumber = counter - 1;
+
+      _this.setState({
+        counter: newNumber
+      });
+    });
+
     _this.state = {
       counter: 0
     };
@@ -72,9 +81,11 @@ var App = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       var counter = this.state.counter;
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
         onClick: this.incrementer
-      }, "App goes here"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_TestComp__WEBPACK_IMPORTED_MODULE_1__.default, {
+      }, "add"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+        onClick: this.decrementer
+      }, "subtract"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_TestComp__WEBPACK_IMPORTED_MODULE_1__.default, {
         number: counter
       }));
     }
@@ -100,9 +111,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 
-var TestComp = function TestComp(props) {
-  var number = props.number;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "this new number is", ' ', number);
+var TestComp = function TestComp(_ref) {
+  var number = _ref.number;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Your Number i", ' ', number);
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TestComp);
