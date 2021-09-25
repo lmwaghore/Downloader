@@ -5,7 +5,7 @@ const SRC_DIR = path.join(__dirname, '/client/src');
 
 module.exports = {
   mode: 'development',
-  entry: `${SRC_DIR}/index.jsx`,
+  entry: `${SRC_DIR}/index.tsx`,
   output: {
     filename: 'bundle.js',
     path: DIST_DIR,
@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js|jsx|tsx)$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
@@ -28,7 +28,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
   },
   devtool: false,
 };

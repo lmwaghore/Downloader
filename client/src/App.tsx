@@ -1,9 +1,11 @@
 import React from 'react';
 import TestComp from './Components/TestComp';
 
-class App extends React.Component {
+type MyProps = {};
+type MyState = { counter: number };
+class App extends React.Component<MyProps, MyState > {
   constructor() {
-    super();
+    super({});
     this.state = {
       counter: 0,
     };
