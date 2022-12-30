@@ -1,43 +1,61 @@
-import React from 'react';
+import React, {useState} from 'react';
 import TestComp from './Components/TestComp';
+import YoutubeDL  from 'youtube-dl-exec';
+import { saveAs } from 'file-saver';
+const Ffmpeg = require('ffmpeg')
 
-type MyProps = {};
-type MyState = { counter: number };
-class App extends React.Component<MyProps, MyState > {
-  constructor() {
-    super({});
-    this.state = {
-      counter: 0,
-    };
+
+function App() {
+  const [youtubeLink, setYoutubeLink] = useState('');
+  const [mp3Data, setMp3Data] = useState(null);
+  const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
+    setYoutubeLink(event.target.value);
   };
 
-  incrementer = () => {
-    const { counter } = this.state;
-    const newNumber = counter + 1;
-    this.setState({
-      counter: newNumber
-    });
+  const handleDownload = (event: { preventDefault: () => void; }) => {
+    event.preventDefault();
+    setIsLoading(true);
+
+      const video = YoutubeDL(youtubeLink);
+      video.pipe(Ffmpeg({ format: 'mp3' })).on('error', (error) => {
+        setError(error);
+        setIsLoading(false);
+      }).on('end', () => {
+        setMp3Data(video.read());
+        setIsLoading(false);
+      });
   };
 
-  decrementer = () => {
-    const { counter } = this.state;
-    const newNumber = counter - 1;
-    this.setState({
-      counter: newNumber
-    });
+  const handleSave = (event) => {
+    event.preventDefault();
+    saveAs(mp3Data, 'video.mp3');
   };
 
-  render() {
-    const { counter } = this.state;
-    return (
-      <>
-        <button onClick={this.incrementer}>add</button>
-        <button onClick={this.decrementer}>subtract</button>
-
-        <TestComp number={counter} />
-      </>
-    );
-  }
+  return (
+    <div>
+      {error && <p>{error.message}</p>}
+      <form onSubmit={handleDownload}>
+        <label htmlFor="youtube-link">YouTube Link:</label>
+        <input
+          type="text"
+          id="youtube-link"
+          value={youtubeLink}
+          onChange={handleChange}
+        />
+        <button type="submit" disabled={isLoading}>
+          Download
+        </button>
+      </form>
+      {mp3Data && (
+        <a href="#" onClick={handleSave}>
+          Save MP3
+        </a>
+      )}
+    </div>
+  );
 }
 
 export default App;

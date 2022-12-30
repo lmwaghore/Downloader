@@ -1,9 +1,9 @@
 import React from 'react';
 
-const TestComp = ({ number }) => {
+const TestComp = ({ number } : {number:number}) => {
   return (
     <div>
-      Your Number i
+      Your Number is
       {' '}
       {number}
     </div>

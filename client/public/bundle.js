@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./client/src/App.tsx":
@@ -8,115 +7,4245 @@
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Components_TestComp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Components/TestComp */ "./client/src/Components/TestComp.tsx");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+/* harmony import */ var youtube_dl_exec__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! youtube-dl-exec */ "./node_modules/youtube-dl-exec/src/index.js");
+/* harmony import */ var youtube_dl_exec__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(youtube_dl_exec__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! file-saver */ "./node_modules/file-saver/dist/FileSaver.min.js");
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(file_saver__WEBPACK_IMPORTED_MODULE_2__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-
-var App = /*#__PURE__*/function (_React$Component) {
-  _inherits(App, _React$Component);
-
-  var _super = _createSuper(App);
-
-  function App() {
-    var _this;
-
-    _classCallCheck(this, App);
-
-    _this = _super.call(this, {});
-
-    _defineProperty(_assertThisInitialized(_this), "incrementer", function () {
-      var counter = _this.state.counter;
-      var newNumber = counter + 1;
-
-      _this.setState({
-        counter: newNumber
-      });
+var Ffmpeg = __webpack_require__(/*! ffmpeg */ "./node_modules/ffmpeg/index.js");
+function App() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    _useState2 = _slicedToArray(_useState, 2),
+    youtubeLink = _useState2[0],
+    setYoutubeLink = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState4 = _slicedToArray(_useState3, 2),
+    mp3Data = _useState4[0],
+    setMp3Data = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState6 = _slicedToArray(_useState5, 2),
+    error = _useState6[0],
+    setError = _useState6[1];
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState8 = _slicedToArray(_useState7, 2),
+    isLoading = _useState8[0],
+    setIsLoading = _useState8[1];
+  var handleChange = function handleChange(event) {
+    setYoutubeLink(event.target.value);
+  };
+  var handleDownload = function handleDownload(event) {
+    event.preventDefault();
+    setIsLoading(true);
+    var video = youtube_dl_exec__WEBPACK_IMPORTED_MODULE_1___default()(youtubeLink);
+    video.pipe(Ffmpeg({
+      format: 'mp3'
+    })).on('error', function (error) {
+      setError(error);
+      setIsLoading(false);
+    }).on('end', function () {
+      setMp3Data(video.read());
+      setIsLoading(false);
     });
-
-    _defineProperty(_assertThisInitialized(_this), "decrementer", function () {
-      var counter = _this.state.counter;
-      var newNumber = counter - 1;
-
-      _this.setState({
-        counter: newNumber
-      });
-    });
-
-    _this.state = {
-      counter: 0
-    };
-    return _this;
-  }
-
-  _createClass(App, [{
-    key: "render",
-    value: function render() {
-      var counter = this.state.counter;
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-        onClick: this.incrementer
-      }, "add"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-        onClick: this.decrementer
-      }, "subtract"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_TestComp__WEBPACK_IMPORTED_MODULE_1__.default, {
-        number: counter
-      }));
-    }
-  }]);
-
-  return App;
-}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
-
+  };
+  var handleSave = function handleSave(event) {
+    event.preventDefault();
+    (0,file_saver__WEBPACK_IMPORTED_MODULE_2__.saveAs)(mp3Data, 'video.mp3');
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, error && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, error.message), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
+    onSubmit: handleDownload
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
+    htmlFor: "youtube-link"
+  }, "YouTube Link:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    type: "text",
+    id: "youtube-link",
+    value: youtubeLink,
+    onChange: handleChange
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    type: "submit",
+    disabled: isLoading
+  }, "Download")), mp3Data && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "#",
+    onClick: handleSave
+  }, "Save MP3"));
+}
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 
 /***/ }),
 
-/***/ "./client/src/Components/TestComp.tsx":
-/*!********************************************!*\
-  !*** ./client/src/Components/TestComp.tsx ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./node_modules/cross-spawn/index.js":
+/*!*******************************************!*\
+  !*** ./node_modules/cross-spawn/index.js ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+"use strict";
 
 
-var TestComp = function TestComp(_ref) {
-  var number = _ref.number;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Your Number i", ' ', number);
+const cp = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'child_process'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+const parse = __webpack_require__(/*! ./lib/parse */ "./node_modules/cross-spawn/lib/parse.js");
+const enoent = __webpack_require__(/*! ./lib/enoent */ "./node_modules/cross-spawn/lib/enoent.js");
+
+function spawn(command, args, options) {
+    // Parse the arguments
+    const parsed = parse(command, args, options);
+
+    // Spawn the child process
+    const spawned = cp.spawn(parsed.command, parsed.args, parsed.options);
+
+    // Hook into child process "exit" event to emit an error if the command
+    // does not exists, see: https://github.com/IndigoUnited/node-cross-spawn/issues/16
+    enoent.hookChildProcess(spawned, parsed);
+
+    return spawned;
+}
+
+function spawnSync(command, args, options) {
+    // Parse the arguments
+    const parsed = parse(command, args, options);
+
+    // Spawn the child process
+    const result = cp.spawnSync(parsed.command, parsed.args, parsed.options);
+
+    // Analyze if the command does not exist, see: https://github.com/IndigoUnited/node-cross-spawn/issues/16
+    result.error = result.error || enoent.verifyENOENTSync(result.status, parsed);
+
+    return result;
+}
+
+module.exports = spawn;
+module.exports.spawn = spawn;
+module.exports.sync = spawnSync;
+
+module.exports._parse = parse;
+module.exports._enoent = enoent;
+
+
+/***/ }),
+
+/***/ "./node_modules/cross-spawn/lib/enoent.js":
+/*!************************************************!*\
+  !*** ./node_modules/cross-spawn/lib/enoent.js ***!
+  \************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+const isWin = process.platform === 'win32';
+
+function notFoundError(original, syscall) {
+    return Object.assign(new Error(`${syscall} ${original.command} ENOENT`), {
+        code: 'ENOENT',
+        errno: 'ENOENT',
+        syscall: `${syscall} ${original.command}`,
+        path: original.command,
+        spawnargs: original.args,
+    });
+}
+
+function hookChildProcess(cp, parsed) {
+    if (!isWin) {
+        return;
+    }
+
+    const originalEmit = cp.emit;
+
+    cp.emit = function (name, arg1) {
+        // If emitting "exit" event and exit code is 1, we need to check if
+        // the command exists and emit an "error" instead
+        // See https://github.com/IndigoUnited/node-cross-spawn/issues/16
+        if (name === 'exit') {
+            const err = verifyENOENT(arg1, parsed, 'spawn');
+
+            if (err) {
+                return originalEmit.call(cp, 'error', err);
+            }
+        }
+
+        return originalEmit.apply(cp, arguments); // eslint-disable-line prefer-rest-params
+    };
+}
+
+function verifyENOENT(status, parsed) {
+    if (isWin && status === 1 && !parsed.file) {
+        return notFoundError(parsed.original, 'spawn');
+    }
+
+    return null;
+}
+
+function verifyENOENTSync(status, parsed) {
+    if (isWin && status === 1 && !parsed.file) {
+        return notFoundError(parsed.original, 'spawnSync');
+    }
+
+    return null;
+}
+
+module.exports = {
+    hookChildProcess,
+    verifyENOENT,
+    verifyENOENTSync,
+    notFoundError,
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TestComp);
+
+/***/ }),
+
+/***/ "./node_modules/cross-spawn/lib/parse.js":
+/*!***********************************************!*\
+  !*** ./node_modules/cross-spawn/lib/parse.js ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+const path = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'path'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+const resolveCommand = __webpack_require__(/*! ./util/resolveCommand */ "./node_modules/cross-spawn/lib/util/resolveCommand.js");
+const escape = __webpack_require__(/*! ./util/escape */ "./node_modules/cross-spawn/lib/util/escape.js");
+const readShebang = __webpack_require__(/*! ./util/readShebang */ "./node_modules/cross-spawn/lib/util/readShebang.js");
+
+const isWin = process.platform === 'win32';
+const isExecutableRegExp = /\.(?:com|exe)$/i;
+const isCmdShimRegExp = /node_modules[\\/].bin[\\/][^\\/]+\.cmd$/i;
+
+function detectShebang(parsed) {
+    parsed.file = resolveCommand(parsed);
+
+    const shebang = parsed.file && readShebang(parsed.file);
+
+    if (shebang) {
+        parsed.args.unshift(parsed.file);
+        parsed.command = shebang;
+
+        return resolveCommand(parsed);
+    }
+
+    return parsed.file;
+}
+
+function parseNonShell(parsed) {
+    if (!isWin) {
+        return parsed;
+    }
+
+    // Detect & add support for shebangs
+    const commandFile = detectShebang(parsed);
+
+    // We don't need a shell if the command filename is an executable
+    const needsShell = !isExecutableRegExp.test(commandFile);
+
+    // If a shell is required, use cmd.exe and take care of escaping everything correctly
+    // Note that `forceShell` is an hidden option used only in tests
+    if (parsed.options.forceShell || needsShell) {
+        // Need to double escape meta chars if the command is a cmd-shim located in `node_modules/.bin/`
+        // The cmd-shim simply calls execute the package bin file with NodeJS, proxying any argument
+        // Because the escape of metachars with ^ gets interpreted when the cmd.exe is first called,
+        // we need to double escape them
+        const needsDoubleEscapeMetaChars = isCmdShimRegExp.test(commandFile);
+
+        // Normalize posix paths into OS compatible paths (e.g.: foo/bar -> foo\bar)
+        // This is necessary otherwise it will always fail with ENOENT in those cases
+        parsed.command = path.normalize(parsed.command);
+
+        // Escape command & arguments
+        parsed.command = escape.command(parsed.command);
+        parsed.args = parsed.args.map((arg) => escape.argument(arg, needsDoubleEscapeMetaChars));
+
+        const shellCommand = [parsed.command].concat(parsed.args).join(' ');
+
+        parsed.args = ['/d', '/s', '/c', `"${shellCommand}"`];
+        parsed.command = process.env.comspec || 'cmd.exe';
+        parsed.options.windowsVerbatimArguments = true; // Tell node's spawn that the arguments are already escaped
+    }
+
+    return parsed;
+}
+
+function parse(command, args, options) {
+    // Normalize arguments, similar to nodejs
+    if (args && !Array.isArray(args)) {
+        options = args;
+        args = null;
+    }
+
+    args = args ? args.slice(0) : []; // Clone array to avoid changing the original
+    options = Object.assign({}, options); // Clone object to avoid changing the original
+
+    // Build our parsed object
+    const parsed = {
+        command,
+        args,
+        options,
+        file: undefined,
+        original: {
+            command,
+            args,
+        },
+    };
+
+    // Delegate further parsing to shell or non-shell
+    return options.shell ? parsed : parseNonShell(parsed);
+}
+
+module.exports = parse;
+
+
+/***/ }),
+
+/***/ "./node_modules/cross-spawn/lib/util/escape.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/cross-spawn/lib/util/escape.js ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+// See http://www.robvanderwoude.com/escapechars.php
+const metaCharsRegExp = /([()\][%!^"`<>&|;, *?])/g;
+
+function escapeCommand(arg) {
+    // Escape meta chars
+    arg = arg.replace(metaCharsRegExp, '^$1');
+
+    return arg;
+}
+
+function escapeArgument(arg, doubleEscapeMetaChars) {
+    // Convert to string
+    arg = `${arg}`;
+
+    // Algorithm below is based on https://qntm.org/cmd
+
+    // Sequence of backslashes followed by a double quote:
+    // double up all the backslashes and escape the double quote
+    arg = arg.replace(/(\\*)"/g, '$1$1\\"');
+
+    // Sequence of backslashes followed by the end of the string
+    // (which will become a double quote later):
+    // double up all the backslashes
+    arg = arg.replace(/(\\*)$/, '$1$1');
+
+    // All other backslashes occur literally
+
+    // Quote the whole thing:
+    arg = `"${arg}"`;
+
+    // Escape meta chars
+    arg = arg.replace(metaCharsRegExp, '^$1');
+
+    // Double escape meta chars if necessary
+    if (doubleEscapeMetaChars) {
+        arg = arg.replace(metaCharsRegExp, '^$1');
+    }
+
+    return arg;
+}
+
+module.exports.command = escapeCommand;
+module.exports.argument = escapeArgument;
+
+
+/***/ }),
+
+/***/ "./node_modules/cross-spawn/lib/util/readShebang.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/cross-spawn/lib/util/readShebang.js ***!
+  \**********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+const fs = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'fs'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+const shebangCommand = __webpack_require__(/*! shebang-command */ "./node_modules/shebang-command/index.js");
+
+function readShebang(command) {
+    // Read the first 150 bytes from the file
+    const size = 150;
+    const buffer = Buffer.alloc(size);
+
+    let fd;
+
+    try {
+        fd = fs.openSync(command, 'r');
+        fs.readSync(fd, buffer, 0, size, 0);
+        fs.closeSync(fd);
+    } catch (e) { /* Empty */ }
+
+    // Attempt to extract shebang (null is returned if not a shebang)
+    return shebangCommand(buffer.toString());
+}
+
+module.exports = readShebang;
+
+
+/***/ }),
+
+/***/ "./node_modules/cross-spawn/lib/util/resolveCommand.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/cross-spawn/lib/util/resolveCommand.js ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+const path = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'path'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+const which = __webpack_require__(/*! which */ "./node_modules/which/which.js");
+const getPathKey = __webpack_require__(/*! path-key */ "./node_modules/path-key/index.js");
+
+function resolveCommandAttempt(parsed, withoutPathExt) {
+    const env = parsed.options.env || process.env;
+    const cwd = process.cwd();
+    const hasCustomCwd = parsed.options.cwd != null;
+    // Worker threads do not have process.chdir()
+    const shouldSwitchCwd = hasCustomCwd && process.chdir !== undefined && !process.chdir.disabled;
+
+    // If a custom `cwd` was specified, we need to change the process cwd
+    // because `which` will do stat calls but does not support a custom cwd
+    if (shouldSwitchCwd) {
+        try {
+            process.chdir(parsed.options.cwd);
+        } catch (err) {
+            /* Empty */
+        }
+    }
+
+    let resolved;
+
+    try {
+        resolved = which.sync(parsed.command, {
+            path: env[getPathKey({ env })],
+            pathExt: withoutPathExt ? path.delimiter : undefined,
+        });
+    } catch (e) {
+        /* Empty */
+    } finally {
+        if (shouldSwitchCwd) {
+            process.chdir(cwd);
+        }
+    }
+
+    // If we successfully resolved, ensure that an absolute path is returned
+    // Note that when a custom `cwd` was used, we need to resolve to an absolute path based on it
+    if (resolved) {
+        resolved = path.resolve(hasCustomCwd ? parsed.options.cwd : '', resolved);
+    }
+
+    return resolved;
+}
+
+function resolveCommand(parsed) {
+    return resolveCommandAttempt(parsed) || resolveCommandAttempt(parsed, true);
+}
+
+module.exports = resolveCommand;
+
+
+/***/ }),
+
+/***/ "./node_modules/dargs/index.js":
+/*!*************************************!*\
+  !*** ./node_modules/dargs/index.js ***!
+  \*************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+const match = (array, value) =>
+	array.some(x => (x instanceof RegExp ? x.test(value) : x === value));
+
+const dargs = (object, options) => {
+	const arguments_ = [];
+	let extraArguments = [];
+	let separatedArguments = [];
+
+	options = {
+		useEquals: true,
+		shortFlag: true,
+		...options
+	};
+
+	const makeArguments = (key, value) => {
+		const prefix = options.shortFlag && key.length === 1 ? '-' : '--';
+		const theKey = (options.allowCamelCase ?
+			key :
+			key.replace(/[A-Z]/g, '-$&').toLowerCase());
+
+		key = prefix + theKey;
+
+		if (options.useEquals) {
+			arguments_.push(key + (value ? `=${value}` : ''));
+		} else {
+			arguments_.push(key);
+
+			if (value) {
+				arguments_.push(value);
+			}
+		}
+	};
+
+	const makeAliasArg = (key, value) => {
+		arguments_.push(`-${key}`);
+
+		if (value) {
+			arguments_.push(value);
+		}
+	};
+
+	for (let [key, value] of Object.entries(object)) {
+		let pushArguments = makeArguments;
+
+		if (Array.isArray(options.excludes) && match(options.excludes, key)) {
+			continue;
+		}
+
+		if (Array.isArray(options.includes) && !match(options.includes, key)) {
+			continue;
+		}
+
+		if (typeof options.aliases === 'object' && options.aliases[key]) {
+			key = options.aliases[key];
+			pushArguments = makeAliasArg;
+		}
+
+		if (key === '--') {
+			if (!Array.isArray(value)) {
+				throw new TypeError(
+					`Expected key \`--\` to be Array, got ${typeof value}`
+				);
+			}
+
+			separatedArguments = value;
+			continue;
+		}
+
+		if (key === '_') {
+			if (!Array.isArray(value)) {
+				throw new TypeError(
+					`Expected key \`_\` to be Array, got ${typeof value}`
+				);
+			}
+
+			extraArguments = value;
+			continue;
+		}
+
+		if (value === true) {
+			pushArguments(key, '');
+		}
+
+		if (value === false && !options.ignoreFalse) {
+			pushArguments(`no-${key}`);
+		}
+
+		if (typeof value === 'string') {
+			pushArguments(key, value);
+		}
+
+		if (typeof value === 'number' && !Number.isNaN(value)) {
+			pushArguments(key, String(value));
+		}
+
+		if (Array.isArray(value)) {
+			for (const arrayValue of value) {
+				pushArguments(key, arrayValue);
+			}
+		}
+	}
+
+	for (const argument of extraArguments) {
+		arguments_.push(String(argument));
+	}
+
+	if (separatedArguments.length > 0) {
+		arguments_.push('--');
+	}
+
+	for (const argument of separatedArguments) {
+		arguments_.push(String(argument));
+	}
+
+	return arguments_;
+};
+
+module.exports = dargs;
+
+
+/***/ }),
+
+/***/ "./node_modules/events/events.js":
+/*!***************************************!*\
+  !*** ./node_modules/events/events.js ***!
+  \***************************************/
+/***/ ((module) => {
+
+"use strict";
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+var R = typeof Reflect === 'object' ? Reflect : null
+var ReflectApply = R && typeof R.apply === 'function'
+  ? R.apply
+  : function ReflectApply(target, receiver, args) {
+    return Function.prototype.apply.call(target, receiver, args);
+  }
+
+var ReflectOwnKeys
+if (R && typeof R.ownKeys === 'function') {
+  ReflectOwnKeys = R.ownKeys
+} else if (Object.getOwnPropertySymbols) {
+  ReflectOwnKeys = function ReflectOwnKeys(target) {
+    return Object.getOwnPropertyNames(target)
+      .concat(Object.getOwnPropertySymbols(target));
+  };
+} else {
+  ReflectOwnKeys = function ReflectOwnKeys(target) {
+    return Object.getOwnPropertyNames(target);
+  };
+}
+
+function ProcessEmitWarning(warning) {
+  if (console && console.warn) console.warn(warning);
+}
+
+var NumberIsNaN = Number.isNaN || function NumberIsNaN(value) {
+  return value !== value;
+}
+
+function EventEmitter() {
+  EventEmitter.init.call(this);
+}
+module.exports = EventEmitter;
+module.exports.once = once;
+
+// Backwards-compat with node 0.10.x
+EventEmitter.EventEmitter = EventEmitter;
+
+EventEmitter.prototype._events = undefined;
+EventEmitter.prototype._eventsCount = 0;
+EventEmitter.prototype._maxListeners = undefined;
+
+// By default EventEmitters will print a warning if more than 10 listeners are
+// added to it. This is a useful default which helps finding memory leaks.
+var defaultMaxListeners = 10;
+
+function checkListener(listener) {
+  if (typeof listener !== 'function') {
+    throw new TypeError('The "listener" argument must be of type Function. Received type ' + typeof listener);
+  }
+}
+
+Object.defineProperty(EventEmitter, 'defaultMaxListeners', {
+  enumerable: true,
+  get: function() {
+    return defaultMaxListeners;
+  },
+  set: function(arg) {
+    if (typeof arg !== 'number' || arg < 0 || NumberIsNaN(arg)) {
+      throw new RangeError('The value of "defaultMaxListeners" is out of range. It must be a non-negative number. Received ' + arg + '.');
+    }
+    defaultMaxListeners = arg;
+  }
+});
+
+EventEmitter.init = function() {
+
+  if (this._events === undefined ||
+      this._events === Object.getPrototypeOf(this)._events) {
+    this._events = Object.create(null);
+    this._eventsCount = 0;
+  }
+
+  this._maxListeners = this._maxListeners || undefined;
+};
+
+// Obviously not all Emitters should be limited to 10. This function allows
+// that to be increased. Set to zero for unlimited.
+EventEmitter.prototype.setMaxListeners = function setMaxListeners(n) {
+  if (typeof n !== 'number' || n < 0 || NumberIsNaN(n)) {
+    throw new RangeError('The value of "n" is out of range. It must be a non-negative number. Received ' + n + '.');
+  }
+  this._maxListeners = n;
+  return this;
+};
+
+function _getMaxListeners(that) {
+  if (that._maxListeners === undefined)
+    return EventEmitter.defaultMaxListeners;
+  return that._maxListeners;
+}
+
+EventEmitter.prototype.getMaxListeners = function getMaxListeners() {
+  return _getMaxListeners(this);
+};
+
+EventEmitter.prototype.emit = function emit(type) {
+  var args = [];
+  for (var i = 1; i < arguments.length; i++) args.push(arguments[i]);
+  var doError = (type === 'error');
+
+  var events = this._events;
+  if (events !== undefined)
+    doError = (doError && events.error === undefined);
+  else if (!doError)
+    return false;
+
+  // If there is no 'error' event listener then throw.
+  if (doError) {
+    var er;
+    if (args.length > 0)
+      er = args[0];
+    if (er instanceof Error) {
+      // Note: The comments on the `throw` lines are intentional, they show
+      // up in Node's output if this results in an unhandled exception.
+      throw er; // Unhandled 'error' event
+    }
+    // At least give some kind of context to the user
+    var err = new Error('Unhandled error.' + (er ? ' (' + er.message + ')' : ''));
+    err.context = er;
+    throw err; // Unhandled 'error' event
+  }
+
+  var handler = events[type];
+
+  if (handler === undefined)
+    return false;
+
+  if (typeof handler === 'function') {
+    ReflectApply(handler, this, args);
+  } else {
+    var len = handler.length;
+    var listeners = arrayClone(handler, len);
+    for (var i = 0; i < len; ++i)
+      ReflectApply(listeners[i], this, args);
+  }
+
+  return true;
+};
+
+function _addListener(target, type, listener, prepend) {
+  var m;
+  var events;
+  var existing;
+
+  checkListener(listener);
+
+  events = target._events;
+  if (events === undefined) {
+    events = target._events = Object.create(null);
+    target._eventsCount = 0;
+  } else {
+    // To avoid recursion in the case that type === "newListener"! Before
+    // adding it to the listeners, first emit "newListener".
+    if (events.newListener !== undefined) {
+      target.emit('newListener', type,
+                  listener.listener ? listener.listener : listener);
+
+      // Re-assign `events` because a newListener handler could have caused the
+      // this._events to be assigned to a new object
+      events = target._events;
+    }
+    existing = events[type];
+  }
+
+  if (existing === undefined) {
+    // Optimize the case of one listener. Don't need the extra array object.
+    existing = events[type] = listener;
+    ++target._eventsCount;
+  } else {
+    if (typeof existing === 'function') {
+      // Adding the second element, need to change to array.
+      existing = events[type] =
+        prepend ? [listener, existing] : [existing, listener];
+      // If we've already got an array, just append.
+    } else if (prepend) {
+      existing.unshift(listener);
+    } else {
+      existing.push(listener);
+    }
+
+    // Check for listener leak
+    m = _getMaxListeners(target);
+    if (m > 0 && existing.length > m && !existing.warned) {
+      existing.warned = true;
+      // No error code for this since it is a Warning
+      // eslint-disable-next-line no-restricted-syntax
+      var w = new Error('Possible EventEmitter memory leak detected. ' +
+                          existing.length + ' ' + String(type) + ' listeners ' +
+                          'added. Use emitter.setMaxListeners() to ' +
+                          'increase limit');
+      w.name = 'MaxListenersExceededWarning';
+      w.emitter = target;
+      w.type = type;
+      w.count = existing.length;
+      ProcessEmitWarning(w);
+    }
+  }
+
+  return target;
+}
+
+EventEmitter.prototype.addListener = function addListener(type, listener) {
+  return _addListener(this, type, listener, false);
+};
+
+EventEmitter.prototype.on = EventEmitter.prototype.addListener;
+
+EventEmitter.prototype.prependListener =
+    function prependListener(type, listener) {
+      return _addListener(this, type, listener, true);
+    };
+
+function onceWrapper() {
+  if (!this.fired) {
+    this.target.removeListener(this.type, this.wrapFn);
+    this.fired = true;
+    if (arguments.length === 0)
+      return this.listener.call(this.target);
+    return this.listener.apply(this.target, arguments);
+  }
+}
+
+function _onceWrap(target, type, listener) {
+  var state = { fired: false, wrapFn: undefined, target: target, type: type, listener: listener };
+  var wrapped = onceWrapper.bind(state);
+  wrapped.listener = listener;
+  state.wrapFn = wrapped;
+  return wrapped;
+}
+
+EventEmitter.prototype.once = function once(type, listener) {
+  checkListener(listener);
+  this.on(type, _onceWrap(this, type, listener));
+  return this;
+};
+
+EventEmitter.prototype.prependOnceListener =
+    function prependOnceListener(type, listener) {
+      checkListener(listener);
+      this.prependListener(type, _onceWrap(this, type, listener));
+      return this;
+    };
+
+// Emits a 'removeListener' event if and only if the listener was removed.
+EventEmitter.prototype.removeListener =
+    function removeListener(type, listener) {
+      var list, events, position, i, originalListener;
+
+      checkListener(listener);
+
+      events = this._events;
+      if (events === undefined)
+        return this;
+
+      list = events[type];
+      if (list === undefined)
+        return this;
+
+      if (list === listener || list.listener === listener) {
+        if (--this._eventsCount === 0)
+          this._events = Object.create(null);
+        else {
+          delete events[type];
+          if (events.removeListener)
+            this.emit('removeListener', type, list.listener || listener);
+        }
+      } else if (typeof list !== 'function') {
+        position = -1;
+
+        for (i = list.length - 1; i >= 0; i--) {
+          if (list[i] === listener || list[i].listener === listener) {
+            originalListener = list[i].listener;
+            position = i;
+            break;
+          }
+        }
+
+        if (position < 0)
+          return this;
+
+        if (position === 0)
+          list.shift();
+        else {
+          spliceOne(list, position);
+        }
+
+        if (list.length === 1)
+          events[type] = list[0];
+
+        if (events.removeListener !== undefined)
+          this.emit('removeListener', type, originalListener || listener);
+      }
+
+      return this;
+    };
+
+EventEmitter.prototype.off = EventEmitter.prototype.removeListener;
+
+EventEmitter.prototype.removeAllListeners =
+    function removeAllListeners(type) {
+      var listeners, events, i;
+
+      events = this._events;
+      if (events === undefined)
+        return this;
+
+      // not listening for removeListener, no need to emit
+      if (events.removeListener === undefined) {
+        if (arguments.length === 0) {
+          this._events = Object.create(null);
+          this._eventsCount = 0;
+        } else if (events[type] !== undefined) {
+          if (--this._eventsCount === 0)
+            this._events = Object.create(null);
+          else
+            delete events[type];
+        }
+        return this;
+      }
+
+      // emit removeListener for all listeners on all events
+      if (arguments.length === 0) {
+        var keys = Object.keys(events);
+        var key;
+        for (i = 0; i < keys.length; ++i) {
+          key = keys[i];
+          if (key === 'removeListener') continue;
+          this.removeAllListeners(key);
+        }
+        this.removeAllListeners('removeListener');
+        this._events = Object.create(null);
+        this._eventsCount = 0;
+        return this;
+      }
+
+      listeners = events[type];
+
+      if (typeof listeners === 'function') {
+        this.removeListener(type, listeners);
+      } else if (listeners !== undefined) {
+        // LIFO order
+        for (i = listeners.length - 1; i >= 0; i--) {
+          this.removeListener(type, listeners[i]);
+        }
+      }
+
+      return this;
+    };
+
+function _listeners(target, type, unwrap) {
+  var events = target._events;
+
+  if (events === undefined)
+    return [];
+
+  var evlistener = events[type];
+  if (evlistener === undefined)
+    return [];
+
+  if (typeof evlistener === 'function')
+    return unwrap ? [evlistener.listener || evlistener] : [evlistener];
+
+  return unwrap ?
+    unwrapListeners(evlistener) : arrayClone(evlistener, evlistener.length);
+}
+
+EventEmitter.prototype.listeners = function listeners(type) {
+  return _listeners(this, type, true);
+};
+
+EventEmitter.prototype.rawListeners = function rawListeners(type) {
+  return _listeners(this, type, false);
+};
+
+EventEmitter.listenerCount = function(emitter, type) {
+  if (typeof emitter.listenerCount === 'function') {
+    return emitter.listenerCount(type);
+  } else {
+    return listenerCount.call(emitter, type);
+  }
+};
+
+EventEmitter.prototype.listenerCount = listenerCount;
+function listenerCount(type) {
+  var events = this._events;
+
+  if (events !== undefined) {
+    var evlistener = events[type];
+
+    if (typeof evlistener === 'function') {
+      return 1;
+    } else if (evlistener !== undefined) {
+      return evlistener.length;
+    }
+  }
+
+  return 0;
+}
+
+EventEmitter.prototype.eventNames = function eventNames() {
+  return this._eventsCount > 0 ? ReflectOwnKeys(this._events) : [];
+};
+
+function arrayClone(arr, n) {
+  var copy = new Array(n);
+  for (var i = 0; i < n; ++i)
+    copy[i] = arr[i];
+  return copy;
+}
+
+function spliceOne(list, index) {
+  for (; index + 1 < list.length; index++)
+    list[index] = list[index + 1];
+  list.pop();
+}
+
+function unwrapListeners(arr) {
+  var ret = new Array(arr.length);
+  for (var i = 0; i < ret.length; ++i) {
+    ret[i] = arr[i].listener || arr[i];
+  }
+  return ret;
+}
+
+function once(emitter, name) {
+  return new Promise(function (resolve, reject) {
+    function errorListener(err) {
+      emitter.removeListener(name, resolver);
+      reject(err);
+    }
+
+    function resolver() {
+      if (typeof emitter.removeListener === 'function') {
+        emitter.removeListener('error', errorListener);
+      }
+      resolve([].slice.call(arguments));
+    };
+
+    eventTargetAgnosticAddListener(emitter, name, resolver, { once: true });
+    if (name !== 'error') {
+      addErrorHandlerIfEventEmitter(emitter, errorListener, { once: true });
+    }
+  });
+}
+
+function addErrorHandlerIfEventEmitter(emitter, handler, flags) {
+  if (typeof emitter.on === 'function') {
+    eventTargetAgnosticAddListener(emitter, 'error', handler, flags);
+  }
+}
+
+function eventTargetAgnosticAddListener(emitter, name, listener, flags) {
+  if (typeof emitter.on === 'function') {
+    if (flags.once) {
+      emitter.once(name, listener);
+    } else {
+      emitter.on(name, listener);
+    }
+  } else if (typeof emitter.addEventListener === 'function') {
+    // EventTarget does not have `error` event semantics like Node
+    // EventEmitters, we do not listen for `error` events here.
+    emitter.addEventListener(name, function wrapListener(arg) {
+      // IE does not have builtin `{ once: true }` support so we
+      // have to do it manually.
+      if (flags.once) {
+        emitter.removeEventListener(name, wrapListener);
+      }
+      listener(arg);
+    });
+  } else {
+    throw new TypeError('The "emitter" argument must be of type EventEmitter. Received type ' + typeof emitter);
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/execa/index.js":
+/*!*************************************!*\
+  !*** ./node_modules/execa/index.js ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+const path = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'path'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+const childProcess = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'child_process'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+const crossSpawn = __webpack_require__(/*! cross-spawn */ "./node_modules/cross-spawn/index.js");
+const stripFinalNewline = __webpack_require__(/*! strip-final-newline */ "./node_modules/strip-final-newline/index.js");
+const npmRunPath = __webpack_require__(/*! npm-run-path */ "./node_modules/npm-run-path/index.js");
+const onetime = __webpack_require__(/*! onetime */ "./node_modules/onetime/index.js");
+const makeError = __webpack_require__(/*! ./lib/error */ "./node_modules/execa/lib/error.js");
+const normalizeStdio = __webpack_require__(/*! ./lib/stdio */ "./node_modules/execa/lib/stdio.js");
+const {spawnedKill, spawnedCancel, setupTimeout, validateTimeout, setExitHandler} = __webpack_require__(/*! ./lib/kill */ "./node_modules/execa/lib/kill.js");
+const {handleInput, getSpawnedResult, makeAllStream, validateInputSync} = __webpack_require__(/*! ./lib/stream */ "./node_modules/execa/lib/stream.js");
+const {mergePromise, getSpawnedPromise} = __webpack_require__(/*! ./lib/promise */ "./node_modules/execa/lib/promise.js");
+const {joinCommand, parseCommand, getEscapedCommand} = __webpack_require__(/*! ./lib/command */ "./node_modules/execa/lib/command.js");
+
+const DEFAULT_MAX_BUFFER = 1000 * 1000 * 100;
+
+const getEnv = ({env: envOption, extendEnv, preferLocal, localDir, execPath}) => {
+	const env = extendEnv ? {...process.env, ...envOption} : envOption;
+
+	if (preferLocal) {
+		return npmRunPath.env({env, cwd: localDir, execPath});
+	}
+
+	return env;
+};
+
+const handleArguments = (file, args, options = {}) => {
+	const parsed = crossSpawn._parse(file, args, options);
+	file = parsed.command;
+	args = parsed.args;
+	options = parsed.options;
+
+	options = {
+		maxBuffer: DEFAULT_MAX_BUFFER,
+		buffer: true,
+		stripFinalNewline: true,
+		extendEnv: true,
+		preferLocal: false,
+		localDir: options.cwd || process.cwd(),
+		execPath: process.execPath,
+		encoding: 'utf8',
+		reject: true,
+		cleanup: true,
+		all: false,
+		windowsHide: true,
+		...options
+	};
+
+	options.env = getEnv(options);
+
+	options.stdio = normalizeStdio(options);
+
+	if (process.platform === 'win32' && path.basename(file, '.exe') === 'cmd') {
+		// #116
+		args.unshift('/q');
+	}
+
+	return {file, args, options, parsed};
+};
+
+const handleOutput = (options, value, error) => {
+	if (typeof value !== 'string' && !Buffer.isBuffer(value)) {
+		// When `execa.sync()` errors, we normalize it to '' to mimic `execa()`
+		return error === undefined ? undefined : '';
+	}
+
+	if (options.stripFinalNewline) {
+		return stripFinalNewline(value);
+	}
+
+	return value;
+};
+
+const execa = (file, args, options) => {
+	const parsed = handleArguments(file, args, options);
+	const command = joinCommand(file, args);
+	const escapedCommand = getEscapedCommand(file, args);
+
+	validateTimeout(parsed.options);
+
+	let spawned;
+	try {
+		spawned = childProcess.spawn(parsed.file, parsed.args, parsed.options);
+	} catch (error) {
+		// Ensure the returned error is always both a promise and a child process
+		const dummySpawned = new childProcess.ChildProcess();
+		const errorPromise = Promise.reject(makeError({
+			error,
+			stdout: '',
+			stderr: '',
+			all: '',
+			command,
+			escapedCommand,
+			parsed,
+			timedOut: false,
+			isCanceled: false,
+			killed: false
+		}));
+		return mergePromise(dummySpawned, errorPromise);
+	}
+
+	const spawnedPromise = getSpawnedPromise(spawned);
+	const timedPromise = setupTimeout(spawned, parsed.options, spawnedPromise);
+	const processDone = setExitHandler(spawned, parsed.options, timedPromise);
+
+	const context = {isCanceled: false};
+
+	spawned.kill = spawnedKill.bind(null, spawned.kill.bind(spawned));
+	spawned.cancel = spawnedCancel.bind(null, spawned, context);
+
+	const handlePromise = async () => {
+		const [{error, exitCode, signal, timedOut}, stdoutResult, stderrResult, allResult] = await getSpawnedResult(spawned, parsed.options, processDone);
+		const stdout = handleOutput(parsed.options, stdoutResult);
+		const stderr = handleOutput(parsed.options, stderrResult);
+		const all = handleOutput(parsed.options, allResult);
+
+		if (error || exitCode !== 0 || signal !== null) {
+			const returnedError = makeError({
+				error,
+				exitCode,
+				signal,
+				stdout,
+				stderr,
+				all,
+				command,
+				escapedCommand,
+				parsed,
+				timedOut,
+				isCanceled: context.isCanceled,
+				killed: spawned.killed
+			});
+
+			if (!parsed.options.reject) {
+				return returnedError;
+			}
+
+			throw returnedError;
+		}
+
+		return {
+			command,
+			escapedCommand,
+			exitCode: 0,
+			stdout,
+			stderr,
+			all,
+			failed: false,
+			timedOut: false,
+			isCanceled: false,
+			killed: false
+		};
+	};
+
+	const handlePromiseOnce = onetime(handlePromise);
+
+	handleInput(spawned, parsed.options.input);
+
+	spawned.all = makeAllStream(spawned, parsed.options);
+
+	return mergePromise(spawned, handlePromiseOnce);
+};
+
+module.exports = execa;
+
+module.exports.sync = (file, args, options) => {
+	const parsed = handleArguments(file, args, options);
+	const command = joinCommand(file, args);
+	const escapedCommand = getEscapedCommand(file, args);
+
+	validateInputSync(parsed.options);
+
+	let result;
+	try {
+		result = childProcess.spawnSync(parsed.file, parsed.args, parsed.options);
+	} catch (error) {
+		throw makeError({
+			error,
+			stdout: '',
+			stderr: '',
+			all: '',
+			command,
+			escapedCommand,
+			parsed,
+			timedOut: false,
+			isCanceled: false,
+			killed: false
+		});
+	}
+
+	const stdout = handleOutput(parsed.options, result.stdout, result.error);
+	const stderr = handleOutput(parsed.options, result.stderr, result.error);
+
+	if (result.error || result.status !== 0 || result.signal !== null) {
+		const error = makeError({
+			stdout,
+			stderr,
+			error: result.error,
+			signal: result.signal,
+			exitCode: result.status,
+			command,
+			escapedCommand,
+			parsed,
+			timedOut: result.error && result.error.code === 'ETIMEDOUT',
+			isCanceled: false,
+			killed: result.signal !== null
+		});
+
+		if (!parsed.options.reject) {
+			return error;
+		}
+
+		throw error;
+	}
+
+	return {
+		command,
+		escapedCommand,
+		exitCode: 0,
+		stdout,
+		stderr,
+		failed: false,
+		timedOut: false,
+		isCanceled: false,
+		killed: false
+	};
+};
+
+module.exports.command = (command, options) => {
+	const [file, ...args] = parseCommand(command);
+	return execa(file, args, options);
+};
+
+module.exports.commandSync = (command, options) => {
+	const [file, ...args] = parseCommand(command);
+	return execa.sync(file, args, options);
+};
+
+module.exports.node = (scriptPath, args, options = {}) => {
+	if (args && !Array.isArray(args) && typeof args === 'object') {
+		options = args;
+		args = [];
+	}
+
+	const stdio = normalizeStdio.node(options);
+	const defaultExecArgv = process.execArgv.filter(arg => !arg.startsWith('--inspect'));
+
+	const {
+		nodePath = process.execPath,
+		nodeOptions = defaultExecArgv
+	} = options;
+
+	return execa(
+		nodePath,
+		[
+			...nodeOptions,
+			scriptPath,
+			...(Array.isArray(args) ? args : [])
+		],
+		{
+			...options,
+			stdin: undefined,
+			stdout: undefined,
+			stderr: undefined,
+			stdio,
+			shell: false
+		}
+	);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/execa/lib/command.js":
+/*!*******************************************!*\
+  !*** ./node_modules/execa/lib/command.js ***!
+  \*******************************************/
+/***/ ((module) => {
+
+"use strict";
+
+const normalizeArgs = (file, args = []) => {
+	if (!Array.isArray(args)) {
+		return [file];
+	}
+
+	return [file, ...args];
+};
+
+const NO_ESCAPE_REGEXP = /^[\w.-]+$/;
+const DOUBLE_QUOTES_REGEXP = /"/g;
+
+const escapeArg = arg => {
+	if (typeof arg !== 'string' || NO_ESCAPE_REGEXP.test(arg)) {
+		return arg;
+	}
+
+	return `"${arg.replace(DOUBLE_QUOTES_REGEXP, '\\"')}"`;
+};
+
+const joinCommand = (file, args) => {
+	return normalizeArgs(file, args).join(' ');
+};
+
+const getEscapedCommand = (file, args) => {
+	return normalizeArgs(file, args).map(arg => escapeArg(arg)).join(' ');
+};
+
+const SPACES_REGEXP = / +/g;
+
+// Handle `execa.command()`
+const parseCommand = command => {
+	const tokens = [];
+	for (const token of command.trim().split(SPACES_REGEXP)) {
+		// Allow spaces to be escaped by a backslash if not meant as a delimiter
+		const previousToken = tokens[tokens.length - 1];
+		if (previousToken && previousToken.endsWith('\\')) {
+			// Merge previous token with current one
+			tokens[tokens.length - 1] = `${previousToken.slice(0, -1)} ${token}`;
+		} else {
+			tokens.push(token);
+		}
+	}
+
+	return tokens;
+};
+
+module.exports = {
+	joinCommand,
+	getEscapedCommand,
+	parseCommand
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/execa/lib/error.js":
+/*!*****************************************!*\
+  !*** ./node_modules/execa/lib/error.js ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+const {signalsByName} = __webpack_require__(/*! human-signals */ "./node_modules/human-signals/build/src/main.js");
+
+const getErrorPrefix = ({timedOut, timeout, errorCode, signal, signalDescription, exitCode, isCanceled}) => {
+	if (timedOut) {
+		return `timed out after ${timeout} milliseconds`;
+	}
+
+	if (isCanceled) {
+		return 'was canceled';
+	}
+
+	if (errorCode !== undefined) {
+		return `failed with ${errorCode}`;
+	}
+
+	if (signal !== undefined) {
+		return `was killed with ${signal} (${signalDescription})`;
+	}
+
+	if (exitCode !== undefined) {
+		return `failed with exit code ${exitCode}`;
+	}
+
+	return 'failed';
+};
+
+const makeError = ({
+	stdout,
+	stderr,
+	all,
+	error,
+	signal,
+	exitCode,
+	command,
+	escapedCommand,
+	timedOut,
+	isCanceled,
+	killed,
+	parsed: {options: {timeout}}
+}) => {
+	// `signal` and `exitCode` emitted on `spawned.on('exit')` event can be `null`.
+	// We normalize them to `undefined`
+	exitCode = exitCode === null ? undefined : exitCode;
+	signal = signal === null ? undefined : signal;
+	const signalDescription = signal === undefined ? undefined : signalsByName[signal].description;
+
+	const errorCode = error && error.code;
+
+	const prefix = getErrorPrefix({timedOut, timeout, errorCode, signal, signalDescription, exitCode, isCanceled});
+	const execaMessage = `Command ${prefix}: ${command}`;
+	const isError = Object.prototype.toString.call(error) === '[object Error]';
+	const shortMessage = isError ? `${execaMessage}\n${error.message}` : execaMessage;
+	const message = [shortMessage, stderr, stdout].filter(Boolean).join('\n');
+
+	if (isError) {
+		error.originalMessage = error.message;
+		error.message = message;
+	} else {
+		error = new Error(message);
+	}
+
+	error.shortMessage = shortMessage;
+	error.command = command;
+	error.escapedCommand = escapedCommand;
+	error.exitCode = exitCode;
+	error.signal = signal;
+	error.signalDescription = signalDescription;
+	error.stdout = stdout;
+	error.stderr = stderr;
+
+	if (all !== undefined) {
+		error.all = all;
+	}
+
+	if ('bufferedData' in error) {
+		delete error.bufferedData;
+	}
+
+	error.failed = true;
+	error.timedOut = Boolean(timedOut);
+	error.isCanceled = isCanceled;
+	error.killed = killed && !timedOut;
+
+	return error;
+};
+
+module.exports = makeError;
+
+
+/***/ }),
+
+/***/ "./node_modules/execa/lib/kill.js":
+/*!****************************************!*\
+  !*** ./node_modules/execa/lib/kill.js ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+const os = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'os'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+const onExit = __webpack_require__(/*! signal-exit */ "./node_modules/signal-exit/index.js");
+
+const DEFAULT_FORCE_KILL_TIMEOUT = 1000 * 5;
+
+// Monkey-patches `childProcess.kill()` to add `forceKillAfterTimeout` behavior
+const spawnedKill = (kill, signal = 'SIGTERM', options = {}) => {
+	const killResult = kill(signal);
+	setKillTimeout(kill, signal, options, killResult);
+	return killResult;
+};
+
+const setKillTimeout = (kill, signal, options, killResult) => {
+	if (!shouldForceKill(signal, options, killResult)) {
+		return;
+	}
+
+	const timeout = getForceKillAfterTimeout(options);
+	const t = setTimeout(() => {
+		kill('SIGKILL');
+	}, timeout);
+
+	// Guarded because there's no `.unref()` when `execa` is used in the renderer
+	// process in Electron. This cannot be tested since we don't run tests in
+	// Electron.
+	// istanbul ignore else
+	if (t.unref) {
+		t.unref();
+	}
+};
+
+const shouldForceKill = (signal, {forceKillAfterTimeout}, killResult) => {
+	return isSigterm(signal) && forceKillAfterTimeout !== false && killResult;
+};
+
+const isSigterm = signal => {
+	return signal === os.constants.signals.SIGTERM ||
+		(typeof signal === 'string' && signal.toUpperCase() === 'SIGTERM');
+};
+
+const getForceKillAfterTimeout = ({forceKillAfterTimeout = true}) => {
+	if (forceKillAfterTimeout === true) {
+		return DEFAULT_FORCE_KILL_TIMEOUT;
+	}
+
+	if (!Number.isFinite(forceKillAfterTimeout) || forceKillAfterTimeout < 0) {
+		throw new TypeError(`Expected the \`forceKillAfterTimeout\` option to be a non-negative integer, got \`${forceKillAfterTimeout}\` (${typeof forceKillAfterTimeout})`);
+	}
+
+	return forceKillAfterTimeout;
+};
+
+// `childProcess.cancel()`
+const spawnedCancel = (spawned, context) => {
+	const killResult = spawned.kill();
+
+	if (killResult) {
+		context.isCanceled = true;
+	}
+};
+
+const timeoutKill = (spawned, signal, reject) => {
+	spawned.kill(signal);
+	reject(Object.assign(new Error('Timed out'), {timedOut: true, signal}));
+};
+
+// `timeout` option handling
+const setupTimeout = (spawned, {timeout, killSignal = 'SIGTERM'}, spawnedPromise) => {
+	if (timeout === 0 || timeout === undefined) {
+		return spawnedPromise;
+	}
+
+	let timeoutId;
+	const timeoutPromise = new Promise((resolve, reject) => {
+		timeoutId = setTimeout(() => {
+			timeoutKill(spawned, killSignal, reject);
+		}, timeout);
+	});
+
+	const safeSpawnedPromise = spawnedPromise.finally(() => {
+		clearTimeout(timeoutId);
+	});
+
+	return Promise.race([timeoutPromise, safeSpawnedPromise]);
+};
+
+const validateTimeout = ({timeout}) => {
+	if (timeout !== undefined && (!Number.isFinite(timeout) || timeout < 0)) {
+		throw new TypeError(`Expected the \`timeout\` option to be a non-negative integer, got \`${timeout}\` (${typeof timeout})`);
+	}
+};
+
+// `cleanup` option handling
+const setExitHandler = async (spawned, {cleanup, detached}, timedPromise) => {
+	if (!cleanup || detached) {
+		return timedPromise;
+	}
+
+	const removeExitHandler = onExit(() => {
+		spawned.kill();
+	});
+
+	return timedPromise.finally(() => {
+		removeExitHandler();
+	});
+};
+
+module.exports = {
+	spawnedKill,
+	spawnedCancel,
+	setupTimeout,
+	validateTimeout,
+	setExitHandler
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/execa/lib/promise.js":
+/*!*******************************************!*\
+  !*** ./node_modules/execa/lib/promise.js ***!
+  \*******************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+const nativePromisePrototype = (async () => {})().constructor.prototype;
+const descriptors = ['then', 'catch', 'finally'].map(property => [
+	property,
+	Reflect.getOwnPropertyDescriptor(nativePromisePrototype, property)
+]);
+
+// The return value is a mixin of `childProcess` and `Promise`
+const mergePromise = (spawned, promise) => {
+	for (const [property, descriptor] of descriptors) {
+		// Starting the main `promise` is deferred to avoid consuming streams
+		const value = typeof promise === 'function' ?
+			(...args) => Reflect.apply(descriptor.value, promise(), args) :
+			descriptor.value.bind(promise);
+
+		Reflect.defineProperty(spawned, property, {...descriptor, value});
+	}
+
+	return spawned;
+};
+
+// Use promises instead of `child_process` events
+const getSpawnedPromise = spawned => {
+	return new Promise((resolve, reject) => {
+		spawned.on('exit', (exitCode, signal) => {
+			resolve({exitCode, signal});
+		});
+
+		spawned.on('error', error => {
+			reject(error);
+		});
+
+		if (spawned.stdin) {
+			spawned.stdin.on('error', error => {
+				reject(error);
+			});
+		}
+	});
+};
+
+module.exports = {
+	mergePromise,
+	getSpawnedPromise
+};
+
+
+
+/***/ }),
+
+/***/ "./node_modules/execa/lib/stdio.js":
+/*!*****************************************!*\
+  !*** ./node_modules/execa/lib/stdio.js ***!
+  \*****************************************/
+/***/ ((module) => {
+
+"use strict";
+
+const aliases = ['stdin', 'stdout', 'stderr'];
+
+const hasAlias = options => aliases.some(alias => options[alias] !== undefined);
+
+const normalizeStdio = options => {
+	if (!options) {
+		return;
+	}
+
+	const {stdio} = options;
+
+	if (stdio === undefined) {
+		return aliases.map(alias => options[alias]);
+	}
+
+	if (hasAlias(options)) {
+		throw new Error(`It's not possible to provide \`stdio\` in combination with one of ${aliases.map(alias => `\`${alias}\``).join(', ')}`);
+	}
+
+	if (typeof stdio === 'string') {
+		return stdio;
+	}
+
+	if (!Array.isArray(stdio)) {
+		throw new TypeError(`Expected \`stdio\` to be of type \`string\` or \`Array\`, got \`${typeof stdio}\``);
+	}
+
+	const length = Math.max(stdio.length, aliases.length);
+	return Array.from({length}, (value, index) => stdio[index]);
+};
+
+module.exports = normalizeStdio;
+
+// `ipc` is pushed unless it is already present
+module.exports.node = options => {
+	const stdio = normalizeStdio(options);
+
+	if (stdio === 'ipc') {
+		return 'ipc';
+	}
+
+	if (stdio === undefined || typeof stdio === 'string') {
+		return [stdio, stdio, stdio, 'ipc'];
+	}
+
+	if (stdio.includes('ipc')) {
+		return stdio;
+	}
+
+	return [...stdio, 'ipc'];
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/execa/lib/stream.js":
+/*!******************************************!*\
+  !*** ./node_modules/execa/lib/stream.js ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+const isStream = __webpack_require__(/*! is-stream */ "./node_modules/is-stream/index.js");
+const getStream = __webpack_require__(/*! get-stream */ "./node_modules/get-stream/index.js");
+const mergeStream = __webpack_require__(/*! merge-stream */ "./node_modules/merge-stream/index.js");
+
+// `input` option
+const handleInput = (spawned, input) => {
+	// Checking for stdin is workaround for https://github.com/nodejs/node/issues/26852
+	// @todo remove `|| spawned.stdin === undefined` once we drop support for Node.js <=12.2.0
+	if (input === undefined || spawned.stdin === undefined) {
+		return;
+	}
+
+	if (isStream(input)) {
+		input.pipe(spawned.stdin);
+	} else {
+		spawned.stdin.end(input);
+	}
+};
+
+// `all` interleaves `stdout` and `stderr`
+const makeAllStream = (spawned, {all}) => {
+	if (!all || (!spawned.stdout && !spawned.stderr)) {
+		return;
+	}
+
+	const mixed = mergeStream();
+
+	if (spawned.stdout) {
+		mixed.add(spawned.stdout);
+	}
+
+	if (spawned.stderr) {
+		mixed.add(spawned.stderr);
+	}
+
+	return mixed;
+};
+
+// On failure, `result.stdout|stderr|all` should contain the currently buffered stream
+const getBufferedData = async (stream, streamPromise) => {
+	if (!stream) {
+		return;
+	}
+
+	stream.destroy();
+
+	try {
+		return await streamPromise;
+	} catch (error) {
+		return error.bufferedData;
+	}
+};
+
+const getStreamPromise = (stream, {encoding, buffer, maxBuffer}) => {
+	if (!stream || !buffer) {
+		return;
+	}
+
+	if (encoding) {
+		return getStream(stream, {encoding, maxBuffer});
+	}
+
+	return getStream.buffer(stream, {maxBuffer});
+};
+
+// Retrieve result of child process: exit code, signal, error, streams (stdout/stderr/all)
+const getSpawnedResult = async ({stdout, stderr, all}, {encoding, buffer, maxBuffer}, processDone) => {
+	const stdoutPromise = getStreamPromise(stdout, {encoding, buffer, maxBuffer});
+	const stderrPromise = getStreamPromise(stderr, {encoding, buffer, maxBuffer});
+	const allPromise = getStreamPromise(all, {encoding, buffer, maxBuffer: maxBuffer * 2});
+
+	try {
+		return await Promise.all([processDone, stdoutPromise, stderrPromise, allPromise]);
+	} catch (error) {
+		return Promise.all([
+			{error, signal: error.signal, timedOut: error.timedOut},
+			getBufferedData(stdout, stdoutPromise),
+			getBufferedData(stderr, stderrPromise),
+			getBufferedData(all, allPromise)
+		]);
+	}
+};
+
+const validateInputSync = ({input}) => {
+	if (isStream(input)) {
+		throw new TypeError('The `input` option cannot be a stream in sync mode');
+	}
+};
+
+module.exports = {
+	handleInput,
+	makeAllStream,
+	getSpawnedResult,
+	validateInputSync
+};
+
+
+
+/***/ }),
+
+/***/ "./node_modules/ffmpeg/index.js":
+/*!**************************************!*\
+  !*** ./node_modules/ffmpeg/index.js ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__(/*! ./lib/ffmpeg */ "./node_modules/ffmpeg/lib/ffmpeg.js");
+
+/***/ }),
+
+/***/ "./node_modules/ffmpeg/lib/configs.js":
+/*!********************************************!*\
+  !*** ./node_modules/ffmpeg/lib/configs.js ***!
+  \********************************************/
+/***/ ((module) => {
+
+/**
+ * Basic configuration
+ */
+module.exports = function () {
+	this.encoding	= 'utf8';
+	this.timeout	= 0;
+	this.maxBuffer	= 200 * 1024
+}
+
+/***/ }),
+
+/***/ "./node_modules/ffmpeg/lib/errors.js":
+/*!*******************************************!*\
+  !*** ./node_modules/ffmpeg/lib/errors.js ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var util = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+// Error list with code and message
+var list = {
+	'empty_input_filepath'							: { 'code' : 100, 'msg' : 'The input file path can not be empty' }
+  , 'input_filepath_must_be_string'					: { 'code' : 101, 'msg' : 'The input file path must be a string' }
+  , 'invalid_option_name'							: { 'code' : 102, 'msg' : 'The option "%s" is invalid. Check the list of available options' }
+  , 'fileinput_not_exist'							: { 'code' : 103, 'msg' : 'The input file does not exist' }
+  , 'format_not_supported'							: { 'code' : 104, 'msg' : 'The format "$s" is not supported by the version of ffmpeg' }
+  , 'audio_channel_is_invalid'						: { 'code' : 105, 'msg' : 'The audio channel "$s" is not valid' }
+  , 'mkdir'											: { 'code' : 106, 'msg' : 'Error occurred during creation folder: $s' }
+  , 'extract_frame_invalid_everyN_options'			: { 'code' : 107, 'msg' : 'You can specify only one option between everyNFrames and everyNSeconds' }
+  , 'invalid_watermark'								: { 'code' : 108, 'msg' : 'The watermark "%s" does not exists' }
+  , 'invalid_watermark_position'					: { 'code' : 109, 'msg' : 'Invalid watermark position "%s"' }
+  , 'size_format'									: { 'code' : 110, 'msg' : 'The format "%s" not supported by the function "setSize"' }
+  , 'resolution_square_not_defined'					: { 'code' : 111, 'msg' : 'The resolution for pixel aspect ratio is not defined' }
+  , 'command_already_exists'						: { 'code' : 112, 'msg' : 'The command "%s" already exists' }
+  , 'codec_not_supported'							: { 'code' : 113, 'msg' : 'The codec "$s" is not supported by the version of ffmpeg' }
+}
+
+/**
+ * Return the error by the codename
+ */
+var renderError = function (codeName) {
+	// Get the error object by the codename
+	var params = [list[codeName].msg];
+	// Get the possible arguments
+	if (arguments.length > 1)
+		params = params.concat(Array.prototype.slice.call(arguments, 1));
+	// Call the function for replace the letter '%s' with the found arguments
+	return { 'code' : list[codeName].code, 'msg' : util.format.apply(this, params) };
+}
+
+module.exports.list = list;
+module.exports.renderError = renderError;
+
+/***/ }),
+
+/***/ "./node_modules/ffmpeg/lib/ffmpeg.js":
+/*!*******************************************!*\
+  !*** ./node_modules/ffmpeg/lib/ffmpeg.js ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var when		= __webpack_require__(/*! when */ "./node_modules/when/when.js")
+  , fs			= __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'fs'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var errors		= __webpack_require__(/*! ./errors */ "./node_modules/ffmpeg/lib/errors.js")
+  , utils		= __webpack_require__(/*! ./utils */ "./node_modules/ffmpeg/lib/utils.js")
+  , configs		= __webpack_require__(/*! ./configs */ "./node_modules/ffmpeg/lib/configs.js")
+  , video		= __webpack_require__(/*! ./video */ "./node_modules/ffmpeg/lib/video.js");
+
+var ffmpeg = function (/* inputFilepath, settings, callback */) {
+
+	/**
+	 * Retrieve the list of the codec supported by the ffmpeg software
+	 */
+	var _ffmpegInfoConfiguration = function (settings) {
+		// New 'promise' instance 
+		var deferred = when.defer();
+		// Instance the new arrays for the format
+		var format = { modules : new Array(), encode : new Array(), decode : new Array() };
+		// Make the call to retrieve information about the ffmpeg
+		utils.exec(['ffmpeg','-formats','2>&1'], settings, function (error, stdout, stderr) {
+			// Get the list of modules
+			var configuration = /configuration:(.*)/.exec(stdout);
+			// Check if exists the configuration
+			if (configuration) {
+				// Get the list of modules
+				var modules = configuration[1].match(/--enable-([a-zA-Z0-9\-]+)/g);
+				// Scan all modules
+				for (var indexModule in modules) {
+					// Add module to the list
+					format.modules.push(/--enable-([a-zA-Z0-9\-]+)/.exec(modules[indexModule])[1]);
+				}
+			}
+			// Get the codec list
+			var codecList = stdout.match(/ (DE|D|E) (.*) {1,} (.*)/g);
+			// Scan all codec
+			for (var i in codecList) {
+				// Get the match value
+				var match = / (DE|D|E) (.*) {1,} (.*)/.exec(codecList[i]);
+				// Check if match is valid
+				if (match) {
+					// Get the value from the match
+					var scope = match[1].replace(/\s/g,'')
+					  , extension = match[2].replace(/\s/g,'');
+					// Check which scope is best suited
+					if (scope == 'D' || scope == 'DE')
+						format.decode.push(extension);
+					if (scope == 'E' || scope == 'DE')
+						format.encode.push(extension);
+				}
+			}
+			// Returns the list of supported formats
+			deferred.resolve(format);
+		});
+		// Return 'promise' instance 
+		return deferred.promise;
+	}
+	
+	/**
+	 * Get the video info
+	 */
+	var _videoInfo = function (fileInput, settings) {
+		// New 'promise' instance 
+		var deferred = when.defer();
+		// Make the call to retrieve information about the ffmpeg
+		utils.exec(['ffmpeg','-i',fileInput,'2>&1'], settings, function (error, stdout, stderr) {
+			// Perse output for retrieve the file info
+			var filename		= /from \'(.*)\'/.exec(stdout) || []
+			  , title			= /(INAM|title)\s+:\s(.+)/.exec(stdout) || []
+			  , artist			= /artist\s+:\s(.+)/.exec(stdout) || []
+			  , album			= /album\s+:\s(.+)/.exec(stdout) || []
+			  , track			= /track\s+:\s(.+)/.exec(stdout) || []
+			  , date			= /date\s+:\s(.+)/.exec(stdout) || []
+			  , is_synched		= (/start: 0.000000/.exec(stdout) !== null)
+			  , duration		= /Duration: (([0-9]+):([0-9]{2}):([0-9]{2}).([0-9]+))/.exec(stdout) || []
+			  
+			  , container		= /Input #0, ([a-zA-Z0-9]+),/.exec(stdout) || []
+			  , video_bitrate	= /bitrate: ([0-9]+) kb\/s/.exec(stdout) || []
+			  , video_stream	= /Stream #([0-9\.]+)([a-z0-9\(\)\[\]]*)[:] Video/.exec(stdout) || []
+			  , video_codec		= /Video: ([\w]+)/.exec(stdout) || []
+			  , resolution		= /(([0-9]{2,5})x([0-9]{2,5}))/.exec(stdout) || []
+			  , pixel			= /[SP]AR ([0-9\:]+)/.exec(stdout) || []
+			  , aspect			= /DAR ([0-9\:]+)/.exec(stdout) || []
+			  , fps				= /([0-9\.]+) (fps|tb\(r\))/.exec(stdout) || []
+			  
+			  , audio_stream	= /Stream #([0-9\.]+)([a-z0-9\(\)\[\]]*)[:] Audio/.exec(stdout) || []
+			  , audio_codec		= /Audio: ([\w]+)/.exec(stdout) || []
+			  , sample_rate		= /([0-9]+) Hz/i.exec(stdout) || []
+			  , channels		= /Audio:.* (stereo|mono)/.exec(stdout) || []
+			  , audio_bitrate	= /Audio:.* ([0-9]+) kb\/s/.exec(stdout) || []
+			  , rotate			= /rotate[\s]+:[\s]([\d]{2,3})/.exec(stdout) || [];
+			// Build return object
+			var ret = { 
+				filename		: filename[1] || ''
+			  , title			: title[2] || ''
+			  , artist			: artist[1] || ''
+			  , album			: album[1] || ''
+			  , track			: track[1] || ''
+			  , date			: date[1] || ''
+			  , synched			: is_synched
+			  , duration		: {
+					raw		: duration[1] || ''
+				  , seconds	: duration[1] ? utils.durationToSeconds(duration[1]) : 0
+				}
+			  , video			: {
+					container			: container[1] || ''
+				  , bitrate				: (video_bitrate.length > 1) ? parseInt(video_bitrate[1], 10) : 0
+				  , stream				: video_stream.length > 1 ? parseFloat(video_stream[1]) : 0.0
+				  , codec				: video_codec[1] || ''
+				  , resolution			: {
+						w : resolution.length > 2 ? parseInt(resolution[2], 10) : 0
+					  , h : resolution.length > 3 ? parseInt(resolution[3], 10) : 0
+					}
+				  , resolutionSquare	: {}
+				  , aspect				: {}
+				  , rotate				: rotate.length > 1 ? parseInt(rotate[1], 10) : 0
+				  , fps					: fps.length > 1 ? parseFloat(fps[1]) : 0.0
+				}
+			  , audio			: {
+					codec				: audio_codec[1] || ''
+				  , bitrate				: audio_bitrate[1] || ''
+				  , sample_rate			: sample_rate.length > 1 ? parseInt(sample_rate[1], 10) : 0
+				  , stream				: audio_stream.length > 1 ? parseFloat(audio_stream[1]) : 0.0
+				  , channels			: {
+						raw		: channels[1] || ''
+					  , value	: (channels.length > 0) ? ({ stereo : 2, mono : 1 }[channels[1]] || 0) : ''
+					}
+				}
+			};
+			// Check if exist aspect ratio
+			if (aspect.length > 0) {
+				var aspectValue = aspect[1].split(":");
+				ret.video.aspect.x		= parseInt(aspectValue[0], 10);
+				ret.video.aspect.y		= parseInt(aspectValue[1], 10);
+				ret.video.aspect.string = aspect[1];
+				ret.video.aspect.value	= parseFloat((ret.video.aspect.x / ret.video.aspect.y));
+			} else {
+				// If exists horizontal resolution then calculate aspect ratio
+				if(ret.video.resolution.w > 0) {
+					var gcdValue = utils.gcd(ret.video.resolution.w, ret.video.resolution.h);
+					// Calculate aspect ratio
+					ret.video.aspect.x		= ret.video.resolution.w / gcdValue;
+					ret.video.aspect.y		= ret.video.resolution.h / gcdValue;
+					ret.video.aspect.string = ret.video.aspect.x + ':' + ret.video.aspect.y;
+					ret.video.aspect.value	= parseFloat((ret.video.aspect.x / ret.video.aspect.y));
+				}
+			}
+			// Save pixel ratio for output size calculation
+			if (pixel.length > 0) {
+				ret.video.pixelString = pixel[1];
+				var pixelValue = pixel[1].split(":");
+				ret.video.pixel = parseFloat((parseInt(pixelValue[0], 10) / parseInt(pixelValue[1], 10)));
+			} else {
+				if (ret.video.resolution.w !== 0) {
+					ret.video.pixelString = '1:1';
+					ret.video.pixel = 1;
+				} else {
+					ret.video.pixelString = '';
+					ret.video.pixel = 0.0;
+				}
+			}
+			// Correct video.resolution when pixel aspectratio is not 1
+			if (ret.video.pixel !== 1 || ret.video.pixel !== 0) {
+				if( ret.video.pixel > 1 ) {
+					ret.video.resolutionSquare.w = parseInt(ret.video.resolution.w * ret.video.pixel, 10);
+					ret.video.resolutionSquare.h = ret.video.resolution.h;
+				} else {
+					ret.video.resolutionSquare.w = ret.video.resolution.w;
+					ret.video.resolutionSquare.h = parseInt(ret.video.resolution.h / ret.video.pixel, 10);
+				}
+			}
+			// Returns the list of supported formats
+			deferred.resolve(ret);
+		});
+		// Return 'promise' instance 
+		return deferred.promise;
+	}
+	
+	/**
+	 * Get the info about ffmpeg's codec and about file
+	 */
+	var _getInformation = function (fileInput, settings) {
+		var deferreds = [];
+		// Add promise
+		deferreds.push(_ffmpegInfoConfiguration(settings));
+		deferreds.push(_videoInfo(fileInput, settings));
+		// Return defer
+		return when.all(deferreds);
+	}
+
+	var __constructor = function (args) {
+		// Check if exist at least one option
+		if (args.length == 0 || args[0] == undefined)
+			throw errors.renderError('empty_input_filepath');
+		// Check if first argument is a string
+		if (typeof args[0] != 'string')
+			throw errors.renderError('input_filepath_must_be_string');
+		// Get the input filepath
+		var inputFilepath = args[0];
+		// Check if file exist
+		if (!fs.existsSync(inputFilepath))
+			throw errors.renderError('fileinput_not_exist');
+		
+		// New instance of the base configuration
+		var settings = new configs();
+		// Callback to call
+		var callback = null;
+		
+		// Scan all arguments
+		for (var i = 1; i < args.length; i++) {
+			// Check the type of variable
+			switch (typeof args[i]) {
+				case 'object' :
+					utils.mergeObject(settings, args[i]);
+					break;
+				case 'function' :
+					callback = args[i];
+					break;
+			}
+		}
+		
+		// Building the value for return value. Check if the callback is not a function. In this case will created a new instance of the deferred class
+		var deferred = typeof callback != 'function' ? when.defer() : { promise : null };
+		
+		when(_getInformation(inputFilepath, settings), function (data) {
+			// Check if the callback is a function
+			if (typeof callback == 'function') {
+				// Call the callback function e return the new instance of 'video' class
+				callback(null, new video(inputFilepath, settings, data[0], data[1]));
+			} else {
+				// Positive response
+				deferred.resolve(new video(inputFilepath, settings, data[0], data[1]));
+			}
+		}, function (error) {
+			// Check if the callback is a function
+			if (typeof callback == 'function') {
+				// Call the callback function e return the error found
+				callback(error, null);
+			} else {
+				// Negative response
+				deferred.reject(error);
+			}
+		});
+		
+		// Return a possible promise instance
+		return deferred.promise;
+	}
+
+	return __constructor.call(this, arguments);
+};
+
+module.exports = ffmpeg;
+
+/***/ }),
+
+/***/ "./node_modules/ffmpeg/lib/presets.js":
+/*!********************************************!*\
+  !*** ./node_modules/ffmpeg/lib/presets.js ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports.size = {
+	'SQCIF'		: '128x96'
+  ,	'QCIF'		: '176x144'
+  ,	'CIF'		: '352x288'
+  ,	'4CIF'		: '704x576'
+  ,	'QQVGA'		: '160x120'
+  ,	'QVGA'		: '320x240'
+  ,	'VGA'		: '640x480'
+  ,	'SVGA'		: '800x600'
+  ,	'XGA'		: '1024x768'
+  ,	'UXGA'		: '1600x1200'
+  ,	'QXGA'		: '2048x1536'
+  ,	'SXGA'		: '1280x1024'
+  ,	'QSXGA'		: '2560x2048'
+  ,	'HSXGA'		: '5120x4096'
+  ,	'WVGA'		: '852x480'
+  ,	'WXGA'		: '1366x768'
+  ,	'WSXGA'		: '1600x1024'
+  ,	'WUXGA'		: '1920x1200'
+  ,	'WOXGA'		: '2560x1600'
+  ,	'WQSXGA'	: '3200x2048'
+  ,	'WQUXGA'	: '3840x2400'
+  ,	'WHSXGA'	: '6400x4096'
+  ,	'WHUXGA'	: '7680x4800'
+  ,	'CGA'		: '320x200'
+  ,	'EGA'		: '640x350'
+  ,	'HD480'		: '852x480'
+  ,	'HD720'		: '1280x720'
+  ,	'HD1080'	: '1920x1080'
+}
+
+module.exports.ratio = {
+	'4:3'		: 1.33
+  , '3:2'		: 1.5
+  , '14:9'		: 1.56
+  , '16:9'		: 1.78
+  , '21:9'		: 2.33
+}
+
+module.exports.audio_channel = {
+	'mono'		: 1
+  ,	'stereo'	: 2
+}
+
+/***/ }),
+
+/***/ "./node_modules/ffmpeg/lib/utils.js":
+/*!******************************************!*\
+  !*** ./node_modules/ffmpeg/lib/utils.js ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var exec	= Object(function webpackMissingModule() { var e = new Error("Cannot find module 'child_process'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  , fs		= __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'fs'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))
+  , path	= __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'path'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var errors	= __webpack_require__(/*! ./errors */ "./node_modules/ffmpeg/lib/errors.js");
+
+/**
+ * Exec the list of commands and call the callback function at the end of the process
+ */
+module.exports.exec = function (commands, settings, callback) {
+	// Create final command line
+	var finalCommand = commands.join(" ");
+	// Create the timeoutId for stop the timeout at the end the process
+	var timeoutID = null;
+	// Exec the command
+	var process = exec(finalCommand, settings, function (error, stdout, stderr) {
+		// Clear timeout if 'timeoutID' are setted
+		if (timeoutID !== null) clearTimeout(timeoutID);
+		// Call the callback function
+		callback(error, stdout, stderr);
+	});
+	// Verify if the timeout are setting
+	if (settings.timeout > 0) {
+		// Set the timeout
+		timeoutID = setTimeout(function () {
+			process.kill();
+		}, 100);		
+	}
+}
+
+/**
+ * Check if object is empty
+ */
+module.exports.isEmptyObj = function (obj) {
+	// Scan all properties
+    for(var prop in obj)
+		// Check if obj has a property
+        if(obj.hasOwnProperty(prop))
+			// The object is not empty
+            return false;
+	// The object is empty
+    return true;
+}
+
+/**
+ * Merge obj1 into obj
+ */
+module.exports.mergeObject = function (obj, obj1) {
+	// Check if there are options set
+	if (!module.exports.isEmptyObj(obj1)) {
+		// Scan all settings
+		for (var key in obj1) {
+			// Check if the option is valid
+			if (!obj.hasOwnProperty(key))
+				throw errors.renderError('invalid_option_name', key);
+			// Set new option value
+			obj[key] = obj1[key];
+		}
+	}
+}
+
+/**
+ * Calculate the duration in seconds from the string retrieved by the ffmpeg info
+ */
+module.exports.durationToSeconds = function(duration) {
+	var parts = duration.substr(0,8).split(':');
+	return parseInt(parts[0], 10) * 3600 + parseInt(parts[1], 10) * 60 + parseInt(parts[2], 10);
+};
+
+/**
+ * Calculate the greatest common divisor
+ */
+module.exports.gcd = function (a, b) { 
+	if (b === 0) return a;
+	return module.exports.gcd(b, a % b);
+}
+
+/**
+ * Offers functionality similar to mkdir -p
+ */
+module.exports.mkdir = function (dirpath, mode, callback, position) {
+	// Split all directories
+    var parts = path.normalize(dirpath).split('/');
+	// If the first part is empty then remove this part
+	if (parts[0] == "") 
+		parts = parts.slice(1);
+	
+	// Set the initial configuration
+    mode = mode || 0777;
+    position = position || 0;
+	
+	// Check se current position is greater than the list of folders
+	if (position > parts.length) {
+		// If isset the callback then it will be invoked
+		if (callback) 
+			callback();
+		// Exit and return a positive value
+		return true;
+	}
+
+	// Build the directory path
+	var directory = (dirpath.charAt(0) == '/' ? '/' : '') + parts.slice(0, position + 1).join('/');
+
+	// Check if directory exists
+	if (fs.existsSync(directory)) {
+		module.exports.mkdir(dirpath, mode, callback, position + 1);
+	} else {
+		if (fs.mkdirSync(directory, mode)) {
+			// If isset the callback then it will be invoked
+			if (callback) 
+				callback(errors.renderError('mkdir', directory));
+			// Send the new exception
+			throw errors.renderError('mkdir', directory);
+		} else {
+			module.exports.mkdir(dirpath, mode, callback, position + 1);
+		}
+	}
+}
+
+/**
+ * Check if a value is present inside an array
+ */
+module.exports.in_array = function (value, array) {
+	// Scan all element
+	for (var i in array)
+		// Check if value exists
+		if (array[i] == value)
+			// Return the position of value
+			return i;
+	// The value not exists
+	return false;
+}
+
+/***/ }),
+
+/***/ "./node_modules/ffmpeg/lib/video.js":
+/*!******************************************!*\
+  !*** ./node_modules/ffmpeg/lib/video.js ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var fs			= __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'fs'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))
+  , path		= __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'path'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))
+  , when		= __webpack_require__(/*! when */ "./node_modules/when/when.js");
+
+var errors		= __webpack_require__(/*! ./errors */ "./node_modules/ffmpeg/lib/errors.js")
+  , presets		= __webpack_require__(/*! ./presets */ "./node_modules/ffmpeg/lib/presets.js")
+  , utils		= __webpack_require__(/*! ./utils */ "./node_modules/ffmpeg/lib/utils.js");
+
+module.exports = function (filePath, settings, infoConfiguration, infoFile) {
+	
+	// Public info about file and ffmpeg configuration
+	this.file_path				= filePath;
+	this.info_configuration		= infoConfiguration;
+	this.metadata				= infoFile;
+	
+	// Commands for building the ffmpeg string conversion
+	var commands		= new Array()
+	  , inputs			= new Array()
+	  , filtersComlpex	= new Array()
+	  , output			= null;
+	
+	// List of options generated from setting functions
+	var options			= new Object();
+	
+	/*****************************************/
+	/* FUNCTION FOR FILL THE COMMANDS OBJECT */
+	/*****************************************/
+	
+	/**
+	 * Add a command to be bundled into the ffmpeg command call
+	 */
+	this.addCommand = function (command, argument) {
+		// Check if exists the current command
+		if (utils.in_array(command, commands) === false) {
+			// Add the new command
+			commands.push(command);
+			// Add the argument to new command
+			if (argument != undefined)
+				commands.push(argument);
+		} else 
+			throw errors.renderError('command_already_exists', command);
+	}
+	
+	/**
+	 * Add an input stream
+	 */
+	this.addInput = function (argument) {
+		inputs.push(argument);
+	}
+	
+	/**
+	 * Add a filter complex
+	 */
+	this.addFilterComplex = function (argument) {
+		filtersComlpex.push(argument);
+	}
+	
+	/**
+	 * Set the output path
+	 */
+	var setOutput = function (path) {
+		output = path;
+	}
+	
+	/*********************/
+	/* SETTING FUNCTIONS */
+	/*********************/
+	
+	/**
+	 * Disables audio encoding
+	 */
+	this.setDisableAudio = function () {
+		if (options.audio == undefined)
+			options.audio = new Object();
+		// Set the new option
+		options.audio.disabled = true;
+		return this;
+	}
+
+	/**
+	 * Disables video encoding
+	 */
+	this.setDisableVideo = function () {
+		if (options.video == undefined)
+			options.video = new Object();
+		// Set the new option
+		options.video.disabled = true;
+		return this;
+	}
+	
+	/**
+	 * Sets the new video format
+	 */
+	this.setVideoFormat = function (format) {
+		// Check if the format is supported by ffmpeg version
+		if (this.info_configuration.encode.indexOf(format) != -1) {
+			if (options.video == undefined)
+				options.video = new Object();
+			// Set the new option
+			options.video.format = format;
+			return this;
+		} else 
+			throw errors.renderError('format_not_supported', format);
+	}
+	
+	/**
+	 * Sets the new audio codec
+	 */
+	this.setVideoCodec = function (codec) {
+		// Check if the codec is supported by ffmpeg version
+		if (this.info_configuration.encode.indexOf(codec) != -1) {
+			if (options.video == undefined)
+				options.video = new Object();
+			// Set the new option
+			options.video.codec = codec;
+			return this;
+		} else 
+			throw errors.renderError('codec_not_supported', codec);
+	}
+	
+	/**
+	 * Sets the video bitrate
+	 */
+	this.setVideoBitRate = function (bitrate) {
+		if (options.video == undefined)
+			options.video = new Object();
+		// Set the new option
+		options.video.bitrate = bitrate;
+		return this;
+	}
+	
+	/**
+	 * Sets the framerate of the video
+	 */
+	this.setVideoFrameRate = function (framerate) {
+		if (options.video == undefined)
+			options.video = new Object();
+		// Set the new option
+		options.video.framerate = framerate;
+		return this;		
+	}
+	
+	/**
+	 * Sets the start time
+	 */
+	this.setVideoStartTime = function (time) {
+		if (options.video == undefined)
+			options.video = new Object();
+		
+		// Check if time is a string that contain: hours, minutes and seconds
+		if (isNaN(time) && /([0-9]+):([0-9]{2}):([0-9]{2})/.exec(time)) {
+			time = utils.durationToSeconds(time);			
+		} else if (!isNaN(time) && parseInt(time) == time) {
+			time = parseInt(time, 10);			
+		} else {
+			time = 0;			
+		}
+
+		// Set the new option
+		options.video.startTime = time;
+		return this;
+	}
+	
+	/**
+	 * Sets the duration
+	 */
+	this.setVideoDuration = function (duration) {
+		if (options.video == undefined)
+			options.video = new Object();
+		
+		// Check if duration is a string that contain: hours, minutes and seconds
+		if (isNaN(duration) && /([0-9]+):([0-9]{2}):([0-9]{2})/.exec(duration)) {
+			duration = utils.durationToSeconds(duration);
+		} else if (!isNaN(duration) && parseInt(duration) == duration) {
+			duration = parseInt(duration, 10);			
+		} else {
+			duration = 0;
+		}
+
+		// Set the new option
+		options.video.duration = duration;
+		return this;
+	}
+	
+	/**
+	 * Sets the new aspetc ratio
+	 */
+	this.setVideoAspectRatio = function (aspect) {
+		// Check if aspect is a string
+		if (isNaN(aspect)) {
+			// Check if aspet is string xx:xx
+			if (/([0-9]+):([0-9]+)/.exec(aspect)) {
+				var check = /([0-9]+):([0-9]+)/.exec(aspect);
+				aspect = parseFloat((check[1] / check[2]));
+			} else {
+				aspect = this.metadata.video.aspect.value;
+			}
+		}
+		
+		if (options.video == undefined)
+			options.video = new Object();
+		// Set the new option
+		options.video.aspect = aspect;
+		return this;
+	}
+	
+	/**
+	 * Set the size of the video
+	 */
+	this.setVideoSize = function (size, keepPixelAspectRatio, keepAspectRatio, paddingColor) {
+		if (options.video == undefined)
+			options.video = new Object();
+		// Set the new option
+		options.video.size = size;
+		options.video.keepPixelAspectRatio = keepPixelAspectRatio;
+		options.video.keepAspectRatio = keepAspectRatio;
+		options.video.paddingColor = paddingColor;
+		return this;
+	}
+	
+	/**
+	 * Sets the new audio codec
+	 */
+	this.setAudioCodec = function (codec) {
+		// Check if the codec is supported by ffmpeg version
+		if (this.info_configuration.encode.indexOf(codec) != -1) {
+			// Check if codec is equal 'MP3' and check if the version of ffmpeg support the libmp3lame function
+			if (codec == 'mp3' && this.info_configuration.modules.indexOf('libmp3lame') != -1)
+				codec = 'libmp3lame';
+			
+			if (options.audio == undefined)
+				options.audio = new Object();
+			// Set the new option
+			options.audio.codec = codec;
+			return this;
+		} else 
+			throw errors.renderError('codec_not_supported', codec);
+	}
+	
+	/**
+	 * Sets the audio sample frequency for audio outputs
+	 */
+	this.setAudioFrequency = function (frequency) {
+		if (options.audio == undefined)
+			options.audio = new Object();
+		// Set the new option
+		options.audio.frequency = frequency;
+		return this;
+	}
+	
+	/**
+	 * Sets the number of audio channels
+	 */
+	this.setAudioChannels = function (channel) {
+		// Check if the channel value is valid
+		if (presets.audio_channel.stereo == channel || presets.audio_channel.mono == channel) {
+			if (options.audio == undefined)
+				options.audio = new Object();
+			// Set the new option
+			options.audio.channel = channel;
+			return this;			
+		} else 
+			throw errors.renderError('audio_channel_is_invalid', channel);
+	}
+	
+	/**
+	 * Sets the audio bitrate
+	 */
+	this.setAudioBitRate = function (bitrate) {
+		if (options.audio == undefined)
+			options.audio = new Object();
+		// Set the new option
+		options.audio.bitrate = bitrate;
+		return this;
+	}
+	
+	/**
+	 * Sets the audio quality
+	 */
+	this.setAudioQuality = function (quality) {
+		if (options.audio == undefined)
+			options.audio = new Object();
+		// Set the new option
+		options.audio.quality = quality;
+		return this;
+	}
+	
+	/**
+	 * Sets the watermark
+	 */
+	this.setWatermark = function (watermarkPath, settings) {
+		// Base settings
+		var baseSettings = {
+			position		: "SW"		// Position: NE NC NW SE SC SW C CE CW
+		  , margin_nord		: null		// Margin nord
+		  , margin_sud		: null		// Margin sud
+		  , margin_east		: null		// Margin east
+		  , margin_west		: null		// Margin west
+		};
+		
+		// Check if watermark exists
+		if (!fs.existsSync(watermarkPath))
+			throw errors.renderError('invalid_watermark', watermarkPath);
+		
+		// Check if the settings are specified
+		if (settings != null)
+			utils.mergeObject(baseSettings, settings);
+		
+		// Check if position is valid
+		if (baseSettings.position == null || utils.in_array(baseSettings.position, ['NE','NC','NW','SE','SC','SW','C','CE','CW']) === false)
+			throw errors.renderError('invalid_watermark_position', baseSettings.position);
+		
+		// Check if margins are valid
+		
+		if (baseSettings.margin_nord == null || isNaN(baseSettings.margin_nord))
+			baseSettings.margin_nord = 0;
+		if (baseSettings.margin_sud == null || isNaN(baseSettings.margin_sud))
+			baseSettings.margin_sud = 0;
+		if (baseSettings.margin_east == null || isNaN(baseSettings.margin_east))
+			baseSettings.margin_east = 0;
+		if (baseSettings.margin_west == null || isNaN(baseSettings.margin_west))
+			baseSettings.margin_west = 0;
+		
+		var overlay = '';
+		
+		var getSing = function (val, inverse) {
+			return (val > 0 ? (inverse ? '-' : '+') : (inverse ? '+' : '-')).toString() + Math.abs(val).toString();
+		}
+		
+		var getHorizontalMargins = function (east, west) {
+			return getSing(east, false).toString() + getSing(west, true).toString();
+		}
+		
+		var getVerticalMargins = function (nord, sud) {
+			return getSing(nord, false).toString() + getSing(sud, true).toString();
+		}
+		
+		// Calculate formula		
+		switch (baseSettings.position) {
+			case 'NE':
+				overlay = '0' + getHorizontalMargins(baseSettings.margin_east, baseSettings.margin_west) + ':0' + getVerticalMargins(baseSettings.margin_nord, baseSettings.margin_sud);
+				break;
+			case 'NC':
+				overlay = 'main_w/2-overlay_w/2' + getHorizontalMargins(baseSettings.margin_east, baseSettings.margin_west) + ':0' + getVerticalMargins(baseSettings.margin_nord, baseSettings.margin_sud);
+				break;
+			case 'NW':
+				overlay = 'main_w-overlay_w' + getHorizontalMargins(baseSettings.margin_east, baseSettings.margin_west) + ':0' + getVerticalMargins(baseSettings.margin_nord, baseSettings.margin_sud);
+				break;
+			case 'SE':
+				overlay = '0' + getHorizontalMargins(baseSettings.margin_east, baseSettings.margin_west) + ':main_h-overlay_h' + getVerticalMargins(baseSettings.margin_nord, baseSettings.margin_sud);
+				break;
+			case 'SC':
+				overlay = 'main_w/2-overlay_w/2' + getHorizontalMargins(baseSettings.margin_east, baseSettings.margin_west) + ':main_h-overlay_h' + getVerticalMargins(baseSettings.margin_nord, baseSettings.margin_sud);
+				break;
+			case 'SW':
+				overlay = 'main_w-overlay_w' + getHorizontalMargins(baseSettings.margin_east, baseSettings.margin_west) + ':main_h-overlay_h' + getVerticalMargins(baseSettings.margin_nord, baseSettings.margin_sud);
+				break;
+			case 'CE':
+				overlay = '0' + getHorizontalMargins(baseSettings.margin_east, baseSettings.margin_west) + ':main_h/2-overlay_h/2' + getVerticalMargins(baseSettings.margin_nord, baseSettings.margin_sud);
+				break;
+			case 'C':
+				overlay = 'main_w/2-overlay_w/2' + getHorizontalMargins(baseSettings.margin_east, baseSettings.margin_west) + ':main_h/2-overlay_h/2' + getVerticalMargins(baseSettings.margin_nord, baseSettings.margin_sud);
+				break;
+			case 'CW':
+				overlay = 'main_w-overlay_w' + getHorizontalMargins(baseSettings.margin_east, baseSettings.margin_west) + ':main_h/2-overlay_h/2' + getVerticalMargins(baseSettings.margin_nord, baseSettings.margin_sud);
+				break;
+		}
+		
+		// Check if the call comes from internal function
+		if (arguments[2] == undefined || arguments[2] == null) {
+			if (options.video == undefined)
+				options.video = new Object();
+			// Set the new option
+			options.video.watermark = { path : watermarkPath, overlay : overlay };
+			return this;
+		} else if (arguments[2] != undefined && arguments[2] === true) {
+			this.addInput(watermarkPath);
+			this.addFilterComplex('overlay=' + overlay);
+		}
+	}
+	
+	/**
+	 * Save all set commands
+	 */
+	this.save = function (destionationFileName, callback) {
+		// Check if the 'video' is present in the options
+		if (options.hasOwnProperty('video')) {
+			// Check if video is disabled
+			if (options.video.hasOwnProperty('disabled')) {
+				this.addCommand('-vn');				
+			} else {
+				// Check all video property
+				if (options.video.hasOwnProperty('format'))
+					this.addCommand('-f', options.video.format);
+				if (options.video.hasOwnProperty('codec'))
+					this.addCommand('-vcodec', options.video.codec);
+				if (options.video.hasOwnProperty('bitrate'))
+					this.addCommand('-b', parseInt(options.video.bitrate, 10) + 'kb');
+				if (options.video.hasOwnProperty('framerate'))
+					this.addCommand('-r', parseInt(options.video.framerate, 10));
+				if (options.video.hasOwnProperty('startTime'))
+					this.addCommand('-ss', parseInt(options.video.startTime, 10));
+				if (options.video.hasOwnProperty('duration'))
+					this.addCommand('-t', parseInt(options.video.duration, 10));
+				
+				if (options.video.hasOwnProperty('watermark')) {
+					this.addInput(options.video.watermark.path);
+					this.addFilterComplex('overlay=' + options.video.watermark.overlay);
+				}
+				
+				// Check if the video should be scaled
+				if (options.video.hasOwnProperty('size')) {
+					var newDimension = _calculateNewDimension.call(this);
+					
+					if (newDimension.aspect != null) {
+						this.addFilterComplex('scale=iw*sar:ih, pad=max(iw\\,ih*(' + newDimension.aspect.x + '/' + newDimension.aspect.y + ')):ow/(' + newDimension.aspect.x + '/' + newDimension.aspect.y + '):(ow-iw)/2:(oh-ih)/2' + (options.video.paddingColor != null ? ':' + options.video.paddingColor : ''));
+						this.addCommand('-aspect', newDimension.aspect.string);
+					}
+					
+					this.addCommand('-s', newDimension.width + 'x' + newDimension.height);
+				}
+			}
+		}
+		// Check if the 'audio' is present in the options
+		if (options.hasOwnProperty('audio')) {
+			// Check if audio is disabled
+			if (options.audio.hasOwnProperty('disabled')) {
+				this.addCommand('-an');				
+			} else {
+				// Check all audio property
+				if (options.audio.hasOwnProperty('codec'))
+					this.addCommand('-acodec', options.audio.codec);
+				if (options.audio.hasOwnProperty('frequency'))
+					this.addCommand('-ar', parseInt(options.audio.frequency));
+				if (options.audio.hasOwnProperty('channel'))
+					this.addCommand('-ac', options.audio.channel);
+				if (options.audio.hasOwnProperty('quality'))
+					this.addCommand('-aq', options.audio.quality);
+				if (options.audio.hasOwnProperty('bitrate'))
+					this.addCommand('-ab', parseInt(options.audio.bitrate, 10) + 'k');
+			}
+		}
+		
+		setOutput(destionationFileName);
+		
+		return execCommand.call(this, callback);
+	}
+	
+	/*********************/
+	/* INTERNAL FUNCTION */
+	/*********************/
+	
+	/**
+	 * Reset the list of commands
+	 */
+	var resetCommands = function (self) {
+		commands		= new Array()
+		inputs			= [self.file_path];
+		filtersComlpex	= new Array();
+		output			= null;
+		options			= new Object();
+	}
+
+	/**
+	 * Calculate width, height and aspect ratio by the new dimension data
+	 */
+	var _calculateNewDimension = function () {
+		// Check if keepPixelAspectRatio is undefined
+		var keepPixelAspectRatio = typeof options.video.keepPixelAspectRatio != 'boolean' ? false : options.video.keepPixelAspectRatio;
+		// Check if keepAspectRatio is undefined
+		var keepAspectRatio = typeof options.video.keepAspectRatio != 'boolean' ? false : options.video.keepAspectRatio;
+		
+		// Resolution to be taken as a reference
+		var referrerResolution = this.metadata.video.resolution;
+		// Check if is need keep pixel aspect ratio
+		if (keepPixelAspectRatio) {
+			// Check if exists resolution for pixel aspect ratio
+			if (utils.isEmptyObj(this.metadata.video.resolutionSquare))
+				throw errors.renderError('resolution_square_not_defined');
+			
+			// Apply the resolutionSquare
+			referrerResolution = this.metadata.video.resolutionSquare;
+		}
+		
+		// Final data
+		var width	= null
+		  , height	= null
+		  , aspect	= null;
+
+		// Regex to check which type of dimension was specified
+		var fixedWidth		= /([0-9]+)x\?/.exec(options.video.size)
+		  , fixedHeight		= /\?x([0-9]+)/.exec(options.video.size)
+		  , percentage		= /([0-9]{1,2})%/.exec(options.video.size)
+		  , classicSize		= /([0-9]+)x([0-9]+)/.exec(options.video.size);
+		  
+		if (fixedWidth) {
+			// Set the width dimension
+			width = parseInt(fixedWidth[1], 10);			
+			// Check if the video has the aspect ratio setted
+			if (!utils.isEmptyObj(this.metadata.video.aspect)) {
+				height = Math.round((width / this.metadata.video.aspect.x) * this.metadata.video.aspect.y);
+			} else {
+				// Calculte the new height
+				height = Math.round(referrerResolution.h / (referrerResolution.w / parseInt(fixedWidth[1], 10)));
+			}
+		} else if (fixedHeight) {
+			// Set the width dimension
+			height = parseInt(fixedHeight[1], 10);			
+			// Check if the video has the aspect ratio setted
+			if (!utils.isEmptyObj(this.metadata.video.aspect)) {
+				width = Math.round((height / this.metadata.video.aspect.y) * this.metadata.video.aspect.x);
+			} else {
+				// Calculte the new width
+				width = Math.round(referrerResolution.w / (referrerResolution.h / parseInt(fixedHeight[1], 10)));
+			}			
+		} else if (percentage) {
+			// Calculte the ratio from percentage
+			var ratio = parseInt(percentage[1], 10) / 100;
+			// Calculate the new dimensions
+			width = Math.round(referrerResolution.w * ratio);
+			height = Math.round(referrerResolution.h * ratio);
+		} else if (classicSize) {
+			width = parseInt(classicSize[1], 10);
+			height = parseInt(classicSize[2], 10);
+		} else 
+			throw errors.renderError('size_format', options.video.size);
+		
+		// If the width or height are not multiples of 2 will be decremented by one unit
+		if (width % 2 != 0) width -= 1;
+		if (height % 2 != 0) height -= 1;
+		
+		if (keepAspectRatio) {
+			// Calculate the new aspect ratio
+			var gcdValue	= utils.gcd(width, height);
+			
+			aspect = new Object();
+			aspect.x = width / gcdValue;
+			aspect.y = height / gcdValue;
+			aspect.string = aspect.x + ':' + aspect.y;
+		}
+		
+		return { width : width, height : height, aspect : aspect };
+	}
+	
+	/**
+	 * Executing the commands list
+	 */
+	var execCommand = function (callback, folder) {
+		// Checking if folder is defined
+		var onlyDestinationFile = folder != undefined ? false : true;
+		// Building the value for return value. Check if the callback is not a function. In this case will created a new instance of the deferred class
+		var deferred = typeof callback != 'function' ? when.defer() : { promise : null };
+		// Create a copy of the commands list
+		var finalCommands = ['ffmpeg -i']
+			.concat(inputs.join(' -i '))
+			.concat(commands.join(' '))
+			.concat(filtersComlpex.length > 0 ? ['-filter_complex "'].concat(filtersComlpex.join(', ')).join('') + '"' : [])
+			.concat([output]);
+		// Reset commands
+		resetCommands(this);
+		// Execute the commands from the list
+		utils.exec(finalCommands, settings, function (error, stdout, stderr) {
+			// Building the result
+			var result = null;
+			if (!error) {
+				// Check if show only destination filename or the complete file list
+				if (onlyDestinationFile) {
+					result = finalCommands[finalCommands.length-1];
+				} else {
+					// Clean possible "/" at the end of the string
+					if (folder.charAt(folder.length-1) == "/")
+						folder = folder.substr(0, folder.length-1);
+					// Read file list inside the folder
+					result = fs.readdirSync(folder);
+					// Scan all file and prepend the folder path
+					for (var i in result)
+						result[i] = [folder, result[i]].join('/')
+				}
+			}
+			// Check if the callback is a function
+			if (typeof callback == 'function') {
+				// Call the callback to return the info
+				callback(error, result);
+			} else {
+				if (error) {
+					// Negative response
+					deferred.reject(error);
+				} else {
+					// Positive response
+					deferred.resolve(result);
+				}
+			}
+		});
+		// Return a possible promise instance
+		return deferred.promise;
+	}
+	
+	/*******************/
+	/* PRESET FUNCTION */
+	/*******************/
+	
+	/**
+	 * Extracting sound from a video, and save it as Mp3
+	 */
+	this.fnExtractSoundToMP3 = function (destionationFileName, callback) {
+		// Check if file already exists. In this case will remove it
+		if (fs.existsSync(destionationFileName)) 
+			fs.unlinkSync(destionationFileName);
+
+		// Building the final path
+		var destinationDirName		= path.dirname(destionationFileName)
+		  , destinationFileNameWE	= path.basename(destionationFileName, path.extname(destionationFileName)) + '.mp3'
+		  , finalPath				= path.join(destinationDirName, destinationFileNameWE);
+		
+		resetCommands(this);
+		
+		// Adding commands to the list
+		this.addCommand('-vn');
+		this.addCommand('-ar', 44100);
+		this.addCommand('-ac', 2);
+		this.addCommand('-ab', 192);
+		this.addCommand('-f', 'mp3');
+		
+		// Add destination file path to the command list
+		setOutput(finalPath);
+		
+		// Executing the commands list
+		return execCommand.call(this, callback);
+	}
+	
+	/**
+	 * Extract frame from video file
+	 */
+	this.fnExtractFrameToJPG = function (/* destinationFolder, settings, callback */) {
+		
+		var destinationFolder	= null
+		  , newSettings			= null
+		  , callback			= null;
+		  
+		var settings = {
+			start_time				: null		// Start time to recording
+		  , duration_time			: null		// Duration of recording
+		  , frame_rate				: null		// Number of the frames to capture in one second
+		  , size					: null		// Dimension each frame
+		  , number					: null		// Total frame to capture
+		  , every_n_frames			: null		// Frame to capture every N frames
+		  , every_n_seconds			: null		// Frame to capture every N seconds
+		  , every_n_percentage		: null		// Frame to capture every N percentage range
+		  , keep_pixel_aspect_ratio	: true		// Mantain the original pixel video aspect ratio
+		  , keep_aspect_ratio		: true		// Mantain the original aspect ratio
+		  , padding_color			: 'black'	// Padding color
+		  , file_name				: null		// File name
+		};
+		  
+		// Scan all arguments
+		for (var i in arguments) {
+			// Check the type of the argument
+			switch (typeof arguments[i]) {
+				case 'string':
+					destinationFolder = arguments[i];
+					break;
+				case 'object':
+					newSettings = arguments[i];
+					break;
+				case 'function':
+					callback = arguments[i];
+					break;
+			}
+		}
+		
+		// Check if the settings are specified
+		if (newSettings !== null)
+			utils.mergeObject(settings, newSettings);
+
+		// Check if 'start_time' is in the format hours:minutes:seconds
+		if (settings.start_time != null) {
+			if (/([0-9]+):([0-9]{2}):([0-9]{2})/.exec(settings.start_time))
+				settings.start_time = utils.durationToSeconds(settings.start_time);
+			else if (!isNaN(settings.start_time))
+				settings.start_time = parseInt(settings.start_time, 10);
+			else
+				settings.start_time = null;
+		}
+
+		// Check if 'duration_time' is in the format hours:minutes:seconds
+		if (settings.duration_time != null) {
+			if (/([0-9]+):([0-9]{2}):([0-9]{2})/.exec(settings.duration_time))
+				settings.duration_time = utils.durationToSeconds(settings.duration_time);
+			else if (!isNaN(settings.duration_time))
+				settings.duration_time = parseInt(settings.duration_time, 10);
+			else
+				settings.duration_time = null;
+		}
+
+		// Check if the value of the framerate is number type
+		if (settings.frame_rate != null && isNaN(settings.frame_rate))
+			settings.frame_rate = null;
+
+		// If the size is not settings then the size of the screenshots is equal to video size
+		if (settings.size == null)
+			settings.size = this.metadata.video.resolution.w + 'x' + this.metadata.video.resolution.h;
+
+		// Check if the value of the 'number frame to capture' is number type
+		if (settings.number != null && isNaN(settings.number))
+			settings.number = null;
+
+		var every_n_check = 0;
+
+		// Check if the value of the 'every_n_frames' is number type
+		if (settings.every_n_frames != null && isNaN(settings.every_n_frames)) {
+			settings.every_n_frames = null;
+			every_n_check++;
+		}
+
+		// Check if the value of the 'every_n_seconds' is number type
+		if (settings.every_n_seconds != null && isNaN(settings.every_n_seconds)) {
+			settings.every_n_seconds = null;
+			every_n_check++;
+		}
+
+		// Check if the value of the 'every_n_percentage' is number type
+		if (settings.every_n_percentage != null && (isNaN(settings.every_n_percentage) || settings.every_n_percentage > 100)) {
+			settings.every_n_percentage = null;
+			every_n_check++;
+		}
+		
+		if (every_n_check >= 2) {
+			if (callback) {
+				callback(errors.renderError('extract_frame_invalid_everyN_options'));
+			} else {
+				throw errors.renderError('extract_frame_invalid_everyN_options');
+			}
+		}			
+		
+		// If filename is null then his value is equal to original filename
+		if (settings.file_name == null) {
+			settings.file_name = path.basename(this.file_path, path.extname(this.file_path));
+		} else {
+			// Retrieve all possible replacements
+			var replacements = settings.file_name.match(/(\%[a-zA-Z]{1})/g);
+			// Check if exists replacements. The scan all replacements and build the final filename
+			if (replacements) {
+				for (var i in replacements) {
+					switch (replacements[i]) {
+						case '%t':
+							settings.file_name = settings.file_name.replace('%t', new Date().getTime());
+							break;
+						case '%s':
+							settings.file_name = settings.file_name.replace('%s', settings.size);
+							break;
+						case '%x':
+							settings.file_name = settings.file_name.replace('%x', settings.size.split(':')[0]);
+							break;
+						case '%y':
+							settings.file_name = settings.file_name.replace('%y', settings.size.split(':')[1]);
+							break;
+						default:
+							settings.file_name = settings.file_name.replace(replacements[i], '');
+							break;
+					}
+				}
+			}
+		}
+		// At the filename will added the number of the frame
+		settings.file_name = path.basename(settings.file_name, path.extname(settings.file_name)) + '_%d.jpg';
+		
+		// Create the directory to save the extracted frames
+		utils.mkdir(destinationFolder, 0777);
+		
+		resetCommands(this);
+		
+		// Adding commands to the list
+		if (settings.startTime)
+			this.addCommand('-ss', settings.startTime);
+		if (settings.duration_time)
+			this.addCommand('-t', settings.duration_time);
+		if (settings.frame_rate)
+			this.addCommand('-r', settings.frame_rate);
+
+		// Setting the size and padding settings
+		this.setVideoSize(settings.size, settings.keep_pixel_aspect_ratio, settings.keep_aspect_ratio, settings.padding_color);
+		// Get the dimensions
+		var newDimension = _calculateNewDimension.call(this);
+		// Apply the size and padding commands
+		this.addCommand('-s', newDimension.width + 'x' + newDimension.height);
+		// CHeck if isset aspect ratio options
+		if (newDimension.aspect != null) {
+			this.addFilterComplex('scale=iw*sar:ih, pad=max(iw\\,ih*(' + newDimension.aspect.x + '/' + newDimension.aspect.y + ')):ow/(' + newDimension.aspect.x + '/' + newDimension.aspect.y + '):(ow-iw)/2:(oh-ih)/2' + (settings.padding_color != null ? ':' + settings.padding_color : ''));
+			this.addCommand('-aspect', newDimension.aspect.string);
+		}
+
+		if (settings.number)
+			this.addCommand('-vframes', settings.number);
+		if (settings.every_n_frames) {
+			this.addCommand('-vsync', 0);					
+			this.addFilterComplex('select=not(mod(n\\,' + settings.every_n_frames + '))');
+		}
+		if (settings.every_n_seconds) {
+			this.addCommand('-vsync', 0);
+			this.addFilterComplex('select=not(mod(t\\,' + settings.every_n_seconds + '))');
+		}
+		if (settings.every_n_percentage) {
+			this.addCommand('-vsync', 0);
+			this.addFilterComplex('select=not(mod(t\\,' + parseInt((this.metadata.duration.seconds / 100) * settings.every_n_percentage) + '))');
+		}
+		
+		// Add destination file path to the command list
+		setOutput([destinationFolder,settings.file_name].join('/'));
+
+		// Executing the commands list
+		return execCommand.call(this, callback, destinationFolder);
+	}
+
+	/**
+	 * Add a watermark to the video and save it
+	 */
+	this.fnAddWatermark = function (watermarkPath /* newFilepath , settings, callback */) {
+
+		var newFilepath		= null
+		  , newSettings		= null
+		  , callback		= null;
+		  
+		// Scan all arguments
+		for (var i = 1; i < arguments.length; i++) {
+			// Check the type of the argument
+			switch (typeof arguments[i]) {
+				case 'string':
+					newFilepath = arguments[i];
+					break;
+				case 'object':
+					newSettings = arguments[i];
+					break;
+				case 'function':
+					callback = arguments[i];
+					break;
+			}
+		}
+		
+		resetCommands(this);
+
+		// Call the function to add the watermark options
+		this.setWatermark(watermarkPath, newSettings, true);
+		
+		if (newFilepath == null)
+			newFilepath = path.dirname(this.file_path) + '/' + 
+						  path.basename(this.file_path, path.extname(this.file_path)) + '_watermark_' + 
+						  path.basename(watermarkPath, path.extname(watermarkPath)) + 
+						  path.extname(this.file_path);
+		
+		// Add destination file path to the command list
+		setOutput(newFilepath);
+
+		// Executing the commands list
+		return execCommand.call(this, callback);
+	}
+	
+	/**
+	 * Constructor
+	 */
+	var __constructor = function (self) {
+		resetCommands(self);
+	}(this);
+}
+
+/***/ }),
+
+/***/ "./node_modules/file-saver/dist/FileSaver.min.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/file-saver/dist/FileSaver.min.js ***!
+  \*******************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function(a,b){if(true)!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (b),
+		__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+		(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else {}})(this,function(){"use strict";function b(a,b){return"undefined"==typeof b?b={autoBom:!1}:"object"!=typeof b&&(console.warn("Deprecated: Expected third argument to be a object"),b={autoBom:!b}),b.autoBom&&/^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(a.type)?new Blob(["\uFEFF",a],{type:a.type}):a}function c(a,b,c){var d=new XMLHttpRequest;d.open("GET",a),d.responseType="blob",d.onload=function(){g(d.response,b,c)},d.onerror=function(){console.error("could not download file")},d.send()}function d(a){var b=new XMLHttpRequest;b.open("HEAD",a,!1);try{b.send()}catch(a){}return 200<=b.status&&299>=b.status}function e(a){try{a.dispatchEvent(new MouseEvent("click"))}catch(c){var b=document.createEvent("MouseEvents");b.initMouseEvent("click",!0,!0,window,0,0,0,80,20,!1,!1,!1,!1,0,null),a.dispatchEvent(b)}}var f="object"==typeof window&&window.window===window?window:"object"==typeof self&&self.self===self?self:"object"==typeof __webpack_require__.g&&__webpack_require__.g.global===__webpack_require__.g?__webpack_require__.g:void 0,a=f.navigator&&/Macintosh/.test(navigator.userAgent)&&/AppleWebKit/.test(navigator.userAgent)&&!/Safari/.test(navigator.userAgent),g=f.saveAs||("object"!=typeof window||window!==f?function(){}:"download"in HTMLAnchorElement.prototype&&!a?function(b,g,h){var i=f.URL||f.webkitURL,j=document.createElement("a");g=g||b.name||"download",j.download=g,j.rel="noopener","string"==typeof b?(j.href=b,j.origin===location.origin?e(j):d(j.href)?c(b,g,h):e(j,j.target="_blank")):(j.href=i.createObjectURL(b),setTimeout(function(){i.revokeObjectURL(j.href)},4E4),setTimeout(function(){e(j)},0))}:"msSaveOrOpenBlob"in navigator?function(f,g,h){if(g=g||f.name||"download","string"!=typeof f)navigator.msSaveOrOpenBlob(b(f,h),g);else if(d(f))c(f,g,h);else{var i=document.createElement("a");i.href=f,i.target="_blank",setTimeout(function(){e(i)})}}:function(b,d,e,g){if(g=g||open("","_blank"),g&&(g.document.title=g.document.body.innerText="downloading..."),"string"==typeof b)return c(b,d,e);var h="application/octet-stream"===b.type,i=/constructor/i.test(f.HTMLElement)||f.safari,j=/CriOS\/[\d]+/.test(navigator.userAgent);if((j||h&&i||a)&&"undefined"!=typeof FileReader){var k=new FileReader;k.onloadend=function(){var a=k.result;a=j?a:a.replace(/^data:[^;]*;/,"data:attachment/file;"),g?g.location.href=a:location=a,g=null},k.readAsDataURL(b)}else{var l=f.URL||f.webkitURL,m=l.createObjectURL(b);g?g.location=m:location.href=m,g=null,setTimeout(function(){l.revokeObjectURL(m)},4E4)}});f.saveAs=g.saveAs=g, true&&(module.exports=g)});
+
+//# sourceMappingURL=FileSaver.min.js.map
+
+/***/ }),
+
+/***/ "./node_modules/get-stream/buffer-stream.js":
+/*!**************************************************!*\
+  !*** ./node_modules/get-stream/buffer-stream.js ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+const {PassThrough: PassThroughStream} = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'stream'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+module.exports = options => {
+	options = {...options};
+
+	const {array} = options;
+	let {encoding} = options;
+	const isBuffer = encoding === 'buffer';
+	let objectMode = false;
+
+	if (array) {
+		objectMode = !(encoding || isBuffer);
+	} else {
+		encoding = encoding || 'utf8';
+	}
+
+	if (isBuffer) {
+		encoding = null;
+	}
+
+	const stream = new PassThroughStream({objectMode});
+
+	if (encoding) {
+		stream.setEncoding(encoding);
+	}
+
+	let length = 0;
+	const chunks = [];
+
+	stream.on('data', chunk => {
+		chunks.push(chunk);
+
+		if (objectMode) {
+			length = chunks.length;
+		} else {
+			length += chunk.length;
+		}
+	});
+
+	stream.getBufferedValue = () => {
+		if (array) {
+			return chunks;
+		}
+
+		return isBuffer ? Buffer.concat(chunks, length) : chunks.join('');
+	};
+
+	stream.getBufferedLength = () => length;
+
+	return stream;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/get-stream/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/get-stream/index.js ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+const {constants: BufferConstants} = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'buffer'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+const stream = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'stream'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+const {promisify} = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+const bufferStream = __webpack_require__(/*! ./buffer-stream */ "./node_modules/get-stream/buffer-stream.js");
+
+const streamPipelinePromisified = promisify(stream.pipeline);
+
+class MaxBufferError extends Error {
+	constructor() {
+		super('maxBuffer exceeded');
+		this.name = 'MaxBufferError';
+	}
+}
+
+async function getStream(inputStream, options) {
+	if (!inputStream) {
+		throw new Error('Expected a stream');
+	}
+
+	options = {
+		maxBuffer: Infinity,
+		...options
+	};
+
+	const {maxBuffer} = options;
+	const stream = bufferStream(options);
+
+	await new Promise((resolve, reject) => {
+		const rejectPromise = error => {
+			// Don't retrieve an oversized buffer.
+			if (error && stream.getBufferedLength() <= BufferConstants.MAX_LENGTH) {
+				error.bufferedData = stream.getBufferedValue();
+			}
+
+			reject(error);
+		};
+
+		(async () => {
+			try {
+				await streamPipelinePromisified(inputStream, stream);
+				resolve();
+			} catch (error) {
+				rejectPromise(error);
+			}
+		})();
+
+		stream.on('data', () => {
+			if (stream.getBufferedLength() > maxBuffer) {
+				rejectPromise(new MaxBufferError());
+			}
+		});
+	});
+
+	return stream.getBufferedValue();
+}
+
+module.exports = getStream;
+module.exports.buffer = (stream, options) => getStream(stream, {...options, encoding: 'buffer'});
+module.exports.array = (stream, options) => getStream(stream, {...options, array: true});
+module.exports.MaxBufferError = MaxBufferError;
+
+
+/***/ }),
+
+/***/ "./node_modules/human-signals/build/src/core.js":
+/*!******************************************************!*\
+  !*** ./node_modules/human-signals/build/src/core.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", ({value:true}));exports.SIGNALS=void 0;
+
+const SIGNALS=[
+{
+name:"SIGHUP",
+number:1,
+action:"terminate",
+description:"Terminal closed",
+standard:"posix"},
+
+{
+name:"SIGINT",
+number:2,
+action:"terminate",
+description:"User interruption with CTRL-C",
+standard:"ansi"},
+
+{
+name:"SIGQUIT",
+number:3,
+action:"core",
+description:"User interruption with CTRL-\\",
+standard:"posix"},
+
+{
+name:"SIGILL",
+number:4,
+action:"core",
+description:"Invalid machine instruction",
+standard:"ansi"},
+
+{
+name:"SIGTRAP",
+number:5,
+action:"core",
+description:"Debugger breakpoint",
+standard:"posix"},
+
+{
+name:"SIGABRT",
+number:6,
+action:"core",
+description:"Aborted",
+standard:"ansi"},
+
+{
+name:"SIGIOT",
+number:6,
+action:"core",
+description:"Aborted",
+standard:"bsd"},
+
+{
+name:"SIGBUS",
+number:7,
+action:"core",
+description:
+"Bus error due to misaligned, non-existing address or paging error",
+standard:"bsd"},
+
+{
+name:"SIGEMT",
+number:7,
+action:"terminate",
+description:"Command should be emulated but is not implemented",
+standard:"other"},
+
+{
+name:"SIGFPE",
+number:8,
+action:"core",
+description:"Floating point arithmetic error",
+standard:"ansi"},
+
+{
+name:"SIGKILL",
+number:9,
+action:"terminate",
+description:"Forced termination",
+standard:"posix",
+forced:true},
+
+{
+name:"SIGUSR1",
+number:10,
+action:"terminate",
+description:"Application-specific signal",
+standard:"posix"},
+
+{
+name:"SIGSEGV",
+number:11,
+action:"core",
+description:"Segmentation fault",
+standard:"ansi"},
+
+{
+name:"SIGUSR2",
+number:12,
+action:"terminate",
+description:"Application-specific signal",
+standard:"posix"},
+
+{
+name:"SIGPIPE",
+number:13,
+action:"terminate",
+description:"Broken pipe or socket",
+standard:"posix"},
+
+{
+name:"SIGALRM",
+number:14,
+action:"terminate",
+description:"Timeout or timer",
+standard:"posix"},
+
+{
+name:"SIGTERM",
+number:15,
+action:"terminate",
+description:"Termination",
+standard:"ansi"},
+
+{
+name:"SIGSTKFLT",
+number:16,
+action:"terminate",
+description:"Stack is empty or overflowed",
+standard:"other"},
+
+{
+name:"SIGCHLD",
+number:17,
+action:"ignore",
+description:"Child process terminated, paused or unpaused",
+standard:"posix"},
+
+{
+name:"SIGCLD",
+number:17,
+action:"ignore",
+description:"Child process terminated, paused or unpaused",
+standard:"other"},
+
+{
+name:"SIGCONT",
+number:18,
+action:"unpause",
+description:"Unpaused",
+standard:"posix",
+forced:true},
+
+{
+name:"SIGSTOP",
+number:19,
+action:"pause",
+description:"Paused",
+standard:"posix",
+forced:true},
+
+{
+name:"SIGTSTP",
+number:20,
+action:"pause",
+description:"Paused using CTRL-Z or \"suspend\"",
+standard:"posix"},
+
+{
+name:"SIGTTIN",
+number:21,
+action:"pause",
+description:"Background process cannot read terminal input",
+standard:"posix"},
+
+{
+name:"SIGBREAK",
+number:21,
+action:"terminate",
+description:"User interruption with CTRL-BREAK",
+standard:"other"},
+
+{
+name:"SIGTTOU",
+number:22,
+action:"pause",
+description:"Background process cannot write to terminal output",
+standard:"posix"},
+
+{
+name:"SIGURG",
+number:23,
+action:"ignore",
+description:"Socket received out-of-band data",
+standard:"bsd"},
+
+{
+name:"SIGXCPU",
+number:24,
+action:"core",
+description:"Process timed out",
+standard:"bsd"},
+
+{
+name:"SIGXFSZ",
+number:25,
+action:"core",
+description:"File too big",
+standard:"bsd"},
+
+{
+name:"SIGVTALRM",
+number:26,
+action:"terminate",
+description:"Timeout or timer",
+standard:"bsd"},
+
+{
+name:"SIGPROF",
+number:27,
+action:"terminate",
+description:"Timeout or timer",
+standard:"bsd"},
+
+{
+name:"SIGWINCH",
+number:28,
+action:"ignore",
+description:"Terminal window size changed",
+standard:"bsd"},
+
+{
+name:"SIGIO",
+number:29,
+action:"terminate",
+description:"I/O is available",
+standard:"other"},
+
+{
+name:"SIGPOLL",
+number:29,
+action:"terminate",
+description:"Watched event",
+standard:"other"},
+
+{
+name:"SIGINFO",
+number:29,
+action:"ignore",
+description:"Request for process information",
+standard:"other"},
+
+{
+name:"SIGPWR",
+number:30,
+action:"terminate",
+description:"Device running out of power",
+standard:"systemv"},
+
+{
+name:"SIGSYS",
+number:31,
+action:"core",
+description:"Invalid system call",
+standard:"other"},
+
+{
+name:"SIGUNUSED",
+number:31,
+action:"terminate",
+description:"Invalid system call",
+standard:"other"}];exports.SIGNALS=SIGNALS;
+//# sourceMappingURL=core.js.map
+
+/***/ }),
+
+/***/ "./node_modules/human-signals/build/src/main.js":
+/*!******************************************************!*\
+  !*** ./node_modules/human-signals/build/src/main.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", ({value:true}));exports.signalsByNumber=exports.signalsByName=void 0;var _os=__webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'os'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var _signals=__webpack_require__(/*! ./signals.js */ "./node_modules/human-signals/build/src/signals.js");
+var _realtime=__webpack_require__(/*! ./realtime.js */ "./node_modules/human-signals/build/src/realtime.js");
+
+
+
+const getSignalsByName=function(){
+const signals=(0,_signals.getSignals)();
+return signals.reduce(getSignalByName,{});
+};
+
+const getSignalByName=function(
+signalByNameMemo,
+{name,number,description,supported,action,forced,standard})
+{
+return{
+...signalByNameMemo,
+[name]:{name,number,description,supported,action,forced,standard}};
+
+};
+
+const signalsByName=getSignalsByName();exports.signalsByName=signalsByName;
+
+
+
+
+const getSignalsByNumber=function(){
+const signals=(0,_signals.getSignals)();
+const length=_realtime.SIGRTMAX+1;
+const signalsA=Array.from({length},(value,number)=>
+getSignalByNumber(number,signals));
+
+return Object.assign({},...signalsA);
+};
+
+const getSignalByNumber=function(number,signals){
+const signal=findSignalByNumber(number,signals);
+
+if(signal===undefined){
+return{};
+}
+
+const{name,description,supported,action,forced,standard}=signal;
+return{
+[number]:{
+name,
+number,
+description,
+supported,
+action,
+forced,
+standard}};
+
+
+};
+
+
+
+const findSignalByNumber=function(number,signals){
+const signal=signals.find(({name})=>_os.constants.signals[name]===number);
+
+if(signal!==undefined){
+return signal;
+}
+
+return signals.find(signalA=>signalA.number===number);
+};
+
+const signalsByNumber=getSignalsByNumber();exports.signalsByNumber=signalsByNumber;
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ "./node_modules/human-signals/build/src/realtime.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/human-signals/build/src/realtime.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", ({value:true}));exports.SIGRTMAX=exports.getRealtimeSignals=void 0;
+const getRealtimeSignals=function(){
+const length=SIGRTMAX-SIGRTMIN+1;
+return Array.from({length},getRealtimeSignal);
+};exports.getRealtimeSignals=getRealtimeSignals;
+
+const getRealtimeSignal=function(value,index){
+return{
+name:`SIGRT${index+1}`,
+number:SIGRTMIN+index,
+action:"terminate",
+description:"Application-specific signal (realtime)",
+standard:"posix"};
+
+};
+
+const SIGRTMIN=34;
+const SIGRTMAX=64;exports.SIGRTMAX=SIGRTMAX;
+//# sourceMappingURL=realtime.js.map
+
+/***/ }),
+
+/***/ "./node_modules/human-signals/build/src/signals.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/human-signals/build/src/signals.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", ({value:true}));exports.getSignals=void 0;var _os=__webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'os'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var _core=__webpack_require__(/*! ./core.js */ "./node_modules/human-signals/build/src/core.js");
+var _realtime=__webpack_require__(/*! ./realtime.js */ "./node_modules/human-signals/build/src/realtime.js");
+
+
+
+const getSignals=function(){
+const realtimeSignals=(0,_realtime.getRealtimeSignals)();
+const signals=[..._core.SIGNALS,...realtimeSignals].map(normalizeSignal);
+return signals;
+};exports.getSignals=getSignals;
+
+
+
+
+
+
+
+const normalizeSignal=function({
+name,
+number:defaultNumber,
+description,
+action,
+forced=false,
+standard})
+{
+const{
+signals:{[name]:constantSignal}}=
+_os.constants;
+const supported=constantSignal!==undefined;
+const number=supported?constantSignal:defaultNumber;
+return{name,number,description,supported,action,forced,standard};
+};
+//# sourceMappingURL=signals.js.map
+
+/***/ }),
+
+/***/ "./node_modules/is-stream/index.js":
+/*!*****************************************!*\
+  !*** ./node_modules/is-stream/index.js ***!
+  \*****************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+const isStream = stream =>
+	stream !== null &&
+	typeof stream === 'object' &&
+	typeof stream.pipe === 'function';
+
+isStream.writable = stream =>
+	isStream(stream) &&
+	stream.writable !== false &&
+	typeof stream._write === 'function' &&
+	typeof stream._writableState === 'object';
+
+isStream.readable = stream =>
+	isStream(stream) &&
+	stream.readable !== false &&
+	typeof stream._read === 'function' &&
+	typeof stream._readableState === 'object';
+
+isStream.duplex = stream =>
+	isStream.writable(stream) &&
+	isStream.readable(stream);
+
+isStream.transform = stream =>
+	isStream.duplex(stream) &&
+	typeof stream._transform === 'function';
+
+module.exports = isStream;
+
+
+/***/ }),
+
+/***/ "./node_modules/is-unix/index.js":
+/*!***************************************!*\
+  !*** ./node_modules/is-unix/index.js ***!
+  \***************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = (platform = '') => {
+  platform = platform.toLowerCase()
+  return (
+    [
+      'aix',
+      'android',
+      'darwin',
+      'freebsd',
+      'linux',
+      'openbsd',
+      'sunos'
+    ].indexOf(platform) !== -1
+  )
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/isexe/index.js":
+/*!*************************************!*\
+  !*** ./node_modules/isexe/index.js ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var fs = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'fs'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))
+var core
+if (process.platform === 'win32' || __webpack_require__.g.TESTING_WINDOWS) {
+  core = __webpack_require__(/*! ./windows.js */ "./node_modules/isexe/windows.js")
+} else {
+  core = __webpack_require__(/*! ./mode.js */ "./node_modules/isexe/mode.js")
+}
+
+module.exports = isexe
+isexe.sync = sync
+
+function isexe (path, options, cb) {
+  if (typeof options === 'function') {
+    cb = options
+    options = {}
+  }
+
+  if (!cb) {
+    if (typeof Promise !== 'function') {
+      throw new TypeError('callback not provided')
+    }
+
+    return new Promise(function (resolve, reject) {
+      isexe(path, options || {}, function (er, is) {
+        if (er) {
+          reject(er)
+        } else {
+          resolve(is)
+        }
+      })
+    })
+  }
+
+  core(path, options || {}, function (er, is) {
+    // ignore EACCES because that just means we aren't allowed to run it
+    if (er) {
+      if (er.code === 'EACCES' || options && options.ignoreErrors) {
+        er = null
+        is = false
+      }
+    }
+    cb(er, is)
+  })
+}
+
+function sync (path, options) {
+  // my kingdom for a filtered catch
+  try {
+    return core.sync(path, options || {})
+  } catch (er) {
+    if (options && options.ignoreErrors || er.code === 'EACCES') {
+      return false
+    } else {
+      throw er
+    }
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/isexe/mode.js":
+/*!************************************!*\
+  !*** ./node_modules/isexe/mode.js ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = isexe
+isexe.sync = sync
+
+var fs = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'fs'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))
+
+function isexe (path, options, cb) {
+  fs.stat(path, function (er, stat) {
+    cb(er, er ? false : checkStat(stat, options))
+  })
+}
+
+function sync (path, options) {
+  return checkStat(fs.statSync(path), options)
+}
+
+function checkStat (stat, options) {
+  return stat.isFile() && checkMode(stat, options)
+}
+
+function checkMode (stat, options) {
+  var mod = stat.mode
+  var uid = stat.uid
+  var gid = stat.gid
+
+  var myUid = options.uid !== undefined ?
+    options.uid : process.getuid && process.getuid()
+  var myGid = options.gid !== undefined ?
+    options.gid : process.getgid && process.getgid()
+
+  var u = parseInt('100', 8)
+  var g = parseInt('010', 8)
+  var o = parseInt('001', 8)
+  var ug = u | g
+
+  var ret = (mod & o) ||
+    (mod & g) && gid === myGid ||
+    (mod & u) && uid === myUid ||
+    (mod & ug) && myUid === 0
+
+  return ret
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/isexe/windows.js":
+/*!***************************************!*\
+  !*** ./node_modules/isexe/windows.js ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = isexe
+isexe.sync = sync
+
+var fs = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'fs'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))
+
+function checkPathExt (path, options) {
+  var pathext = options.pathExt !== undefined ?
+    options.pathExt : process.env.PATHEXT
+
+  if (!pathext) {
+    return true
+  }
+
+  pathext = pathext.split(';')
+  if (pathext.indexOf('') !== -1) {
+    return true
+  }
+  for (var i = 0; i < pathext.length; i++) {
+    var p = pathext[i].toLowerCase()
+    if (p && path.substr(-p.length).toLowerCase() === p) {
+      return true
+    }
+  }
+  return false
+}
+
+function checkStat (stat, path, options) {
+  if (!stat.isSymbolicLink() && !stat.isFile()) {
+    return false
+  }
+  return checkPathExt(path, options)
+}
+
+function isexe (path, options, cb) {
+  fs.stat(path, function (er, stat) {
+    cb(er, er ? false : checkStat(stat, path, options))
+  })
+}
+
+function sync (path, options) {
+  return checkStat(fs.statSync(path), path, options)
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/merge-stream/index.js":
+/*!********************************************!*\
+  !*** ./node_modules/merge-stream/index.js ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+const { PassThrough } = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'stream'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+module.exports = function (/*streams...*/) {
+  var sources = []
+  var output  = new PassThrough({objectMode: true})
+
+  output.setMaxListeners(0)
+
+  output.add = add
+  output.isEmpty = isEmpty
+
+  output.on('unpipe', remove)
+
+  Array.prototype.slice.call(arguments).forEach(add)
+
+  return output
+
+  function add (source) {
+    if (Array.isArray(source)) {
+      source.forEach(add)
+      return this
+    }
+
+    sources.push(source);
+    source.once('end', remove.bind(null, source))
+    source.once('error', output.emit.bind(output, 'error'))
+    source.pipe(output, {end: false})
+    return this
+  }
+
+  function isEmpty () {
+    return sources.length == 0;
+  }
+
+  function remove (source) {
+    sources = sources.filter(function (it) { return it !== source })
+    if (!sources.length && output.readable) { output.end() }
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/mimic-fn/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/mimic-fn/index.js ***!
+  \****************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+const mimicFn = (to, from) => {
+	for (const prop of Reflect.ownKeys(from)) {
+		Object.defineProperty(to, prop, Object.getOwnPropertyDescriptor(from, prop));
+	}
+
+	return to;
+};
+
+module.exports = mimicFn;
+// TODO: Remove this for the next major release
+module.exports["default"] = mimicFn;
+
+
+/***/ }),
+
+/***/ "./node_modules/npm-run-path/index.js":
+/*!********************************************!*\
+  !*** ./node_modules/npm-run-path/index.js ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+const path = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'path'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+const pathKey = __webpack_require__(/*! path-key */ "./node_modules/path-key/index.js");
+
+const npmRunPath = options => {
+	options = {
+		cwd: process.cwd(),
+		path: process.env[pathKey()],
+		execPath: process.execPath,
+		...options
+	};
+
+	let previous;
+	let cwdPath = path.resolve(options.cwd);
+	const result = [];
+
+	while (previous !== cwdPath) {
+		result.push(path.join(cwdPath, 'node_modules/.bin'));
+		previous = cwdPath;
+		cwdPath = path.resolve(cwdPath, '..');
+	}
+
+	// Ensure the running `node` binary is used
+	const execPathDir = path.resolve(options.cwd, options.execPath, '..');
+	result.push(execPathDir);
+
+	return result.concat(options.path).join(path.delimiter);
+};
+
+module.exports = npmRunPath;
+// TODO: Remove this for the next major release
+module.exports["default"] = npmRunPath;
+
+module.exports.env = options => {
+	options = {
+		env: process.env,
+		...options
+	};
+
+	const env = {...options.env};
+	const path = pathKey({env});
+
+	options.path = env[path];
+	env[path] = module.exports(options);
+
+	return env;
+};
+
 
 /***/ }),
 
@@ -126,6 +4255,7 @@ var TestComp = function TestComp(_ref) {
   \*********************************************/
 /***/ ((module) => {
 
+"use strict";
 /*
 object-assign
 (c) Sindre Sorhus
@@ -220,12 +4350,95 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 /***/ }),
 
+/***/ "./node_modules/onetime/index.js":
+/*!***************************************!*\
+  !*** ./node_modules/onetime/index.js ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+const mimicFn = __webpack_require__(/*! mimic-fn */ "./node_modules/mimic-fn/index.js");
+
+const calledFunctions = new WeakMap();
+
+const onetime = (function_, options = {}) => {
+	if (typeof function_ !== 'function') {
+		throw new TypeError('Expected a function');
+	}
+
+	let returnValue;
+	let callCount = 0;
+	const functionName = function_.displayName || function_.name || '<anonymous>';
+
+	const onetime = function (...arguments_) {
+		calledFunctions.set(onetime, ++callCount);
+
+		if (callCount === 1) {
+			returnValue = function_.apply(this, arguments_);
+			function_ = null;
+		} else if (options.throw === true) {
+			throw new Error(`Function \`${functionName}\` can only be called once`);
+		}
+
+		return returnValue;
+	};
+
+	mimicFn(onetime, function_);
+	calledFunctions.set(onetime, callCount);
+
+	return onetime;
+};
+
+module.exports = onetime;
+// TODO: Remove this for the next major release
+module.exports["default"] = onetime;
+
+module.exports.callCount = function_ => {
+	if (!calledFunctions.has(function_)) {
+		throw new Error(`The given function \`${function_.name}\` is not wrapped by the \`onetime\` package`);
+	}
+
+	return calledFunctions.get(function_);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/path-key/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/path-key/index.js ***!
+  \****************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+const pathKey = (options = {}) => {
+	const environment = options.env || process.env;
+	const platform = options.platform || process.platform;
+
+	if (platform !== 'win32') {
+		return 'PATH';
+	}
+
+	return Object.keys(environment).reverse().find(key => key.toUpperCase() === 'PATH') || 'Path';
+};
+
+module.exports = pathKey;
+// TODO: Remove this for the next major release
+module.exports["default"] = pathKey;
+
+
+/***/ }),
+
 /***/ "./node_modules/react-dom/cjs/react-dom.development.js":
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/cjs/react-dom.development.js ***!
   \*************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
+"use strict";
 /** @license React v17.0.2
  * react-dom.development.js
  *
@@ -26493,6 +30706,7 @@ exports.version = ReactVersion;
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 function checkDCE() {
@@ -26536,6 +30750,7 @@ if (false) {} else {
   \*****************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
+"use strict";
 /** @license React v17.0.2
  * react.development.js
  *
@@ -28879,6 +33094,7 @@ exports.version = ReactVersion;
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 if (false) {} else {
@@ -28894,6 +33110,7 @@ if (false) {} else {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
+"use strict";
 /** @license React v0.20.2
  * scheduler-tracing.development.js
  *
@@ -29251,6 +33468,7 @@ exports.unstable_wrap = unstable_wrap;
   \*************************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
+"use strict";
 /** @license React v0.20.2
  * scheduler.development.js
  *
@@ -29907,6 +34125,7 @@ exports.unstable_wrapCallback = unstable_wrapCallback;
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 if (false) {} else {
@@ -29922,12 +34141,3120 @@ if (false) {} else {
   \*******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ "./node_modules/scheduler/cjs/scheduler-tracing.development.js");
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/shebang-command/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/shebang-command/index.js ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+const shebangRegex = __webpack_require__(/*! shebang-regex */ "./node_modules/shebang-regex/index.js");
+
+module.exports = (string = '') => {
+	const match = string.match(shebangRegex);
+
+	if (!match) {
+		return null;
+	}
+
+	const [path, argument] = match[0].replace(/#! ?/, '').split(' ');
+	const binary = path.split('/').pop();
+
+	if (binary === 'env') {
+		return argument;
+	}
+
+	return argument ? `${binary} ${argument}` : binary;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/shebang-regex/index.js":
+/*!*********************************************!*\
+  !*** ./node_modules/shebang-regex/index.js ***!
+  \*********************************************/
+/***/ ((module) => {
+
+"use strict";
+
+module.exports = /^#!(.*)/;
+
+
+/***/ }),
+
+/***/ "./node_modules/signal-exit/index.js":
+/*!*******************************************!*\
+  !*** ./node_modules/signal-exit/index.js ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// Note: since nyc uses this module to output coverage, any lines
+// that are in the direct sync flow of nyc's outputCoverage are
+// ignored, since we can never get coverage for them.
+// grab a reference to node's real process object right away
+var process = __webpack_require__.g.process
+
+const processOk = function (process) {
+  return process &&
+    typeof process === 'object' &&
+    typeof process.removeListener === 'function' &&
+    typeof process.emit === 'function' &&
+    typeof process.reallyExit === 'function' &&
+    typeof process.listeners === 'function' &&
+    typeof process.kill === 'function' &&
+    typeof process.pid === 'number' &&
+    typeof process.on === 'function'
+}
+
+// some kind of non-node environment, just no-op
+/* istanbul ignore if */
+if (!processOk(process)) {
+  module.exports = function () {
+    return function () {}
+  }
+} else {
+  var assert = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'assert'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))
+  var signals = __webpack_require__(/*! ./signals.js */ "./node_modules/signal-exit/signals.js")
+  var isWin = /^win/i.test(process.platform)
+
+  var EE = __webpack_require__(/*! events */ "./node_modules/events/events.js")
+  /* istanbul ignore if */
+  if (typeof EE !== 'function') {
+    EE = EE.EventEmitter
+  }
+
+  var emitter
+  if (process.__signal_exit_emitter__) {
+    emitter = process.__signal_exit_emitter__
+  } else {
+    emitter = process.__signal_exit_emitter__ = new EE()
+    emitter.count = 0
+    emitter.emitted = {}
+  }
+
+  // Because this emitter is a global, we have to check to see if a
+  // previous version of this library failed to enable infinite listeners.
+  // I know what you're about to say.  But literally everything about
+  // signal-exit is a compromise with evil.  Get used to it.
+  if (!emitter.infinite) {
+    emitter.setMaxListeners(Infinity)
+    emitter.infinite = true
+  }
+
+  module.exports = function (cb, opts) {
+    /* istanbul ignore if */
+    if (!processOk(__webpack_require__.g.process)) {
+      return function () {}
+    }
+    assert.equal(typeof cb, 'function', 'a callback must be provided for exit handler')
+
+    if (loaded === false) {
+      load()
+    }
+
+    var ev = 'exit'
+    if (opts && opts.alwaysLast) {
+      ev = 'afterexit'
+    }
+
+    var remove = function () {
+      emitter.removeListener(ev, cb)
+      if (emitter.listeners('exit').length === 0 &&
+          emitter.listeners('afterexit').length === 0) {
+        unload()
+      }
+    }
+    emitter.on(ev, cb)
+
+    return remove
+  }
+
+  var unload = function unload () {
+    if (!loaded || !processOk(__webpack_require__.g.process)) {
+      return
+    }
+    loaded = false
+
+    signals.forEach(function (sig) {
+      try {
+        process.removeListener(sig, sigListeners[sig])
+      } catch (er) {}
+    })
+    process.emit = originalProcessEmit
+    process.reallyExit = originalProcessReallyExit
+    emitter.count -= 1
+  }
+  module.exports.unload = unload
+
+  var emit = function emit (event, code, signal) {
+    /* istanbul ignore if */
+    if (emitter.emitted[event]) {
+      return
+    }
+    emitter.emitted[event] = true
+    emitter.emit(event, code, signal)
+  }
+
+  // { <signal>: <listener fn>, ... }
+  var sigListeners = {}
+  signals.forEach(function (sig) {
+    sigListeners[sig] = function listener () {
+      /* istanbul ignore if */
+      if (!processOk(__webpack_require__.g.process)) {
+        return
+      }
+      // If there are no other listeners, an exit is coming!
+      // Simplest way: remove us and then re-send the signal.
+      // We know that this will kill the process, so we can
+      // safely emit now.
+      var listeners = process.listeners(sig)
+      if (listeners.length === emitter.count) {
+        unload()
+        emit('exit', null, sig)
+        /* istanbul ignore next */
+        emit('afterexit', null, sig)
+        /* istanbul ignore next */
+        if (isWin && sig === 'SIGHUP') {
+          // "SIGHUP" throws an `ENOSYS` error on Windows,
+          // so use a supported signal instead
+          sig = 'SIGINT'
+        }
+        /* istanbul ignore next */
+        process.kill(process.pid, sig)
+      }
+    }
+  })
+
+  module.exports.signals = function () {
+    return signals
+  }
+
+  var loaded = false
+
+  var load = function load () {
+    if (loaded || !processOk(__webpack_require__.g.process)) {
+      return
+    }
+    loaded = true
+
+    // This is the number of onSignalExit's that are in play.
+    // It's important so that we can count the correct number of
+    // listeners on signals, and don't wait for the other one to
+    // handle it instead of us.
+    emitter.count += 1
+
+    signals = signals.filter(function (sig) {
+      try {
+        process.on(sig, sigListeners[sig])
+        return true
+      } catch (er) {
+        return false
+      }
+    })
+
+    process.emit = processEmit
+    process.reallyExit = processReallyExit
+  }
+  module.exports.load = load
+
+  var originalProcessReallyExit = process.reallyExit
+  var processReallyExit = function processReallyExit (code) {
+    /* istanbul ignore if */
+    if (!processOk(__webpack_require__.g.process)) {
+      return
+    }
+    process.exitCode = code || /* istanbul ignore next */ 0
+    emit('exit', process.exitCode, null)
+    /* istanbul ignore next */
+    emit('afterexit', process.exitCode, null)
+    /* istanbul ignore next */
+    originalProcessReallyExit.call(process, process.exitCode)
+  }
+
+  var originalProcessEmit = process.emit
+  var processEmit = function processEmit (ev, arg) {
+    if (ev === 'exit' && processOk(__webpack_require__.g.process)) {
+      /* istanbul ignore else */
+      if (arg !== undefined) {
+        process.exitCode = arg
+      }
+      var ret = originalProcessEmit.apply(this, arguments)
+      /* istanbul ignore next */
+      emit('exit', process.exitCode, null)
+      /* istanbul ignore next */
+      emit('afterexit', process.exitCode, null)
+      /* istanbul ignore next */
+      return ret
+    } else {
+      return originalProcessEmit.apply(this, arguments)
+    }
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/signal-exit/signals.js":
+/*!*********************************************!*\
+  !*** ./node_modules/signal-exit/signals.js ***!
+  \*********************************************/
+/***/ ((module) => {
+
+// This is not the set of all possible signals.
+//
+// It IS, however, the set of all signals that trigger
+// an exit on either Linux or BSD systems.  Linux is a
+// superset of the signal names supported on BSD, and
+// the unknown signals just fail to register, so we can
+// catch that easily enough.
+//
+// Don't bother with SIGKILL.  It's uncatchable, which
+// means that we can't fire any callbacks anyway.
+//
+// If a user does happen to register a handler on a non-
+// fatal signal like SIGWINCH or something, and then
+// exit, it'll end up firing `process.emit('exit')`, so
+// the handler will be fired anyway.
+//
+// SIGBUS, SIGFPE, SIGSEGV and SIGILL, when not raised
+// artificially, inherently leave the process in a
+// state from which it is not safe to try and enter JS
+// listeners.
+module.exports = [
+  'SIGABRT',
+  'SIGALRM',
+  'SIGHUP',
+  'SIGINT',
+  'SIGTERM'
+]
+
+if (process.platform !== 'win32') {
+  module.exports.push(
+    'SIGVTALRM',
+    'SIGXCPU',
+    'SIGXFSZ',
+    'SIGUSR2',
+    'SIGTRAP',
+    'SIGSYS',
+    'SIGQUIT',
+    'SIGIOT'
+    // should detect profiler and enable/disable accordingly.
+    // see #21
+    // 'SIGPROF'
+  )
+}
+
+if (process.platform === 'linux') {
+  module.exports.push(
+    'SIGIO',
+    'SIGPOLL',
+    'SIGPWR',
+    'SIGSTKFLT',
+    'SIGUNUSED'
+  )
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/strip-final-newline/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/strip-final-newline/index.js ***!
+  \***************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = input => {
+	const LF = typeof input === 'string' ? '\n' : '\n'.charCodeAt();
+	const CR = typeof input === 'string' ? '\r' : '\r'.charCodeAt();
+
+	if (input[input.length - 1] === LF) {
+		input = input.slice(0, input.length - 1);
+	}
+
+	if (input[input.length - 1] === CR) {
+		input = input.slice(0, input.length - 1);
+	}
+
+	return input;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/Promise.js":
+/*!******************************************!*\
+  !*** ./node_modules/when/lib/Promise.js ***!
+  \******************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function (require) {
+
+	var makePromise = __webpack_require__(/*! ./makePromise */ "./node_modules/when/lib/makePromise.js");
+	var Scheduler = __webpack_require__(/*! ./Scheduler */ "./node_modules/when/lib/Scheduler.js");
+	var async = (__webpack_require__(/*! ./env */ "./node_modules/when/lib/env.js").asap);
+
+	return makePromise({
+		scheduler: new Scheduler(async)
+	});
+
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+})(__webpack_require__.amdD);
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/Scheduler.js":
+/*!********************************************!*\
+  !*** ./node_modules/when/lib/Scheduler.js ***!
+  \********************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+
+	// Credit to Twisol (https://github.com/Twisol) for suggesting
+	// this type of extensible queue + trampoline approach for next-tick conflation.
+
+	/**
+	 * Async task scheduler
+	 * @param {function} async function to schedule a single async function
+	 * @constructor
+	 */
+	function Scheduler(async) {
+		this._async = async;
+		this._running = false;
+
+		this._queue = this;
+		this._queueLen = 0;
+		this._afterQueue = {};
+		this._afterQueueLen = 0;
+
+		var self = this;
+		this.drain = function() {
+			self._drain();
+		};
+	}
+
+	/**
+	 * Enqueue a task
+	 * @param {{ run:function }} task
+	 */
+	Scheduler.prototype.enqueue = function(task) {
+		this._queue[this._queueLen++] = task;
+		this.run();
+	};
+
+	/**
+	 * Enqueue a task to run after the main task queue
+	 * @param {{ run:function }} task
+	 */
+	Scheduler.prototype.afterQueue = function(task) {
+		this._afterQueue[this._afterQueueLen++] = task;
+		this.run();
+	};
+
+	Scheduler.prototype.run = function() {
+		if (!this._running) {
+			this._running = true;
+			this._async(this.drain);
+		}
+	};
+
+	/**
+	 * Drain the handler queue entirely, and then the after queue
+	 */
+	Scheduler.prototype._drain = function() {
+		var i = 0;
+		for (; i < this._queueLen; ++i) {
+			this._queue[i].run();
+			this._queue[i] = void 0;
+		}
+
+		this._queueLen = 0;
+		this._running = false;
+
+		for (i = 0; i < this._afterQueueLen; ++i) {
+			this._afterQueue[i].run();
+			this._afterQueue[i] = void 0;
+		}
+
+		this._afterQueueLen = 0;
+	};
+
+	return Scheduler;
+
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/TimeoutError.js":
+/*!***********************************************!*\
+  !*** ./node_modules/when/lib/TimeoutError.js ***!
+  \***********************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+
+	/**
+	 * Custom error type for promises rejected by promise.timeout
+	 * @param {string} message
+	 * @constructor
+	 */
+	function TimeoutError (message) {
+		Error.call(this);
+		this.message = message;
+		this.name = TimeoutError.name;
+		if (typeof Error.captureStackTrace === 'function') {
+			Error.captureStackTrace(this, TimeoutError);
+		}
+	}
+
+	TimeoutError.prototype = Object.create(Error.prototype);
+	TimeoutError.prototype.constructor = TimeoutError;
+
+	return TimeoutError;
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/apply.js":
+/*!****************************************!*\
+  !*** ./node_modules/when/lib/apply.js ***!
+  \****************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+
+	makeApply.tryCatchResolve = tryCatchResolve;
+
+	return makeApply;
+
+	function makeApply(Promise, call) {
+		if(arguments.length < 2) {
+			call = tryCatchResolve;
+		}
+
+		return apply;
+
+		function apply(f, thisArg, args) {
+			var p = Promise._defer();
+			var l = args.length;
+			var params = new Array(l);
+			callAndResolve({ f:f, thisArg:thisArg, args:args, params:params, i:l-1, call:call }, p._handler);
+
+			return p;
+		}
+
+		function callAndResolve(c, h) {
+			if(c.i < 0) {
+				return call(c.f, c.thisArg, c.params, h);
+			}
+
+			var handler = Promise._handler(c.args[c.i]);
+			handler.fold(callAndResolveNext, c, void 0, h);
+		}
+
+		function callAndResolveNext(c, x, h) {
+			c.params[c.i] = x;
+			c.i -= 1;
+			callAndResolve(c, h);
+		}
+	}
+
+	function tryCatchResolve(f, thisArg, args, resolver) {
+		try {
+			resolver.resolve(f.apply(thisArg, args));
+		} catch(e) {
+			resolver.reject(e);
+		}
+	}
+
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/decorators/array.js":
+/*!***************************************************!*\
+  !*** ./node_modules/when/lib/decorators/array.js ***!
+  \***************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require) {
+
+	var state = __webpack_require__(/*! ../state */ "./node_modules/when/lib/state.js");
+	var applier = __webpack_require__(/*! ../apply */ "./node_modules/when/lib/apply.js");
+
+	return function array(Promise) {
+
+		var applyFold = applier(Promise);
+		var toPromise = Promise.resolve;
+		var all = Promise.all;
+
+		var ar = Array.prototype.reduce;
+		var arr = Array.prototype.reduceRight;
+		var slice = Array.prototype.slice;
+
+		// Additional array combinators
+
+		Promise.any = any;
+		Promise.some = some;
+		Promise.settle = settle;
+
+		Promise.map = map;
+		Promise.filter = filter;
+		Promise.reduce = reduce;
+		Promise.reduceRight = reduceRight;
+
+		/**
+		 * When this promise fulfills with an array, do
+		 * onFulfilled.apply(void 0, array)
+		 * @param {function} onFulfilled function to apply
+		 * @returns {Promise} promise for the result of applying onFulfilled
+		 */
+		Promise.prototype.spread = function(onFulfilled) {
+			return this.then(all).then(function(array) {
+				return onFulfilled.apply(this, array);
+			});
+		};
+
+		return Promise;
+
+		/**
+		 * One-winner competitive race.
+		 * Return a promise that will fulfill when one of the promises
+		 * in the input array fulfills, or will reject when all promises
+		 * have rejected.
+		 * @param {array} promises
+		 * @returns {Promise} promise for the first fulfilled value
+		 */
+		function any(promises) {
+			var p = Promise._defer();
+			var resolver = p._handler;
+			var l = promises.length>>>0;
+
+			var pending = l;
+			var errors = [];
+
+			for (var h, x, i = 0; i < l; ++i) {
+				x = promises[i];
+				if(x === void 0 && !(i in promises)) {
+					--pending;
+					continue;
+				}
+
+				h = Promise._handler(x);
+				if(h.state() > 0) {
+					resolver.become(h);
+					Promise._visitRemaining(promises, i, h);
+					break;
+				} else {
+					h.visit(resolver, handleFulfill, handleReject);
+				}
+			}
+
+			if(pending === 0) {
+				resolver.reject(new RangeError('any(): array must not be empty'));
+			}
+
+			return p;
+
+			function handleFulfill(x) {
+				/*jshint validthis:true*/
+				errors = null;
+				this.resolve(x); // this === resolver
+			}
+
+			function handleReject(e) {
+				/*jshint validthis:true*/
+				if(this.resolved) { // this === resolver
+					return;
+				}
+
+				errors.push(e);
+				if(--pending === 0) {
+					this.reject(errors);
+				}
+			}
+		}
+
+		/**
+		 * N-winner competitive race
+		 * Return a promise that will fulfill when n input promises have
+		 * fulfilled, or will reject when it becomes impossible for n
+		 * input promises to fulfill (ie when promises.length - n + 1
+		 * have rejected)
+		 * @param {array} promises
+		 * @param {number} n
+		 * @returns {Promise} promise for the earliest n fulfillment values
+		 *
+		 * @deprecated
+		 */
+		function some(promises, n) {
+			/*jshint maxcomplexity:7*/
+			var p = Promise._defer();
+			var resolver = p._handler;
+
+			var results = [];
+			var errors = [];
+
+			var l = promises.length>>>0;
+			var nFulfill = 0;
+			var nReject;
+			var x, i; // reused in both for() loops
+
+			// First pass: count actual array items
+			for(i=0; i<l; ++i) {
+				x = promises[i];
+				if(x === void 0 && !(i in promises)) {
+					continue;
+				}
+				++nFulfill;
+			}
+
+			// Compute actual goals
+			n = Math.max(n, 0);
+			nReject = (nFulfill - n + 1);
+			nFulfill = Math.min(n, nFulfill);
+
+			if(n > nFulfill) {
+				resolver.reject(new RangeError('some(): array must contain at least '
+				+ n + ' item(s), but had ' + nFulfill));
+			} else if(nFulfill === 0) {
+				resolver.resolve(results);
+			}
+
+			// Second pass: observe each array item, make progress toward goals
+			for(i=0; i<l; ++i) {
+				x = promises[i];
+				if(x === void 0 && !(i in promises)) {
+					continue;
+				}
+
+				Promise._handler(x).visit(resolver, fulfill, reject, resolver.notify);
+			}
+
+			return p;
+
+			function fulfill(x) {
+				/*jshint validthis:true*/
+				if(this.resolved) { // this === resolver
+					return;
+				}
+
+				results.push(x);
+				if(--nFulfill === 0) {
+					errors = null;
+					this.resolve(results);
+				}
+			}
+
+			function reject(e) {
+				/*jshint validthis:true*/
+				if(this.resolved) { // this === resolver
+					return;
+				}
+
+				errors.push(e);
+				if(--nReject === 0) {
+					results = null;
+					this.reject(errors);
+				}
+			}
+		}
+
+		/**
+		 * Apply f to the value of each promise in a list of promises
+		 * and return a new list containing the results.
+		 * @param {array} promises
+		 * @param {function(x:*, index:Number):*} f mapping function
+		 * @returns {Promise}
+		 */
+		function map(promises, f) {
+			return Promise._traverse(f, promises);
+		}
+
+		/**
+		 * Filter the provided array of promises using the provided predicate.  Input may
+		 * contain promises and values
+		 * @param {Array} promises array of promises and values
+		 * @param {function(x:*, index:Number):boolean} predicate filtering predicate.
+		 *  Must return truthy (or promise for truthy) for items to retain.
+		 * @returns {Promise} promise that will fulfill with an array containing all items
+		 *  for which predicate returned truthy.
+		 */
+		function filter(promises, predicate) {
+			var a = slice.call(promises);
+			return Promise._traverse(predicate, a).then(function(keep) {
+				return filterSync(a, keep);
+			});
+		}
+
+		function filterSync(promises, keep) {
+			// Safe because we know all promises have fulfilled if we've made it this far
+			var l = keep.length;
+			var filtered = new Array(l);
+			for(var i=0, j=0; i<l; ++i) {
+				if(keep[i]) {
+					filtered[j++] = Promise._handler(promises[i]).value;
+				}
+			}
+			filtered.length = j;
+			return filtered;
+
+		}
+
+		/**
+		 * Return a promise that will always fulfill with an array containing
+		 * the outcome states of all input promises.  The returned promise
+		 * will never reject.
+		 * @param {Array} promises
+		 * @returns {Promise} promise for array of settled state descriptors
+		 */
+		function settle(promises) {
+			return all(promises.map(settleOne));
+		}
+
+		function settleOne(p) {
+			// Optimize the case where we get an already-resolved when.js promise
+			//  by extracting its state:
+			var handler;
+			if (p instanceof Promise) {
+				// This is our own Promise type and we can reach its handler internals:
+				handler = p._handler.join();
+			}
+			if((handler && handler.state() === 0) || !handler) {
+				// Either still pending, or not a Promise at all:
+				return toPromise(p).then(state.fulfilled, state.rejected);
+			}
+
+			// The promise is our own, but it is already resolved. Take a shortcut.
+			// Since we're not actually handling the resolution, we need to disable
+			// rejection reporting.
+			handler._unreport();
+			return state.inspect(handler);
+		}
+
+		/**
+		 * Traditional reduce function, similar to `Array.prototype.reduce()`, but
+		 * input may contain promises and/or values, and reduceFunc
+		 * may return either a value or a promise, *and* initialValue may
+		 * be a promise for the starting value.
+		 * @param {Array|Promise} promises array or promise for an array of anything,
+		 *      may contain a mix of promises and values.
+		 * @param {function(accumulated:*, x:*, index:Number):*} f reduce function
+		 * @returns {Promise} that will resolve to the final reduced value
+		 */
+		function reduce(promises, f /*, initialValue */) {
+			return arguments.length > 2 ? ar.call(promises, liftCombine(f), arguments[2])
+					: ar.call(promises, liftCombine(f));
+		}
+
+		/**
+		 * Traditional reduce function, similar to `Array.prototype.reduceRight()`, but
+		 * input may contain promises and/or values, and reduceFunc
+		 * may return either a value or a promise, *and* initialValue may
+		 * be a promise for the starting value.
+		 * @param {Array|Promise} promises array or promise for an array of anything,
+		 *      may contain a mix of promises and values.
+		 * @param {function(accumulated:*, x:*, index:Number):*} f reduce function
+		 * @returns {Promise} that will resolve to the final reduced value
+		 */
+		function reduceRight(promises, f /*, initialValue */) {
+			return arguments.length > 2 ? arr.call(promises, liftCombine(f), arguments[2])
+					: arr.call(promises, liftCombine(f));
+		}
+
+		function liftCombine(f) {
+			return function(z, x, i) {
+				return applyFold(f, void 0, [z,x,i]);
+			};
+		}
+	};
+
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/decorators/flow.js":
+/*!**************************************************!*\
+  !*** ./node_modules/when/lib/decorators/flow.js ***!
+  \**************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+
+	return function flow(Promise) {
+
+		var resolve = Promise.resolve;
+		var reject = Promise.reject;
+		var origCatch = Promise.prototype['catch'];
+
+		/**
+		 * Handle the ultimate fulfillment value or rejection reason, and assume
+		 * responsibility for all errors.  If an error propagates out of result
+		 * or handleFatalError, it will be rethrown to the host, resulting in a
+		 * loud stack track on most platforms and a crash on some.
+		 * @param {function?} onResult
+		 * @param {function?} onError
+		 * @returns {undefined}
+		 */
+		Promise.prototype.done = function(onResult, onError) {
+			this._handler.visit(this._handler.receiver, onResult, onError);
+		};
+
+		/**
+		 * Add Error-type and predicate matching to catch.  Examples:
+		 * promise.catch(TypeError, handleTypeError)
+		 *   .catch(predicate, handleMatchedErrors)
+		 *   .catch(handleRemainingErrors)
+		 * @param onRejected
+		 * @returns {*}
+		 */
+		Promise.prototype['catch'] = Promise.prototype.otherwise = function(onRejected) {
+			if (arguments.length < 2) {
+				return origCatch.call(this, onRejected);
+			}
+
+			if(typeof onRejected !== 'function') {
+				return this.ensure(rejectInvalidPredicate);
+			}
+
+			return origCatch.call(this, createCatchFilter(arguments[1], onRejected));
+		};
+
+		/**
+		 * Wraps the provided catch handler, so that it will only be called
+		 * if the predicate evaluates truthy
+		 * @param {?function} handler
+		 * @param {function} predicate
+		 * @returns {function} conditional catch handler
+		 */
+		function createCatchFilter(handler, predicate) {
+			return function(e) {
+				return evaluatePredicate(e, predicate)
+					? handler.call(this, e)
+					: reject(e);
+			};
+		}
+
+		/**
+		 * Ensures that onFulfilledOrRejected will be called regardless of whether
+		 * this promise is fulfilled or rejected.  onFulfilledOrRejected WILL NOT
+		 * receive the promises' value or reason.  Any returned value will be disregarded.
+		 * onFulfilledOrRejected may throw or return a rejected promise to signal
+		 * an additional error.
+		 * @param {function} handler handler to be called regardless of
+		 *  fulfillment or rejection
+		 * @returns {Promise}
+		 */
+		Promise.prototype['finally'] = Promise.prototype.ensure = function(handler) {
+			if(typeof handler !== 'function') {
+				return this;
+			}
+
+			return this.then(function(x) {
+				return runSideEffect(handler, this, identity, x);
+			}, function(e) {
+				return runSideEffect(handler, this, reject, e);
+			});
+		};
+
+		function runSideEffect (handler, thisArg, propagate, value) {
+			var result = handler.call(thisArg);
+			return maybeThenable(result)
+				? propagateValue(result, propagate, value)
+				: propagate(value);
+		}
+
+		function propagateValue (result, propagate, x) {
+			return resolve(result).then(function () {
+				return propagate(x);
+			});
+		}
+
+		/**
+		 * Recover from a failure by returning a defaultValue.  If defaultValue
+		 * is a promise, it's fulfillment value will be used.  If defaultValue is
+		 * a promise that rejects, the returned promise will reject with the
+		 * same reason.
+		 * @param {*} defaultValue
+		 * @returns {Promise} new promise
+		 */
+		Promise.prototype['else'] = Promise.prototype.orElse = function(defaultValue) {
+			return this.then(void 0, function() {
+				return defaultValue;
+			});
+		};
+
+		/**
+		 * Shortcut for .then(function() { return value; })
+		 * @param  {*} value
+		 * @return {Promise} a promise that:
+		 *  - is fulfilled if value is not a promise, or
+		 *  - if value is a promise, will fulfill with its value, or reject
+		 *    with its reason.
+		 */
+		Promise.prototype['yield'] = function(value) {
+			return this.then(function() {
+				return value;
+			});
+		};
+
+		/**
+		 * Runs a side effect when this promise fulfills, without changing the
+		 * fulfillment value.
+		 * @param {function} onFulfilledSideEffect
+		 * @returns {Promise}
+		 */
+		Promise.prototype.tap = function(onFulfilledSideEffect) {
+			return this.then(onFulfilledSideEffect)['yield'](this);
+		};
+
+		return Promise;
+	};
+
+	function rejectInvalidPredicate() {
+		throw new TypeError('catch predicate must be a function');
+	}
+
+	function evaluatePredicate(e, predicate) {
+		return isError(predicate) ? e instanceof predicate : predicate(e);
+	}
+
+	function isError(predicate) {
+		return predicate === Error
+			|| (predicate != null && predicate.prototype instanceof Error);
+	}
+
+	function maybeThenable(x) {
+		return (typeof x === 'object' || typeof x === 'function') && x !== null;
+	}
+
+	function identity(x) {
+		return x;
+	}
+
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/decorators/fold.js":
+/*!**************************************************!*\
+  !*** ./node_modules/when/lib/decorators/fold.js ***!
+  \**************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+/** @author Jeff Escalante */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+
+	return function fold(Promise) {
+
+		Promise.prototype.fold = function(f, z) {
+			var promise = this._beget();
+
+			this._handler.fold(function(z, x, to) {
+				Promise._handler(z).fold(function(x, z, to) {
+					to.resolve(f.call(this, z, x));
+				}, x, this, to);
+			}, z, promise._handler.receiver, promise._handler);
+
+			return promise;
+		};
+
+		return Promise;
+	};
+
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/decorators/inspect.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/when/lib/decorators/inspect.js ***!
+  \*****************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require) {
+
+	var inspect = (__webpack_require__(/*! ../state */ "./node_modules/when/lib/state.js").inspect);
+
+	return function inspection(Promise) {
+
+		Promise.prototype.inspect = function() {
+			return inspect(Promise._handler(this));
+		};
+
+		return Promise;
+	};
+
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/decorators/iterate.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/when/lib/decorators/iterate.js ***!
+  \*****************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+
+	return function generate(Promise) {
+
+		var resolve = Promise.resolve;
+
+		Promise.iterate = iterate;
+		Promise.unfold = unfold;
+
+		return Promise;
+
+		/**
+		 * @deprecated Use github.com/cujojs/most streams and most.iterate
+		 * Generate a (potentially infinite) stream of promised values:
+		 * x, f(x), f(f(x)), etc. until condition(x) returns true
+		 * @param {function} f function to generate a new x from the previous x
+		 * @param {function} condition function that, given the current x, returns
+		 *  truthy when the iterate should stop
+		 * @param {function} handler function to handle the value produced by f
+		 * @param {*|Promise} x starting value, may be a promise
+		 * @return {Promise} the result of the last call to f before
+		 *  condition returns true
+		 */
+		function iterate(f, condition, handler, x) {
+			return unfold(function(x) {
+				return [x, f(x)];
+			}, condition, handler, x);
+		}
+
+		/**
+		 * @deprecated Use github.com/cujojs/most streams and most.unfold
+		 * Generate a (potentially infinite) stream of promised values
+		 * by applying handler(generator(seed)) iteratively until
+		 * condition(seed) returns true.
+		 * @param {function} unspool function that generates a [value, newSeed]
+		 *  given a seed.
+		 * @param {function} condition function that, given the current seed, returns
+		 *  truthy when the unfold should stop
+		 * @param {function} handler function to handle the value produced by unspool
+		 * @param x {*|Promise} starting value, may be a promise
+		 * @return {Promise} the result of the last value produced by unspool before
+		 *  condition returns true
+		 */
+		function unfold(unspool, condition, handler, x) {
+			return resolve(x).then(function(seed) {
+				return resolve(condition(seed)).then(function(done) {
+					return done ? seed : resolve(unspool(seed)).spread(next);
+				});
+			});
+
+			function next(item, newSeed) {
+				return resolve(handler(item)).then(function() {
+					return unfold(unspool, condition, handler, newSeed);
+				});
+			}
+		}
+	};
+
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/decorators/progress.js":
+/*!******************************************************!*\
+  !*** ./node_modules/when/lib/decorators/progress.js ***!
+  \******************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+
+	return function progress(Promise) {
+
+		/**
+		 * @deprecated
+		 * Register a progress handler for this promise
+		 * @param {function} onProgress
+		 * @returns {Promise}
+		 */
+		Promise.prototype.progress = function(onProgress) {
+			return this.then(void 0, void 0, onProgress);
+		};
+
+		return Promise;
+	};
+
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/decorators/timed.js":
+/*!***************************************************!*\
+  !*** ./node_modules/when/lib/decorators/timed.js ***!
+  \***************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require) {
+
+	var env = __webpack_require__(/*! ../env */ "./node_modules/when/lib/env.js");
+	var TimeoutError = __webpack_require__(/*! ../TimeoutError */ "./node_modules/when/lib/TimeoutError.js");
+
+	function setTimeout(f, ms, x, y) {
+		return env.setTimer(function() {
+			f(x, y, ms);
+		}, ms);
+	}
+
+	return function timed(Promise) {
+		/**
+		 * Return a new promise whose fulfillment value is revealed only
+		 * after ms milliseconds
+		 * @param {number} ms milliseconds
+		 * @returns {Promise}
+		 */
+		Promise.prototype.delay = function(ms) {
+			var p = this._beget();
+			this._handler.fold(handleDelay, ms, void 0, p._handler);
+			return p;
+		};
+
+		function handleDelay(ms, x, h) {
+			setTimeout(resolveDelay, ms, x, h);
+		}
+
+		function resolveDelay(x, h) {
+			h.resolve(x);
+		}
+
+		/**
+		 * Return a new promise that rejects after ms milliseconds unless
+		 * this promise fulfills earlier, in which case the returned promise
+		 * fulfills with the same value.
+		 * @param {number} ms milliseconds
+		 * @param {Error|*=} reason optional rejection reason to use, defaults
+		 *   to a TimeoutError if not provided
+		 * @returns {Promise}
+		 */
+		Promise.prototype.timeout = function(ms, reason) {
+			var p = this._beget();
+			var h = p._handler;
+
+			var t = setTimeout(onTimeout, ms, reason, p._handler);
+
+			this._handler.visit(h,
+				function onFulfill(x) {
+					env.clearTimer(t);
+					this.resolve(x); // this = h
+				},
+				function onReject(x) {
+					env.clearTimer(t);
+					this.reject(x); // this = h
+				},
+				h.notify);
+
+			return p;
+		};
+
+		function onTimeout(reason, h, ms) {
+			var e = typeof reason === 'undefined'
+				? new TimeoutError('timed out after ' + ms + 'ms')
+				: reason;
+			h.reject(e);
+		}
+
+		return Promise;
+	};
+
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/decorators/unhandledRejection.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/when/lib/decorators/unhandledRejection.js ***!
+  \****************************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require) {
+
+	var setTimer = (__webpack_require__(/*! ../env */ "./node_modules/when/lib/env.js").setTimer);
+	var format = __webpack_require__(/*! ../format */ "./node_modules/when/lib/format.js");
+
+	return function unhandledRejection(Promise) {
+
+		var logError = noop;
+		var logInfo = noop;
+		var localConsole;
+
+		if(typeof console !== 'undefined') {
+			// Alias console to prevent things like uglify's drop_console option from
+			// removing console.log/error. Unhandled rejections fall into the same
+			// category as uncaught exceptions, and build tools shouldn't silence them.
+			localConsole = console;
+			logError = typeof localConsole.error !== 'undefined'
+				? function (e) { localConsole.error(e); }
+				: function (e) { localConsole.log(e); };
+
+			logInfo = typeof localConsole.info !== 'undefined'
+				? function (e) { localConsole.info(e); }
+				: function (e) { localConsole.log(e); };
+		}
+
+		Promise.onPotentiallyUnhandledRejection = function(rejection) {
+			enqueue(report, rejection);
+		};
+
+		Promise.onPotentiallyUnhandledRejectionHandled = function(rejection) {
+			enqueue(unreport, rejection);
+		};
+
+		Promise.onFatalRejection = function(rejection) {
+			enqueue(throwit, rejection.value);
+		};
+
+		var tasks = [];
+		var reported = [];
+		var running = null;
+
+		function report(r) {
+			if(!r.handled) {
+				reported.push(r);
+				logError('Potentially unhandled rejection [' + r.id + '] ' + format.formatError(r.value));
+			}
+		}
+
+		function unreport(r) {
+			var i = reported.indexOf(r);
+			if(i >= 0) {
+				reported.splice(i, 1);
+				logInfo('Handled previous rejection [' + r.id + '] ' + format.formatObject(r.value));
+			}
+		}
+
+		function enqueue(f, x) {
+			tasks.push(f, x);
+			if(running === null) {
+				running = setTimer(flush, 0);
+			}
+		}
+
+		function flush() {
+			running = null;
+			while(tasks.length > 0) {
+				tasks.shift()(tasks.shift());
+			}
+		}
+
+		return Promise;
+	};
+
+	function throwit(e) {
+		throw e;
+	}
+
+	function noop() {}
+
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/decorators/with.js":
+/*!**************************************************!*\
+  !*** ./node_modules/when/lib/decorators/with.js ***!
+  \**************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+
+	return function addWith(Promise) {
+		/**
+		 * Returns a promise whose handlers will be called with `this` set to
+		 * the supplied receiver.  Subsequent promises derived from the
+		 * returned promise will also have their handlers called with receiver
+		 * as `this`. Calling `with` with undefined or no arguments will return
+		 * a promise whose handlers will again be called in the usual Promises/A+
+		 * way (no `this`) thus safely undoing any previous `with` in the
+		 * promise chain.
+		 *
+		 * WARNING: Promises returned from `with`/`withThis` are NOT Promises/A+
+		 * compliant, specifically violating 2.2.5 (http://promisesaplus.com/#point-41)
+		 *
+		 * @param {object} receiver `this` value for all handlers attached to
+		 *  the returned promise.
+		 * @returns {Promise}
+		 */
+		Promise.prototype['with'] = Promise.prototype.withThis = function(receiver) {
+			var p = this._beget();
+			var child = p._handler;
+			child.receiver = receiver;
+			this._handler.chain(child, receiver);
+			return p;
+		};
+
+		return Promise;
+	};
+
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/env.js":
+/*!**************************************!*\
+  !*** ./node_modules/when/lib/env.js ***!
+  \**************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+/*global process,document,setTimeout,clearTimeout,MutationObserver,WebKitMutationObserver*/
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(require) {
+	/*jshint maxcomplexity:6*/
+
+	// Sniff "best" async scheduling option
+	// Prefer process.nextTick or MutationObserver, then check for
+	// setTimeout, and finally vertx, since its the only env that doesn't
+	// have setTimeout
+
+	var MutationObs;
+	var capturedSetTimeout = typeof setTimeout !== 'undefined' && setTimeout;
+
+	// Default env
+	var setTimer = function(f, ms) { return setTimeout(f, ms); };
+	var clearTimer = function(t) { return clearTimeout(t); };
+	var asap = function (f) { return capturedSetTimeout(f, 0); };
+
+	// Detect specific env
+	if (isNode()) { // Node
+		asap = function (f) { return process.nextTick(f); };
+
+	} else if (MutationObs = hasMutationObserver()) { // Modern browser
+		asap = initMutationObserver(MutationObs);
+
+	} else if (!capturedSetTimeout) { // vert.x
+		var vertxRequire = undefined;
+		var vertx = __webpack_require__(/*! vertx */ "?bfcf");
+		setTimer = function (f, ms) { return vertx.setTimer(ms, f); };
+		clearTimer = vertx.cancelTimer;
+		asap = vertx.runOnLoop || vertx.runOnContext;
+	}
+
+	return {
+		setTimer: setTimer,
+		clearTimer: clearTimer,
+		asap: asap
+	};
+
+	function isNode () {
+		return typeof process !== 'undefined' &&
+			Object.prototype.toString.call(process) === '[object process]';
+	}
+
+	function hasMutationObserver () {
+	    return (typeof MutationObserver !== 'undefined' && MutationObserver) ||
+			(typeof WebKitMutationObserver !== 'undefined' && WebKitMutationObserver);
+	}
+
+	function initMutationObserver(MutationObserver) {
+		var scheduled;
+		var node = document.createTextNode('');
+		var o = new MutationObserver(run);
+		o.observe(node, { characterData: true });
+
+		function run() {
+			var f = scheduled;
+			scheduled = void 0;
+			f();
+		}
+
+		var i = 0;
+		return function (f) {
+			scheduled = f;
+			node.data = (i ^= 1);
+		};
+	}
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/format.js":
+/*!*****************************************!*\
+  !*** ./node_modules/when/lib/format.js ***!
+  \*****************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+
+	return {
+		formatError: formatError,
+		formatObject: formatObject,
+		tryStringify: tryStringify
+	};
+
+	/**
+	 * Format an error into a string.  If e is an Error and has a stack property,
+	 * it's returned.  Otherwise, e is formatted using formatObject, with a
+	 * warning added about e not being a proper Error.
+	 * @param {*} e
+	 * @returns {String} formatted string, suitable for output to developers
+	 */
+	function formatError(e) {
+		var s = typeof e === 'object' && e !== null && (e.stack || e.message) ? e.stack || e.message : formatObject(e);
+		return e instanceof Error ? s : s + ' (WARNING: non-Error used)';
+	}
+
+	/**
+	 * Format an object, detecting "plain" objects and running them through
+	 * JSON.stringify if possible.
+	 * @param {Object} o
+	 * @returns {string}
+	 */
+	function formatObject(o) {
+		var s = String(o);
+		if(s === '[object Object]' && typeof JSON !== 'undefined') {
+			s = tryStringify(o, s);
+		}
+		return s;
+	}
+
+	/**
+	 * Try to return the result of JSON.stringify(x).  If that fails, return
+	 * defaultValue
+	 * @param {*} x
+	 * @param {*} defaultValue
+	 * @returns {String|*} JSON.stringify(x) or defaultValue
+	 */
+	function tryStringify(x, defaultValue) {
+		try {
+			return JSON.stringify(x);
+		} catch(e) {
+			return defaultValue;
+		}
+	}
+
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/makePromise.js":
+/*!**********************************************!*\
+  !*** ./node_modules/when/lib/makePromise.js ***!
+  \**********************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+
+	return function makePromise(environment) {
+
+		var tasks = environment.scheduler;
+		var emitRejection = initEmitRejection();
+
+		var objectCreate = Object.create ||
+			function(proto) {
+				function Child() {}
+				Child.prototype = proto;
+				return new Child();
+			};
+
+		/**
+		 * Create a promise whose fate is determined by resolver
+		 * @constructor
+		 * @returns {Promise} promise
+		 * @name Promise
+		 */
+		function Promise(resolver, handler) {
+			this._handler = resolver === Handler ? handler : init(resolver);
+		}
+
+		/**
+		 * Run the supplied resolver
+		 * @param resolver
+		 * @returns {Pending}
+		 */
+		function init(resolver) {
+			var handler = new Pending();
+
+			try {
+				resolver(promiseResolve, promiseReject, promiseNotify);
+			} catch (e) {
+				promiseReject(e);
+			}
+
+			return handler;
+
+			/**
+			 * Transition from pre-resolution state to post-resolution state, notifying
+			 * all listeners of the ultimate fulfillment or rejection
+			 * @param {*} x resolution value
+			 */
+			function promiseResolve (x) {
+				handler.resolve(x);
+			}
+			/**
+			 * Reject this promise with reason, which will be used verbatim
+			 * @param {Error|*} reason rejection reason, strongly suggested
+			 *   to be an Error type
+			 */
+			function promiseReject (reason) {
+				handler.reject(reason);
+			}
+
+			/**
+			 * @deprecated
+			 * Issue a progress event, notifying all progress listeners
+			 * @param {*} x progress event payload to pass to all listeners
+			 */
+			function promiseNotify (x) {
+				handler.notify(x);
+			}
+		}
+
+		// Creation
+
+		Promise.resolve = resolve;
+		Promise.reject = reject;
+		Promise.never = never;
+
+		Promise._defer = defer;
+		Promise._handler = getHandler;
+
+		/**
+		 * Returns a trusted promise. If x is already a trusted promise, it is
+		 * returned, otherwise returns a new trusted Promise which follows x.
+		 * @param  {*} x
+		 * @return {Promise} promise
+		 */
+		function resolve(x) {
+			return isPromise(x) ? x
+				: new Promise(Handler, new Async(getHandler(x)));
+		}
+
+		/**
+		 * Return a reject promise with x as its reason (x is used verbatim)
+		 * @param {*} x
+		 * @returns {Promise} rejected promise
+		 */
+		function reject(x) {
+			return new Promise(Handler, new Async(new Rejected(x)));
+		}
+
+		/**
+		 * Return a promise that remains pending forever
+		 * @returns {Promise} forever-pending promise.
+		 */
+		function never() {
+			return foreverPendingPromise; // Should be frozen
+		}
+
+		/**
+		 * Creates an internal {promise, resolver} pair
+		 * @private
+		 * @returns {Promise}
+		 */
+		function defer() {
+			return new Promise(Handler, new Pending());
+		}
+
+		// Transformation and flow control
+
+		/**
+		 * Transform this promise's fulfillment value, returning a new Promise
+		 * for the transformed result.  If the promise cannot be fulfilled, onRejected
+		 * is called with the reason.  onProgress *may* be called with updates toward
+		 * this promise's fulfillment.
+		 * @param {function=} onFulfilled fulfillment handler
+		 * @param {function=} onRejected rejection handler
+		 * @param {function=} onProgress @deprecated progress handler
+		 * @return {Promise} new promise
+		 */
+		Promise.prototype.then = function(onFulfilled, onRejected, onProgress) {
+			var parent = this._handler;
+			var state = parent.join().state();
+
+			if ((typeof onFulfilled !== 'function' && state > 0) ||
+				(typeof onRejected !== 'function' && state < 0)) {
+				// Short circuit: value will not change, simply share handler
+				return new this.constructor(Handler, parent);
+			}
+
+			var p = this._beget();
+			var child = p._handler;
+
+			parent.chain(child, parent.receiver, onFulfilled, onRejected, onProgress);
+
+			return p;
+		};
+
+		/**
+		 * If this promise cannot be fulfilled due to an error, call onRejected to
+		 * handle the error. Shortcut for .then(undefined, onRejected)
+		 * @param {function?} onRejected
+		 * @return {Promise}
+		 */
+		Promise.prototype['catch'] = function(onRejected) {
+			return this.then(void 0, onRejected);
+		};
+
+		/**
+		 * Creates a new, pending promise of the same type as this promise
+		 * @private
+		 * @returns {Promise}
+		 */
+		Promise.prototype._beget = function() {
+			return begetFrom(this._handler, this.constructor);
+		};
+
+		function begetFrom(parent, Promise) {
+			var child = new Pending(parent.receiver, parent.join().context);
+			return new Promise(Handler, child);
+		}
+
+		// Array combinators
+
+		Promise.all = all;
+		Promise.race = race;
+		Promise._traverse = traverse;
+
+		/**
+		 * Return a promise that will fulfill when all promises in the
+		 * input array have fulfilled, or will reject when one of the
+		 * promises rejects.
+		 * @param {array} promises array of promises
+		 * @returns {Promise} promise for array of fulfillment values
+		 */
+		function all(promises) {
+			return traverseWith(snd, null, promises);
+		}
+
+		/**
+		 * Array<Promise<X>> -> Promise<Array<f(X)>>
+		 * @private
+		 * @param {function} f function to apply to each promise's value
+		 * @param {Array} promises array of promises
+		 * @returns {Promise} promise for transformed values
+		 */
+		function traverse(f, promises) {
+			return traverseWith(tryCatch2, f, promises);
+		}
+
+		function traverseWith(tryMap, f, promises) {
+			var handler = typeof f === 'function' ? mapAt : settleAt;
+
+			var resolver = new Pending();
+			var pending = promises.length >>> 0;
+			var results = new Array(pending);
+
+			for (var i = 0, x; i < promises.length && !resolver.resolved; ++i) {
+				x = promises[i];
+
+				if (x === void 0 && !(i in promises)) {
+					--pending;
+					continue;
+				}
+
+				traverseAt(promises, handler, i, x, resolver);
+			}
+
+			if(pending === 0) {
+				resolver.become(new Fulfilled(results));
+			}
+
+			return new Promise(Handler, resolver);
+
+			function mapAt(i, x, resolver) {
+				if(!resolver.resolved) {
+					traverseAt(promises, settleAt, i, tryMap(f, x, i), resolver);
+				}
+			}
+
+			function settleAt(i, x, resolver) {
+				results[i] = x;
+				if(--pending === 0) {
+					resolver.become(new Fulfilled(results));
+				}
+			}
+		}
+
+		function traverseAt(promises, handler, i, x, resolver) {
+			if (maybeThenable(x)) {
+				var h = getHandlerMaybeThenable(x);
+				var s = h.state();
+
+				if (s === 0) {
+					h.fold(handler, i, void 0, resolver);
+				} else if (s > 0) {
+					handler(i, h.value, resolver);
+				} else {
+					resolver.become(h);
+					visitRemaining(promises, i+1, h);
+				}
+			} else {
+				handler(i, x, resolver);
+			}
+		}
+
+		Promise._visitRemaining = visitRemaining;
+		function visitRemaining(promises, start, handler) {
+			for(var i=start; i<promises.length; ++i) {
+				markAsHandled(getHandler(promises[i]), handler);
+			}
+		}
+
+		function markAsHandled(h, handler) {
+			if(h === handler) {
+				return;
+			}
+
+			var s = h.state();
+			if(s === 0) {
+				h.visit(h, void 0, h._unreport);
+			} else if(s < 0) {
+				h._unreport();
+			}
+		}
+
+		/**
+		 * Fulfill-reject competitive race. Return a promise that will settle
+		 * to the same state as the earliest input promise to settle.
+		 *
+		 * WARNING: The ES6 Promise spec requires that race()ing an empty array
+		 * must return a promise that is pending forever.  This implementation
+		 * returns a singleton forever-pending promise, the same singleton that is
+		 * returned by Promise.never(), thus can be checked with ===
+		 *
+		 * @param {array} promises array of promises to race
+		 * @returns {Promise} if input is non-empty, a promise that will settle
+		 * to the same outcome as the earliest input promise to settle. if empty
+		 * is empty, returns a promise that will never settle.
+		 */
+		function race(promises) {
+			if(typeof promises !== 'object' || promises === null) {
+				return reject(new TypeError('non-iterable passed to race()'));
+			}
+
+			// Sigh, race([]) is untestable unless we return *something*
+			// that is recognizable without calling .then() on it.
+			return promises.length === 0 ? never()
+				 : promises.length === 1 ? resolve(promises[0])
+				 : runRace(promises);
+		}
+
+		function runRace(promises) {
+			var resolver = new Pending();
+			var i, x, h;
+			for(i=0; i<promises.length; ++i) {
+				x = promises[i];
+				if (x === void 0 && !(i in promises)) {
+					continue;
+				}
+
+				h = getHandler(x);
+				if(h.state() !== 0) {
+					resolver.become(h);
+					visitRemaining(promises, i+1, h);
+					break;
+				} else {
+					h.visit(resolver, resolver.resolve, resolver.reject);
+				}
+			}
+			return new Promise(Handler, resolver);
+		}
+
+		// Promise internals
+		// Below this, everything is @private
+
+		/**
+		 * Get an appropriate handler for x, without checking for cycles
+		 * @param {*} x
+		 * @returns {object} handler
+		 */
+		function getHandler(x) {
+			if(isPromise(x)) {
+				return x._handler.join();
+			}
+			return maybeThenable(x) ? getHandlerUntrusted(x) : new Fulfilled(x);
+		}
+
+		/**
+		 * Get a handler for thenable x.
+		 * NOTE: You must only call this if maybeThenable(x) == true
+		 * @param {object|function|Promise} x
+		 * @returns {object} handler
+		 */
+		function getHandlerMaybeThenable(x) {
+			return isPromise(x) ? x._handler.join() : getHandlerUntrusted(x);
+		}
+
+		/**
+		 * Get a handler for potentially untrusted thenable x
+		 * @param {*} x
+		 * @returns {object} handler
+		 */
+		function getHandlerUntrusted(x) {
+			try {
+				var untrustedThen = x.then;
+				return typeof untrustedThen === 'function'
+					? new Thenable(untrustedThen, x)
+					: new Fulfilled(x);
+			} catch(e) {
+				return new Rejected(e);
+			}
+		}
+
+		/**
+		 * Handler for a promise that is pending forever
+		 * @constructor
+		 */
+		function Handler() {}
+
+		Handler.prototype.when
+			= Handler.prototype.become
+			= Handler.prototype.notify // deprecated
+			= Handler.prototype.fail
+			= Handler.prototype._unreport
+			= Handler.prototype._report
+			= noop;
+
+		Handler.prototype._state = 0;
+
+		Handler.prototype.state = function() {
+			return this._state;
+		};
+
+		/**
+		 * Recursively collapse handler chain to find the handler
+		 * nearest to the fully resolved value.
+		 * @returns {object} handler nearest the fully resolved value
+		 */
+		Handler.prototype.join = function() {
+			var h = this;
+			while(h.handler !== void 0) {
+				h = h.handler;
+			}
+			return h;
+		};
+
+		Handler.prototype.chain = function(to, receiver, fulfilled, rejected, progress) {
+			this.when({
+				resolver: to,
+				receiver: receiver,
+				fulfilled: fulfilled,
+				rejected: rejected,
+				progress: progress
+			});
+		};
+
+		Handler.prototype.visit = function(receiver, fulfilled, rejected, progress) {
+			this.chain(failIfRejected, receiver, fulfilled, rejected, progress);
+		};
+
+		Handler.prototype.fold = function(f, z, c, to) {
+			this.when(new Fold(f, z, c, to));
+		};
+
+		/**
+		 * Handler that invokes fail() on any handler it becomes
+		 * @constructor
+		 */
+		function FailIfRejected() {}
+
+		inherit(Handler, FailIfRejected);
+
+		FailIfRejected.prototype.become = function(h) {
+			h.fail();
+		};
+
+		var failIfRejected = new FailIfRejected();
+
+		/**
+		 * Handler that manages a queue of consumers waiting on a pending promise
+		 * @constructor
+		 */
+		function Pending(receiver, inheritedContext) {
+			Promise.createContext(this, inheritedContext);
+
+			this.consumers = void 0;
+			this.receiver = receiver;
+			this.handler = void 0;
+			this.resolved = false;
+		}
+
+		inherit(Handler, Pending);
+
+		Pending.prototype._state = 0;
+
+		Pending.prototype.resolve = function(x) {
+			this.become(getHandler(x));
+		};
+
+		Pending.prototype.reject = function(x) {
+			if(this.resolved) {
+				return;
+			}
+
+			this.become(new Rejected(x));
+		};
+
+		Pending.prototype.join = function() {
+			if (!this.resolved) {
+				return this;
+			}
+
+			var h = this;
+
+			while (h.handler !== void 0) {
+				h = h.handler;
+				if (h === this) {
+					return this.handler = cycle();
+				}
+			}
+
+			return h;
+		};
+
+		Pending.prototype.run = function() {
+			var q = this.consumers;
+			var handler = this.handler;
+			this.handler = this.handler.join();
+			this.consumers = void 0;
+
+			for (var i = 0; i < q.length; ++i) {
+				handler.when(q[i]);
+			}
+		};
+
+		Pending.prototype.become = function(handler) {
+			if(this.resolved) {
+				return;
+			}
+
+			this.resolved = true;
+			this.handler = handler;
+			if(this.consumers !== void 0) {
+				tasks.enqueue(this);
+			}
+
+			if(this.context !== void 0) {
+				handler._report(this.context);
+			}
+		};
+
+		Pending.prototype.when = function(continuation) {
+			if(this.resolved) {
+				tasks.enqueue(new ContinuationTask(continuation, this.handler));
+			} else {
+				if(this.consumers === void 0) {
+					this.consumers = [continuation];
+				} else {
+					this.consumers.push(continuation);
+				}
+			}
+		};
+
+		/**
+		 * @deprecated
+		 */
+		Pending.prototype.notify = function(x) {
+			if(!this.resolved) {
+				tasks.enqueue(new ProgressTask(x, this));
+			}
+		};
+
+		Pending.prototype.fail = function(context) {
+			var c = typeof context === 'undefined' ? this.context : context;
+			this.resolved && this.handler.join().fail(c);
+		};
+
+		Pending.prototype._report = function(context) {
+			this.resolved && this.handler.join()._report(context);
+		};
+
+		Pending.prototype._unreport = function() {
+			this.resolved && this.handler.join()._unreport();
+		};
+
+		/**
+		 * Wrap another handler and force it into a future stack
+		 * @param {object} handler
+		 * @constructor
+		 */
+		function Async(handler) {
+			this.handler = handler;
+		}
+
+		inherit(Handler, Async);
+
+		Async.prototype.when = function(continuation) {
+			tasks.enqueue(new ContinuationTask(continuation, this));
+		};
+
+		Async.prototype._report = function(context) {
+			this.join()._report(context);
+		};
+
+		Async.prototype._unreport = function() {
+			this.join()._unreport();
+		};
+
+		/**
+		 * Handler that wraps an untrusted thenable and assimilates it in a future stack
+		 * @param {function} then
+		 * @param {{then: function}} thenable
+		 * @constructor
+		 */
+		function Thenable(then, thenable) {
+			Pending.call(this);
+			tasks.enqueue(new AssimilateTask(then, thenable, this));
+		}
+
+		inherit(Pending, Thenable);
+
+		/**
+		 * Handler for a fulfilled promise
+		 * @param {*} x fulfillment value
+		 * @constructor
+		 */
+		function Fulfilled(x) {
+			Promise.createContext(this);
+			this.value = x;
+		}
+
+		inherit(Handler, Fulfilled);
+
+		Fulfilled.prototype._state = 1;
+
+		Fulfilled.prototype.fold = function(f, z, c, to) {
+			runContinuation3(f, z, this, c, to);
+		};
+
+		Fulfilled.prototype.when = function(cont) {
+			runContinuation1(cont.fulfilled, this, cont.receiver, cont.resolver);
+		};
+
+		var errorId = 0;
+
+		/**
+		 * Handler for a rejected promise
+		 * @param {*} x rejection reason
+		 * @constructor
+		 */
+		function Rejected(x) {
+			Promise.createContext(this);
+
+			this.id = ++errorId;
+			this.value = x;
+			this.handled = false;
+			this.reported = false;
+
+			this._report();
+		}
+
+		inherit(Handler, Rejected);
+
+		Rejected.prototype._state = -1;
+
+		Rejected.prototype.fold = function(f, z, c, to) {
+			to.become(this);
+		};
+
+		Rejected.prototype.when = function(cont) {
+			if(typeof cont.rejected === 'function') {
+				this._unreport();
+			}
+			runContinuation1(cont.rejected, this, cont.receiver, cont.resolver);
+		};
+
+		Rejected.prototype._report = function(context) {
+			tasks.afterQueue(new ReportTask(this, context));
+		};
+
+		Rejected.prototype._unreport = function() {
+			if(this.handled) {
+				return;
+			}
+			this.handled = true;
+			tasks.afterQueue(new UnreportTask(this));
+		};
+
+		Rejected.prototype.fail = function(context) {
+			this.reported = true;
+			emitRejection('unhandledRejection', this);
+			Promise.onFatalRejection(this, context === void 0 ? this.context : context);
+		};
+
+		function ReportTask(rejection, context) {
+			this.rejection = rejection;
+			this.context = context;
+		}
+
+		ReportTask.prototype.run = function() {
+			if(!this.rejection.handled && !this.rejection.reported) {
+				this.rejection.reported = true;
+				emitRejection('unhandledRejection', this.rejection) ||
+					Promise.onPotentiallyUnhandledRejection(this.rejection, this.context);
+			}
+		};
+
+		function UnreportTask(rejection) {
+			this.rejection = rejection;
+		}
+
+		UnreportTask.prototype.run = function() {
+			if(this.rejection.reported) {
+				emitRejection('rejectionHandled', this.rejection) ||
+					Promise.onPotentiallyUnhandledRejectionHandled(this.rejection);
+			}
+		};
+
+		// Unhandled rejection hooks
+		// By default, everything is a noop
+
+		Promise.createContext
+			= Promise.enterContext
+			= Promise.exitContext
+			= Promise.onPotentiallyUnhandledRejection
+			= Promise.onPotentiallyUnhandledRejectionHandled
+			= Promise.onFatalRejection
+			= noop;
+
+		// Errors and singletons
+
+		var foreverPendingHandler = new Handler();
+		var foreverPendingPromise = new Promise(Handler, foreverPendingHandler);
+
+		function cycle() {
+			return new Rejected(new TypeError('Promise cycle'));
+		}
+
+		// Task runners
+
+		/**
+		 * Run a single consumer
+		 * @constructor
+		 */
+		function ContinuationTask(continuation, handler) {
+			this.continuation = continuation;
+			this.handler = handler;
+		}
+
+		ContinuationTask.prototype.run = function() {
+			this.handler.join().when(this.continuation);
+		};
+
+		/**
+		 * Run a queue of progress handlers
+		 * @constructor
+		 */
+		function ProgressTask(value, handler) {
+			this.handler = handler;
+			this.value = value;
+		}
+
+		ProgressTask.prototype.run = function() {
+			var q = this.handler.consumers;
+			if(q === void 0) {
+				return;
+			}
+
+			for (var c, i = 0; i < q.length; ++i) {
+				c = q[i];
+				runNotify(c.progress, this.value, this.handler, c.receiver, c.resolver);
+			}
+		};
+
+		/**
+		 * Assimilate a thenable, sending it's value to resolver
+		 * @param {function} then
+		 * @param {object|function} thenable
+		 * @param {object} resolver
+		 * @constructor
+		 */
+		function AssimilateTask(then, thenable, resolver) {
+			this._then = then;
+			this.thenable = thenable;
+			this.resolver = resolver;
+		}
+
+		AssimilateTask.prototype.run = function() {
+			var h = this.resolver;
+			tryAssimilate(this._then, this.thenable, _resolve, _reject, _notify);
+
+			function _resolve(x) { h.resolve(x); }
+			function _reject(x)  { h.reject(x); }
+			function _notify(x)  { h.notify(x); }
+		};
+
+		function tryAssimilate(then, thenable, resolve, reject, notify) {
+			try {
+				then.call(thenable, resolve, reject, notify);
+			} catch (e) {
+				reject(e);
+			}
+		}
+
+		/**
+		 * Fold a handler value with z
+		 * @constructor
+		 */
+		function Fold(f, z, c, to) {
+			this.f = f; this.z = z; this.c = c; this.to = to;
+			this.resolver = failIfRejected;
+			this.receiver = this;
+		}
+
+		Fold.prototype.fulfilled = function(x) {
+			this.f.call(this.c, this.z, x, this.to);
+		};
+
+		Fold.prototype.rejected = function(x) {
+			this.to.reject(x);
+		};
+
+		Fold.prototype.progress = function(x) {
+			this.to.notify(x);
+		};
+
+		// Other helpers
+
+		/**
+		 * @param {*} x
+		 * @returns {boolean} true iff x is a trusted Promise
+		 */
+		function isPromise(x) {
+			return x instanceof Promise;
+		}
+
+		/**
+		 * Test just enough to rule out primitives, in order to take faster
+		 * paths in some code
+		 * @param {*} x
+		 * @returns {boolean} false iff x is guaranteed *not* to be a thenable
+		 */
+		function maybeThenable(x) {
+			return (typeof x === 'object' || typeof x === 'function') && x !== null;
+		}
+
+		function runContinuation1(f, h, receiver, next) {
+			if(typeof f !== 'function') {
+				return next.become(h);
+			}
+
+			Promise.enterContext(h);
+			tryCatchReject(f, h.value, receiver, next);
+			Promise.exitContext();
+		}
+
+		function runContinuation3(f, x, h, receiver, next) {
+			if(typeof f !== 'function') {
+				return next.become(h);
+			}
+
+			Promise.enterContext(h);
+			tryCatchReject3(f, x, h.value, receiver, next);
+			Promise.exitContext();
+		}
+
+		/**
+		 * @deprecated
+		 */
+		function runNotify(f, x, h, receiver, next) {
+			if(typeof f !== 'function') {
+				return next.notify(x);
+			}
+
+			Promise.enterContext(h);
+			tryCatchReturn(f, x, receiver, next);
+			Promise.exitContext();
+		}
+
+		function tryCatch2(f, a, b) {
+			try {
+				return f(a, b);
+			} catch(e) {
+				return reject(e);
+			}
+		}
+
+		/**
+		 * Return f.call(thisArg, x), or if it throws return a rejected promise for
+		 * the thrown exception
+		 */
+		function tryCatchReject(f, x, thisArg, next) {
+			try {
+				next.become(getHandler(f.call(thisArg, x)));
+			} catch(e) {
+				next.become(new Rejected(e));
+			}
+		}
+
+		/**
+		 * Same as above, but includes the extra argument parameter.
+		 */
+		function tryCatchReject3(f, x, y, thisArg, next) {
+			try {
+				f.call(thisArg, x, y, next);
+			} catch(e) {
+				next.become(new Rejected(e));
+			}
+		}
+
+		/**
+		 * @deprecated
+		 * Return f.call(thisArg, x), or if it throws, *return* the exception
+		 */
+		function tryCatchReturn(f, x, thisArg, next) {
+			try {
+				next.notify(f.call(thisArg, x));
+			} catch(e) {
+				next.notify(e);
+			}
+		}
+
+		function inherit(Parent, Child) {
+			Child.prototype = objectCreate(Parent.prototype);
+			Child.prototype.constructor = Child;
+		}
+
+		function snd(x, y) {
+			return y;
+		}
+
+		function noop() {}
+
+		function hasCustomEvent() {
+			if(typeof CustomEvent === 'function') {
+				try {
+					var ev = new CustomEvent('unhandledRejection');
+					return ev instanceof CustomEvent;
+				} catch (ignoredException) {}
+			}
+			return false;
+		}
+
+		function hasInternetExplorerCustomEvent() {
+			if(typeof document !== 'undefined' && typeof document.createEvent === 'function') {
+				try {
+					// Try to create one event to make sure it's supported
+					var ev = document.createEvent('CustomEvent');
+					ev.initCustomEvent('eventType', false, true, {});
+					return true;
+				} catch (ignoredException) {}
+			}
+			return false;
+		}
+
+		function initEmitRejection() {
+			/*global process, self, CustomEvent*/
+			if(typeof process !== 'undefined' && process !== null
+				&& typeof process.emit === 'function') {
+				// Returning falsy here means to call the default
+				// onPotentiallyUnhandledRejection API.  This is safe even in
+				// browserify since process.emit always returns falsy in browserify:
+				// https://github.com/defunctzombie/node-process/blob/master/browser.js#L40-L46
+				return function(type, rejection) {
+					return type === 'unhandledRejection'
+						? process.emit(type, rejection.value, rejection)
+						: process.emit(type, rejection);
+				};
+			} else if(typeof self !== 'undefined' && hasCustomEvent()) {
+				return (function (self, CustomEvent) {
+					return function (type, rejection) {
+						var ev = new CustomEvent(type, {
+							detail: {
+								reason: rejection.value,
+								key: rejection
+							},
+							bubbles: false,
+							cancelable: true
+						});
+
+						return !self.dispatchEvent(ev);
+					};
+				}(self, CustomEvent));
+			} else if(typeof self !== 'undefined' && hasInternetExplorerCustomEvent()) {
+				return (function(self, document) {
+					return function(type, rejection) {
+						var ev = document.createEvent('CustomEvent');
+						ev.initCustomEvent(type, false, true, {
+							reason: rejection.value,
+							key: rejection
+						});
+
+						return !self.dispatchEvent(ev);
+					};
+				}(self, document));
+			}
+
+			return noop;
+		}
+
+		return Promise;
+	};
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+/***/ }),
+
+/***/ "./node_modules/when/lib/state.js":
+/*!****************************************!*\
+  !*** ./node_modules/when/lib/state.js ***!
+  \****************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+/** @author Brian Cavalier */
+/** @author John Hann */
+
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+
+	return {
+		pending: toPendingState,
+		fulfilled: toFulfilledState,
+		rejected: toRejectedState,
+		inspect: inspect
+	};
+
+	function toPendingState() {
+		return { state: 'pending' };
+	}
+
+	function toRejectedState(e) {
+		return { state: 'rejected', reason: e };
+	}
+
+	function toFulfilledState(x) {
+		return { state: 'fulfilled', value: x };
+	}
+
+	function inspect(handler) {
+		var state = handler.state();
+		return state === 0 ? toPendingState()
+			 : state > 0   ? toFulfilledState(handler.value)
+			               : toRejectedState(handler.value);
+	}
+
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+}(__webpack_require__.amdD));
+
+
+/***/ }),
+
+/***/ "./node_modules/when/when.js":
+/*!***********************************!*\
+  !*** ./node_modules/when/when.js ***!
+  \***********************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/** @license MIT License (c) copyright 2010-2014 original author or authors */
+
+/**
+ * Promises/A+ and when() implementation
+ * when is part of the cujoJS family of libraries (http://cujojs.com/)
+ * @author Brian Cavalier
+ * @author John Hann
+ */
+(function(define) { 'use strict';
+!(__WEBPACK_AMD_DEFINE_RESULT__ = (function (require) {
+
+	var timed = __webpack_require__(/*! ./lib/decorators/timed */ "./node_modules/when/lib/decorators/timed.js");
+	var array = __webpack_require__(/*! ./lib/decorators/array */ "./node_modules/when/lib/decorators/array.js");
+	var flow = __webpack_require__(/*! ./lib/decorators/flow */ "./node_modules/when/lib/decorators/flow.js");
+	var fold = __webpack_require__(/*! ./lib/decorators/fold */ "./node_modules/when/lib/decorators/fold.js");
+	var inspect = __webpack_require__(/*! ./lib/decorators/inspect */ "./node_modules/when/lib/decorators/inspect.js");
+	var generate = __webpack_require__(/*! ./lib/decorators/iterate */ "./node_modules/when/lib/decorators/iterate.js");
+	var progress = __webpack_require__(/*! ./lib/decorators/progress */ "./node_modules/when/lib/decorators/progress.js");
+	var withThis = __webpack_require__(/*! ./lib/decorators/with */ "./node_modules/when/lib/decorators/with.js");
+	var unhandledRejection = __webpack_require__(/*! ./lib/decorators/unhandledRejection */ "./node_modules/when/lib/decorators/unhandledRejection.js");
+	var TimeoutError = __webpack_require__(/*! ./lib/TimeoutError */ "./node_modules/when/lib/TimeoutError.js");
+
+	var Promise = [array, flow, fold, generate, progress,
+		inspect, withThis, timed, unhandledRejection]
+		.reduce(function(Promise, feature) {
+			return feature(Promise);
+		}, __webpack_require__(/*! ./lib/Promise */ "./node_modules/when/lib/Promise.js"));
+
+	var apply = __webpack_require__(/*! ./lib/apply */ "./node_modules/when/lib/apply.js")(Promise);
+
+	// Public API
+
+	when.promise     = promise;              // Create a pending promise
+	when.resolve     = Promise.resolve;      // Create a resolved promise
+	when.reject      = Promise.reject;       // Create a rejected promise
+
+	when.lift        = lift;                 // lift a function to return promises
+	when['try']      = attempt;              // call a function and return a promise
+	when.attempt     = attempt;              // alias for when.try
+
+	when.iterate     = Promise.iterate;      // DEPRECATED (use cujojs/most streams) Generate a stream of promises
+	when.unfold      = Promise.unfold;       // DEPRECATED (use cujojs/most streams) Generate a stream of promises
+
+	when.join        = join;                 // Join 2 or more promises
+
+	when.all         = all;                  // Resolve a list of promises
+	when.settle      = settle;               // Settle a list of promises
+
+	when.any         = lift(Promise.any);    // One-winner race
+	when.some        = lift(Promise.some);   // Multi-winner race
+	when.race        = lift(Promise.race);   // First-to-settle race
+
+	when.map         = map;                  // Array.map() for promises
+	when.filter      = filter;               // Array.filter() for promises
+	when.reduce      = lift(Promise.reduce);       // Array.reduce() for promises
+	when.reduceRight = lift(Promise.reduceRight);  // Array.reduceRight() for promises
+
+	when.isPromiseLike = isPromiseLike;      // Is something promise-like, aka thenable
+
+	when.Promise     = Promise;              // Promise constructor
+	when.defer       = defer;                // Create a {promise, resolve, reject} tuple
+
+	// Error types
+
+	when.TimeoutError = TimeoutError;
+
+	/**
+	 * Get a trusted promise for x, or by transforming x with onFulfilled
+	 *
+	 * @param {*} x
+	 * @param {function?} onFulfilled callback to be called when x is
+	 *   successfully fulfilled.  If promiseOrValue is an immediate value, callback
+	 *   will be invoked immediately.
+	 * @param {function?} onRejected callback to be called when x is
+	 *   rejected.
+	 * @param {function?} onProgress callback to be called when progress updates
+	 *   are issued for x. @deprecated
+	 * @returns {Promise} a new promise that will fulfill with the return
+	 *   value of callback or errback or the completion value of promiseOrValue if
+	 *   callback and/or errback is not supplied.
+	 */
+	function when(x, onFulfilled, onRejected, onProgress) {
+		var p = Promise.resolve(x);
+		if (arguments.length < 2) {
+			return p;
+		}
+
+		return p.then(onFulfilled, onRejected, onProgress);
+	}
+
+	/**
+	 * Creates a new promise whose fate is determined by resolver.
+	 * @param {function} resolver function(resolve, reject, notify)
+	 * @returns {Promise} promise whose fate is determine by resolver
+	 */
+	function promise(resolver) {
+		return new Promise(resolver);
+	}
+
+	/**
+	 * Lift the supplied function, creating a version of f that returns
+	 * promises, and accepts promises as arguments.
+	 * @param {function} f
+	 * @returns {Function} version of f that returns promises
+	 */
+	function lift(f) {
+		return function() {
+			for(var i=0, l=arguments.length, a=new Array(l); i<l; ++i) {
+				a[i] = arguments[i];
+			}
+			return apply(f, this, a);
+		};
+	}
+
+	/**
+	 * Call f in a future turn, with the supplied args, and return a promise
+	 * for the result.
+	 * @param {function} f
+	 * @returns {Promise}
+	 */
+	function attempt(f /*, args... */) {
+		/*jshint validthis:true */
+		for(var i=0, l=arguments.length-1, a=new Array(l); i<l; ++i) {
+			a[i] = arguments[i+1];
+		}
+		return apply(f, this, a);
+	}
+
+	/**
+	 * Creates a {promise, resolver} pair, either or both of which
+	 * may be given out safely to consumers.
+	 * @return {{promise: Promise, resolve: function, reject: function, notify: function}}
+	 */
+	function defer() {
+		return new Deferred();
+	}
+
+	function Deferred() {
+		var p = Promise._defer();
+
+		function resolve(x) { p._handler.resolve(x); }
+		function reject(x) { p._handler.reject(x); }
+		function notify(x) { p._handler.notify(x); }
+
+		this.promise = p;
+		this.resolve = resolve;
+		this.reject = reject;
+		this.notify = notify;
+		this.resolver = { resolve: resolve, reject: reject, notify: notify };
+	}
+
+	/**
+	 * Determines if x is promise-like, i.e. a thenable object
+	 * NOTE: Will return true for *any thenable object*, and isn't truly
+	 * safe, since it may attempt to access the `then` property of x (i.e.
+	 *  clever/malicious getters may do weird things)
+	 * @param {*} x anything
+	 * @returns {boolean} true if x is promise-like
+	 */
+	function isPromiseLike(x) {
+		return x && typeof x.then === 'function';
+	}
+
+	/**
+	 * Return a promise that will resolve only once all the supplied arguments
+	 * have resolved. The resolution value of the returned promise will be an array
+	 * containing the resolution values of each of the arguments.
+	 * @param {...*} arguments may be a mix of promises and values
+	 * @returns {Promise}
+	 */
+	function join(/* ...promises */) {
+		return Promise.all(arguments);
+	}
+
+	/**
+	 * Return a promise that will fulfill once all input promises have
+	 * fulfilled, or reject when any one input promise rejects.
+	 * @param {array|Promise} promises array (or promise for an array) of promises
+	 * @returns {Promise}
+	 */
+	function all(promises) {
+		return when(promises, Promise.all);
+	}
+
+	/**
+	 * Return a promise that will always fulfill with an array containing
+	 * the outcome states of all input promises.  The returned promise
+	 * will only reject if `promises` itself is a rejected promise.
+	 * @param {array|Promise} promises array (or promise for an array) of promises
+	 * @returns {Promise} promise for array of settled state descriptors
+	 */
+	function settle(promises) {
+		return when(promises, Promise.settle);
+	}
+
+	/**
+	 * Promise-aware array map function, similar to `Array.prototype.map()`,
+	 * but input array may contain promises or values.
+	 * @param {Array|Promise} promises array of anything, may contain promises and values
+	 * @param {function(x:*, index:Number):*} mapFunc map function which may
+	 *  return a promise or value
+	 * @returns {Promise} promise that will fulfill with an array of mapped values
+	 *  or reject if any input promise rejects.
+	 */
+	function map(promises, mapFunc) {
+		return when(promises, function(promises) {
+			return Promise.map(promises, mapFunc);
+		});
+	}
+
+	/**
+	 * Filter the provided array of promises using the provided predicate.  Input may
+	 * contain promises and values
+	 * @param {Array|Promise} promises array of promises and values
+	 * @param {function(x:*, index:Number):boolean} predicate filtering predicate.
+	 *  Must return truthy (or promise for truthy) for items to retain.
+	 * @returns {Promise} promise that will fulfill with an array containing all items
+	 *  for which predicate returned truthy.
+	 */
+	function filter(promises, predicate) {
+		return when(promises, function(promises) {
+			return Promise.filter(promises, predicate);
+		});
+	}
+
+	return when;
+}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+})(__webpack_require__.amdD);
+
+
+/***/ }),
+
+/***/ "./node_modules/which/which.js":
+/*!*************************************!*\
+  !*** ./node_modules/which/which.js ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+const isWindows = process.platform === 'win32' ||
+    process.env.OSTYPE === 'cygwin' ||
+    process.env.OSTYPE === 'msys'
+
+const path = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'path'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))
+const COLON = isWindows ? ';' : ':'
+const isexe = __webpack_require__(/*! isexe */ "./node_modules/isexe/index.js")
+
+const getNotFoundError = (cmd) =>
+  Object.assign(new Error(`not found: ${cmd}`), { code: 'ENOENT' })
+
+const getPathInfo = (cmd, opt) => {
+  const colon = opt.colon || COLON
+
+  // If it has a slash, then we don't bother searching the pathenv.
+  // just check the file itself, and that's it.
+  const pathEnv = cmd.match(/\//) || isWindows && cmd.match(/\\/) ? ['']
+    : (
+      [
+        // windows always checks the cwd first
+        ...(isWindows ? [process.cwd()] : []),
+        ...(opt.path || process.env.PATH ||
+          /* istanbul ignore next: very unusual */ '').split(colon),
+      ]
+    )
+  const pathExtExe = isWindows
+    ? opt.pathExt || process.env.PATHEXT || '.EXE;.CMD;.BAT;.COM'
+    : ''
+  const pathExt = isWindows ? pathExtExe.split(colon) : ['']
+
+  if (isWindows) {
+    if (cmd.indexOf('.') !== -1 && pathExt[0] !== '')
+      pathExt.unshift('')
+  }
+
+  return {
+    pathEnv,
+    pathExt,
+    pathExtExe,
+  }
+}
+
+const which = (cmd, opt, cb) => {
+  if (typeof opt === 'function') {
+    cb = opt
+    opt = {}
+  }
+  if (!opt)
+    opt = {}
+
+  const { pathEnv, pathExt, pathExtExe } = getPathInfo(cmd, opt)
+  const found = []
+
+  const step = i => new Promise((resolve, reject) => {
+    if (i === pathEnv.length)
+      return opt.all && found.length ? resolve(found)
+        : reject(getNotFoundError(cmd))
+
+    const ppRaw = pathEnv[i]
+    const pathPart = /^".*"$/.test(ppRaw) ? ppRaw.slice(1, -1) : ppRaw
+
+    const pCmd = path.join(pathPart, cmd)
+    const p = !pathPart && /^\.[\\\/]/.test(cmd) ? cmd.slice(0, 2) + pCmd
+      : pCmd
+
+    resolve(subStep(p, i, 0))
+  })
+
+  const subStep = (p, i, ii) => new Promise((resolve, reject) => {
+    if (ii === pathExt.length)
+      return resolve(step(i + 1))
+    const ext = pathExt[ii]
+    isexe(p + ext, { pathExt: pathExtExe }, (er, is) => {
+      if (!er && is) {
+        if (opt.all)
+          found.push(p + ext)
+        else
+          return resolve(p + ext)
+      }
+      return resolve(subStep(p, i, ii + 1))
+    })
+  })
+
+  return cb ? step(0).then(res => cb(null, res), cb) : step(0)
+}
+
+const whichSync = (cmd, opt) => {
+  opt = opt || {}
+
+  const { pathEnv, pathExt, pathExtExe } = getPathInfo(cmd, opt)
+  const found = []
+
+  for (let i = 0; i < pathEnv.length; i ++) {
+    const ppRaw = pathEnv[i]
+    const pathPart = /^".*"$/.test(ppRaw) ? ppRaw.slice(1, -1) : ppRaw
+
+    const pCmd = path.join(pathPart, cmd)
+    const p = !pathPart && /^\.[\\\/]/.test(cmd) ? cmd.slice(0, 2) + pCmd
+      : pCmd
+
+    for (let j = 0; j < pathExt.length; j ++) {
+      const cur = p + pathExt[j]
+      try {
+        const is = isexe.sync(cur, { pathExt: pathExtExe })
+        if (is) {
+          if (opt.all)
+            found.push(cur)
+          else
+            return cur
+        }
+      } catch (ex) {}
+    }
+  }
+
+  if (opt.all && found.length)
+    return found
+
+  if (opt.nothrow)
+    return null
+
+  throw getNotFoundError(cmd)
+}
+
+module.exports = which
+which.sync = whichSync
+
+
+/***/ }),
+
+/***/ "./node_modules/youtube-dl-exec/src/constants.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/youtube-dl-exec/src/constants.js ***!
+  \*******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+var __dirname = "/";
+
+
+const isUnix = __webpack_require__(/*! is-unix */ "./node_modules/is-unix/index.js")
+const path = __webpack_require__(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'path'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))
+
+const PLATFORM_WIN = 'win32'
+const PLATFORM_UNIX = 'unix'
+
+function get (key) {
+  if (!key) return undefined
+  return (
+    process.env[key] ||
+    process.env[`npm_config_${key.toLowerCase()}`] ||
+    process.env[`npm_config_${key.toUpperCase()}`]
+  )
+}
+
+const YOUTUBE_DL_HOST =
+  get('YOUTUBE_DL_HOST') ||
+  'https://api.github.com/repos/yt-dlp/yt-dlp/releases?per_page=1'
+
+const YOUTUBE_DL_DIR =
+  get('YOUTUBE_DL_DIR') || path.join(__dirname, '..', 'bin')
+
+const YOUTUBE_DL_PLATFORM =
+  get('YOUTUBE_DL_PLATFORM') || isUnix(process.platform)
+    ? PLATFORM_UNIX
+    : PLATFORM_WIN
+
+const YOUTUBE_DL_FILENAME = get('YOUTUBE_DL_FILENAME') || 'yt-dlp'
+
+const YOUTUBE_DL_FILE =
+  !YOUTUBE_DL_FILENAME.endsWith('.exe') && YOUTUBE_DL_PLATFORM === 'win32'
+    ? `${YOUTUBE_DL_FILENAME}.exe`
+    : YOUTUBE_DL_FILENAME
+
+const YOUTUBE_DL_PATH = path.join(YOUTUBE_DL_DIR, YOUTUBE_DL_FILE)
+
+const YOUTUBE_DL_SKIP_DOWNLOAD = get('YOUTUBE_DL_SKIP_DOWNLOAD')
+
+module.exports = {
+  YOUTUBE_DL_DIR,
+  YOUTUBE_DL_FILE,
+  YOUTUBE_DL_FILENAME,
+  YOUTUBE_DL_HOST,
+  YOUTUBE_DL_PATH,
+  YOUTUBE_DL_PLATFORM,
+  YOUTUBE_DL_SKIP_DOWNLOAD
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/youtube-dl-exec/src/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/youtube-dl-exec/src/index.js ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+const dargs = __webpack_require__(/*! dargs */ "./node_modules/dargs/index.js")
+const execa = __webpack_require__(/*! execa */ "./node_modules/execa/index.js")
+
+const constants = __webpack_require__(/*! ./constants */ "./node_modules/youtube-dl-exec/src/constants.js")
+
+const args = (url, flags = {}) =>
+  [].concat(url, dargs(flags, { useEquals: false })).filter(Boolean)
+
+const isJSON = (str = '') => str.startsWith('{')
+
+const parse = ({ stdout }) => (isJSON(stdout) ? JSON.parse(stdout) : stdout)
+
+const create = binaryPath => {
+  const fn = (url, flags, opts) => fn.exec(url, flags, opts).then(parse)
+  fn.exec = (url, flags, opts) => execa(binaryPath, args(url, flags), opts)
+  return fn
+}
+
+module.exports = create(constants.YOUTUBE_DL_PATH)
+module.exports.create = create
+module.exports.args = args
+module.exports.isJSON = isJSON
+module.exports.constants = constants
+
+
+/***/ }),
+
+/***/ "?bfcf":
+/*!***********************!*\
+  !*** vertx (ignored) ***!
+  \***********************/
+/***/ (() => {
+
+/* (ignored) */
 
 /***/ })
 
@@ -29951,13 +37278,32 @@ if (false) {} else {
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/amd define */
+/******/ 	(() => {
+/******/ 		__webpack_require__.amdD = function () {
+/******/ 			throw new Error('define cannot be used indirect');
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -29968,6 +37314,18 @@ if (false) {} else {
 /******/ 				}
 /******/ 			}
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -29988,8 +37346,9 @@ if (false) {} else {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!******************************!*\
   !*** ./client/src/index.tsx ***!
   \******************************/
@@ -30000,7 +37359,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_App__WEBPACK_IMPORTED_MODULE_2__.default, null), document.getElementById('app'));
+react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_App__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('app'));
 })();
 
 /******/ })()
